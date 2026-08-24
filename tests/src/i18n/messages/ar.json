@@ -1,0 +1,1451 @@
+{
+  "app": {
+    "name": "MindStep",
+    "tagline": "خطوة واحدة. تركيز واحد. يوم واحد.",
+    "description": "رفيق إنتاجية متميز يدعم اضطراب فرط الحركة وتشتت الانتباه."
+  },
+  "nav": {
+    "dashboard": "الرئيسية",
+    "tasks": "المهام",
+    "projects": "المشاريع",
+    "brainDump": "تفريغ ذهني",
+    "focus": "التركيز",
+    "planner": "المخطط",
+    "calendar": "التقويم",
+    "habits": "العادات",
+    "life": "الحياة",
+    "sleep": "النوم",
+    "energy": "الطاقة",
+    "insights": "رؤى",
+    "ai": "المساعد الذكي",
+    "family": "العائلة",
+    "professional": "العمل",
+    "reports": "التقارير",
+    "settings": "الإعدادات",
+    "notifications": "الإشعارات",
+    "piAccount": "حساب Pi",
+    "privacy": "الخصوصية",
+    "help": "المساعدة",
+    "bottomNav": {
+      "home": "الرئيسية",
+      "tasks": "المهام",
+      "focus": "تركيز",
+      "planner": "المخطط",
+      "ai": "ذكي"
+    },
+    "group": {
+      "core": "الأساسي",
+      "productivity": "الإنتاجية",
+      "focus": "التركيز",
+      "adhdSupport": "دعم ADHD",
+      "life": "الحياة",
+      "ai": "الذكاء الاصطناعي",
+      "family": "العائلة",
+      "professional": "العمل"
+    }
+  },
+  "common": {
+    "loading": "جارٍ التحميل…",
+    "empty": "لا شيء هنا بعد",
+    "error": "حدث خطأ ما",
+    "retry": "حاول مرة أخرى",
+    "save": "حفظ",
+    "saved": "تم الحفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "close": "إغلاق",
+    "create": "إنشاء",
+    "add": "إضافة",
+    "search": "بحث",
+    "all": "الكل",
+    "today": "اليوم",
+    "tomorrow": "غدًا",
+    "yesterday": "أمس",
+    "thisWeek": "هذا الأسبوع",
+    "more": "المزيد",
+    "less": "أقل",
+    "yes": "نعم",
+    "no": "لا",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "start": "ابدأ",
+    "continue": "متابعة",
+    "open": "فتح",
+    "keep": "أبقِ",
+    "move": "أجّل",
+    "drop": "اترك",
+    "done": "تم",
+    "of": "من",
+    "or": "أو",
+    "items": "{count, plural, zero {لا عناصر} one {عنصر واحد} two {عنصران} few {# عناصر} many {# عنصرًا} other {# عنصر}}"
+  },
+  "theme": {
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "النظام",
+    "toggle": "تبديل السمة",
+    "label": "السمة"
+  },
+  "language": {
+    "label": "اللغة",
+    "english": "English",
+    "arabic": "العربية",
+    "french": "Français",
+    "chinese": "简体中文",
+    "changed": "تم تغيير اللغة إلى {name}"
+  },
+  "accessibility": {
+    "skipToMain": "تخطَّ إلى المحتوى الرئيسي",
+    "openNavigation": "فتح التنقل",
+    "closeNavigation": "إغلاق التنقل",
+    "navigationLandmark": "تنقل MindStep",
+    "quickActionsToolbar": "إجراءات MindStep السريعة",
+    "mainContent": "المحتوى الرئيسي",
+    "currentPage": "الصفحة الحالية",
+    "progress": "{percent}% مكتمل"
+  },
+  "dashboard": {
+    "hero": {
+      "greeting": {
+        "morning": "صباح الخير",
+        "afternoon": "مساء الخير",
+        "evening": "مساء الخير",
+        "night": "هل تستريح جيدًا؟"
+      },
+      "whatMattersNow": "ما يهم الآن",
+      "subtitle": "خطوة واحدة. تركيز واحد. يوم واحد.",
+      "aiHint": "اسأل مساعدك"
+    },
+    "sections": {
+      "adhdSupport": "دعم ADHD",
+      "adhdSupportDescription": "أدوات لطيفة للحظات الصعبة.",
+      "nextStep": "خطوتك التالية",
+      "nextStepDescription": "مهمة واحدة. لا غير.",
+      "brainDump": "تفريغ ذهني",
+      "brainDumpDescription": "التقط أي شيء في ذهنك.",
+      "focus": "التركيز",
+      "focusDescription": "ابدأ جلسة تركيز واحدة.",
+      "todayRhythm": "إيقاع اليوم",
+      "todayRhythmDescription": "الطاقة والمزاج والنوم بنظرة سريعة.",
+      "topPriorities": "أولوياتك العليا",
+      "topPrioritiesDescription": "فقط ما يهم أكثر.",
+      "reminders": "تذكيرات",
+      "remindersDescription": "أشياء تحتاج انتباهك قريبًا.",
+      "progress": "تقدّم اليوم",
+      "progressDescription": "زخم لطيف، لا احتساب نقاط.",
+      "energyCheck": "كيف طاقتك؟",
+      "energyCheckDescription": "فحص سريع يضبط ما يقترحه MindStep."
+    },
+    "adhdCards": {
+      "iCantStart": {
+        "title": "لا أستطيع البدء",
+        "description": "تحرّك بخطوة صغيرة جدًا."
+      },
+      "oneStep": {
+        "title": "خطوة واحدة",
+        "description": "قلّص المهمة إلى أول دقيقتين."
+      },
+      "resetMyDay": {
+        "title": "أعد ضبط يومي",
+        "description": "ابدأ من جديد، بلا ذنب."
+      },
+      "minimumViableDay": {
+        "title": "اليوم الأدنى",
+        "description": "اختر ثلاث ضروريات فقط."
+      },
+      "whereWasI": {
+        "title": "أين كنت؟",
+        "description": "أكمل من حيث توقفت."
+      },
+      "overwhelmMode": {
+        "title": "وضع الإرهاق",
+        "description": "صفّ الضوضاء، نَفَس واحدًا في كل مرة."
+      }
+    },
+    "stats": {
+      "tasksDone": "مهام مكتملة اليوم",
+      "focusMinutes": "دقائق التركيز اليوم",
+      "streak": "السلسلة الحالية",
+      "brainDumps": "أفكار ملتقطة",
+      "energy": "مستوى الطاقة"
+    },
+    "empty": {
+      "noTasks": "لا شيء للقيام به — لحظة مثالية لأخذ نَفَس.",
+      "noFocus": "لا جلسة تركيز اليوم. حتى 5 دقائق تُحسب.",
+      "noReminders": "لا تذكيرات. أنت صافٍ الآن."
+    }
+  },
+  "signature": {
+    "iCantStart": {
+      "title": "لا أستطيع البدء",
+      "step1Title": "اعترف",
+      "step1Body": "البدء صعب. ليس كسلًا — عقلك فقط مرهق. خذ نَفَسًا. سنقلّص هذا معًا.",
+      "step1Action": "لنصغّره",
+      "step2Title": "اختر مهمة واحدة",
+      "step2Body": "واحدة فقط. التي تشدك.",
+      "step2Placeholder": "اكتب المهمة العالقة (أو اختر واحدة بالأسفل)",
+      "step3Title": "قلّصها",
+      "step3Body": "ما أصغر نسخة تستغرق دقيقتين أو أقل؟ افتح المستند. افتح البريد. قف.",
+      "step3Placeholder": "اكتب النسخة الدقيقتين…",
+      "step4Title": "ابدأ تركيز 5 دقائق",
+      "step4Body": "خمس دقائق. يمكنك التوقف بعدها. غالبًا لن تريد.",
+      "step4Action": "ابدأ تركيز 5 دقائق",
+      "skipFocus": "فقط أعطني الخطوة الصغيرة",
+      "success": "لقد بدأت. هذا هو الفوز كله اليوم."
+    },
+    "resetMyDay": {
+      "title": "أعد ضبط يومي",
+      "subtitle": "سنُبقي ما يهم ونترك الباقي. لا شيء يُحذف.",
+      "keep": "أبقِ",
+      "move": "أجّل للغد",
+      "drop": "اترك الآن",
+      "keepHint": "يبقى في قائمة اليوم",
+      "moveHint": "مؤجل — يعود غدًا",
+      "dropHint": "مؤرشف — قابل للاستعادة من الإعدادات",
+      "summary": {
+        "title": "هذا يومك الأصغر",
+        "kept": "أُبقي",
+        "moved": "أُجّل",
+        "dropped": "تُرك"
+      },
+      "apply": "طبّق هذا المخطط",
+      "empty": "لا شيء لإعادة ضبطه — يومك خفيف بالفعل."
+    },
+    "startFocus": {
+      "title": "ابدأ جلسة تركيز",
+      "subtitle": "اختر شيئًا. اختر المدة. ابدأ.",
+      "pickTask": "اختر مهمة",
+      "orFreelance": "أو اعمل على شيء خارج القائمة",
+      "freelancePlaceholder": "على ماذا تركز؟",
+      "duration": "كم المدة؟",
+      "presets": {
+        "quick5": "5 دقيقة · بداية سريعة",
+        "focus15": "15 دقيقة · تركيز سريع",
+        "focus25": "25 دقيقة · بومودورو",
+        "focus45": "45 دقيقة · عمل عميق",
+        "focus90": "90 دقيقة · انسياب"
+      },
+      "begin": "ابدأ التركيز",
+      "openFullFocus": "افتح عرض التركيز الكامل"
+    },
+    "quickCapture": {
+      "title": "التقاط سريع",
+      "subtitle": "أفرغ ذهنك في ضغطة واحدة.",
+      "placeholder": "اكتب أي شيء — فكرة، تذكير، خاطرة…",
+      "save": "التقط",
+      "saved": "التُقط — صنّفه لاحقًا في التفريغ الذهني",
+      "shortcut": "اضغط C في أي مكان للتقاط"
+    }
+  },
+  "tasks": {
+    "title": "المهام",
+    "subtitle": "قسّم الكبير إلى خطوات صغيرة.",
+    "add": "أضف مهمة",
+    "placeholder": "ما الذي يحتاج إنجازًا؟",
+    "empty": "لا مهام بعد. أضف أول واحدة بالأعلى.",
+    "fields": {
+      "title": "العنوان",
+      "description": "الوصف",
+      "notes": "ملاحظات",
+      "priority": "الأولوية",
+      "energy": "الطاقة المطلوبة",
+      "due": "موعد الاستحقاق",
+      "dueTime": "الوقت",
+      "project": "المشروع",
+      "milestone": "المعلم",
+      "estimate": "الوقت المقدّر",
+      "tags": "الوسوم"
+    },
+    "priority": {
+      "low": "منخفض",
+      "normal": "عادي",
+      "high": "مرتفع",
+      "urgent": "عاجل"
+    },
+    "energy": {
+      "low": "طاقة منخفضة",
+      "medium": "طاقة متوسطة",
+      "high": "طاقة عالية"
+    },
+    "status": {
+      "inbox": "صندوق الوارد",
+      "planned": "مخطّط",
+      "in_progress": "قيد التنفيذ",
+      "completed": "مكتمل",
+      "archived": "مؤرشف"
+    },
+    "breakdown": "قسّم إلى خطوات أصغر",
+    "markDone": "ضع علامة كمكتمل",
+    "markUndone": "ضع علامة كغير مكتمل",
+    "startFocus": "ابدأ التركيز على هذا",
+    "overdue": "متأخر",
+    "subtasks": "مهام فرعية",
+    "subtaskCount": "{done}/{total} مكتملة",
+    "count": "{count, plural, zero {لا مهام} one {مهمة واحدة} two {مهمتان} few {# مهام} many {# مهمة} other {# مهمة}}",
+    "filters": {
+      "all": "كل المهام",
+      "today": "اليوم",
+      "overdue": "متأخرة",
+      "completed": "مكتملة",
+      "snoozed": "مؤجلة",
+      "archived": "مؤرشفة"
+    },
+    "sort": {
+      "label": "رتّب حسب",
+      "manual": "يدوي",
+      "due": "موعد الاستحقاق",
+      "priority": "الأولوية",
+      "created": "تاريخ الإنشاء",
+      "updated": "تاريخ التحديث"
+    },
+    "search": {
+      "label": "ابحث في المهام",
+      "placeholder": "ابحث في المهام، المشاريع، الوسوم…",
+      "empty": "لا نتائج. جرب بحثًا مختلفًا.",
+      "clear": "مسح البحث"
+    },
+    "estimatePresets": {
+      "5": "5 دقائق",
+      "10": "10 دقائق",
+      "15": "15 دقيقة",
+      "25": "25 دقيقة",
+      "30": "30 دقيقة",
+      "45": "45 دقيقة",
+      "60": "60 دقيقة",
+      "custom": "مخصّص"
+    },
+    "detail": {
+      "title": "تفاصيل المهمة",
+      "openTask": "افتح المهمة",
+      "edit": "حرّر المهمة",
+      "save": "حفظ",
+      "cancel": "إلغاء",
+      "addSubtask": "أضف خطوة",
+      "subtaskPlaceholder": "ما الخطوة التالية؟",
+      "deleteSubtask": "احذف الخطوة",
+      "completeSubtask": "أكمل الخطوة",
+      "uncompleteSubtask": "ضع علامة كغير مكتملة",
+      "moveUp": "حرّك لأعلى",
+      "moveDown": "حرّك لأسفل",
+      "archive": "أرشفة",
+      "unarchive": "استعادة",
+      "convertToTask": "حوّل إلى مهمة",
+      "convertToReminder": "حوّل إلى تذكير"
+    },
+    "confirmDelete": {
+      "title": "حذف المهمة؟",
+      "description": "لا يمكن التراجع. سيتم حذف المهام الفرعية أيضًا.",
+      "confirm": "حذف"
+    },
+    "progress": {
+      "label": "التقدّم",
+      "value": "{done} من {total} خطوات",
+      "noSubtasks": "لا مهام فرعية بعد"
+    }
+  },
+  "subtasks": {
+    "title": "المهام الفرعية",
+    "add": "أضف مهمة فرعية",
+    "empty": "لا مهام فرعية. أضف الخطوة الأولى.",
+    "markDone": "ضع علامة كمكتملة",
+    "markUndone": "ضع علامة كغير مكتملة",
+    "delete": "احذف المهمة الفرعية",
+    "reorder": "أعد ترتيب المهام الفرعية",
+    "moveUp": "حرّك لأعلى",
+    "moveDown": "حرّك لأسفل",
+    "count": "{count, plural, zero {لا مهام فرعية} one {مهمة فرعية واحدة} two {مهمتان فرعيتان} few {# مهام فرعية} many {# مهمة فرعية} other {# مهمة فرعية}}",
+    "completedCount": "{done} من {total} مكتملة"
+  },
+  "projects": {
+    "title": "المشاريع",
+    "subtitle": "جمّع المهام ذات الصلة. تابع التقدّم الحقيقي.",
+    "add": "مشروع جديد",
+    "empty": "لا مشاريع بعد. جمّع بعض المهام ذات الصلة هنا.",
+    "fields": {
+      "name": "اسم المشروع",
+      "description": "الوصف",
+      "color": "اللون"
+    },
+    "detail": {
+      "title": "المشروع",
+      "tasks": "المهام",
+      "completedTasks": "المكتملة",
+      "activeTasks": "النشطة",
+      "milestones": "المعالم",
+      "noTasks": "لا مهام في هذا المشروع بعد.",
+      "addTask": "أضف مهمة للمشروع",
+      "progress": "التقدّم"
+    },
+    "status": {
+      "active": "نشط",
+      "completed": "مكتمل",
+      "archived": "مؤرشف"
+    },
+    "confirmDelete": {
+      "title": "حذف المشروع؟",
+      "description": "المهام في هذا المشروع ستحتفظ ببياناتها لكنها ستفقد الرابط للمشروع.",
+      "confirm": "حذف"
+    },
+    "count": "{count, plural, zero {لا مشاريع} one {مشروع واحد} two {مشروعان} few {# مشاريع} many {# مشروعًا} other {# مشروع}}"
+  },
+  "milestones": {
+    "title": "المعالم",
+    "subtitle": "جمّع مهام المشروع في معالم.",
+    "add": "معلم جديد",
+    "empty": "لا معالم. جمّع المهام في معلم.",
+    "fields": {
+      "name": "اسم المعلم",
+      "description": "الوصف",
+      "due": "موعد الاستحقاق"
+    },
+    "detail": {
+      "title": "المعلم",
+      "progress": "التقدّم",
+      "tasks": "المهام",
+      "noTasks": "لا مهام في هذا المعلم بعد.",
+      "complete": "ضع علامة على المعلم كمكتمل",
+      "reopen": "إعادة فتح المعلم"
+    },
+    "status": {
+      "active": "نشط",
+      "completed": "مكتمل",
+      "archived": "مؤرشف"
+    },
+    "confirmDelete": {
+      "title": "حذف المعلم؟",
+      "description": "المهام في هذا المعلم ستحتفظ ببياناتها لكنها ستفقد الرابط للمعلم.",
+      "confirm": "حذف"
+    },
+    "count": "{count, plural, zero {لا معالم} one {معلم واحد} two {معلمان} few {# معالم} many {# معلمًا} other {# معلم}}"
+  },
+  "brainDump": {
+    "title": "تفريغ ذهني",
+    "subtitle": "أفرغ ذهنك. صنّف لاحقًا.",
+    "placeholder": "اكتب أي شيء — فكرة، خاطرة، تذكير…",
+    "add": "التقط",
+    "empty": "ذهنك صافٍ. الآن.",
+    "categorize": "صنّف",
+    "categories": {
+      "task": "مهمة",
+      "idea": "فكرة",
+      "reminder": "تذكير",
+      "uncategorized": "غير مصنّف"
+    },
+    "count": "{count, plural, zero {لا إدخالات} one {إدخال واحد} two {إدخالان} few {# إدخالات} many {# إدخالًا} other {# إدخال}}",
+    "convert": {
+      "toTask": "حوّل إلى مهمة",
+      "toReminder": "حوّل إلى تذكير",
+      "title": "حوّل هذا الإدخال",
+      "taskTitleLabel": "عنوان المهمة",
+      "priorityLabel": "الأولوية",
+      "projectLabel": "المشروع",
+      "dueLabel": "موعد الاستحقاق",
+      "remindAtLabel": "ذكّرني عند",
+      "confirm": "حوّل",
+      "cancel": "إلغاء",
+      "success": "تم التحويل بنجاح.",
+      "alreadyConverted": "محوّل بالفعل."
+    },
+    "status": {
+      "inbox": "صندوق الوارد",
+      "converted": "محوّل",
+      "archived": "مؤرشف"
+    }
+  },
+  "breakdown": {
+    "title": "تفكيك ذكي",
+    "subtitle": "احصل على نقطة بداية. حرّر قبل الموافقة.",
+    "trigger": "فكّك هذا",
+    "suggest": "اقترح خطوات",
+    "sourceDisclosure": "اقتراح حتمي — راجع وحرّر قبل الموافقة.",
+    "edit": "حرّر الخطوة",
+    "delete": "احذف الخطوة",
+    "addStep": "أضف خطوة",
+    "approve": "وافق وأنشئ",
+    "cancel": "إلغاء",
+    "empty": "لا اقتراحات. جرب عنوانًا أوضح.",
+    "approved": "تم إنشاء المهام الفرعية.",
+    "noChanges": "لا شيء تغيّر."
+  },
+  "focus": {
+    "title": "التركيز",
+    "subtitle": "أمر واحد في كل مرة.",
+    "startSession": "ابدأ جلسة تركيز",
+    "endFocus": "إنهاء التركيز",
+    "pause": "إيقاف مؤقت",
+    "resume": "استئناف",
+    "stop": "إيقاف",
+    "complete": "إكمال",
+    "duration": "المدة",
+    "justFive": "فقط ٥ دقائق",
+    "distractionCapture": "التقاط التشتت",
+    "distractionPlaceholder": "ما الذي يشتتتك؟",
+    "captureDistraction": "التقط وأكمل",
+    "distractionSaved": "تم الالتقاط. عُد إلى التركيز.",
+    "interruptions": "المقاطعات",
+    "sessionActive": "الجلسة نشطة",
+    "sessionPaused": "متوقفة مؤقتًا",
+    "sessionComplete": "الجلسة اكتملت",
+    "sessionEnded": "انتهى التركيز",
+    "noTask": "لا مهمة مختارة",
+    "timerComplete": "انتهى الوقت. لقد فعلتها.",
+    "preset": {
+      "focus5": "٥ دقيقة · ابدأ فحسب",
+      "focus10": "١٠ دقيقة · سريع",
+      "focus15": "١٥ دقيقة · تركيز سريع",
+      "focus25": "٢٥ دقيقة · بومودورو",
+      "focus30": "٣٠ دقيقة · نصف ساعة",
+      "focus45": "٤٥ دقيقة · عمل عميق",
+      "focus60": "٦٠ دقيقة · ساعة كاملة",
+      "focus90": "٩٠ دقيقة · انسياب"
+    },
+    "interruptionsCount": "{count, plural, zero {لا مقاطعات} one {مقاطعة واحدة} two {مقاطعتان} few {# مقاطعات} many {# مقاطعة} other {# مقاطعة}}",
+    "welcomeBack": {
+      "title": "مرحًا بعودتك.",
+      "body": "كنت تركز على \"{task}\". بقي {minutes} دقيقة.",
+      "continue": "متابعة التركيز",
+      "endSession": "إنهاء هذه الجلسة",
+      "chooseAnother": "اختر مهمة أخرى"
+    },
+    "whereWasI": {
+      "title": "أين كنت؟",
+      "noRecentSession": "لا جلسة تركيز حديثة.",
+      "lastSession": "كنت تعمل على: {task}",
+      "lastDistraction": "آخر فكرة ملتقطة: {thought}",
+      "nextStep": "مستعد للمتابعة؟"
+    },
+    "completion": {
+      "title": "اكتمل التركيز",
+      "duration": "{minutes} دقيقة",
+      "whatDidYouDo": "ما الذي أنجزته؟ (اختياري)",
+      "whatDidYouDoPlaceholder": "ملاحظة اختيارية…",
+      "done": "تم",
+      "startAnother": "ابدأ أخرى",
+      "backToTasks": "العودة إلى المهام"
+    },
+    "overwhelm": {
+      "title": "أنا غارق",
+      "subtitle": "لنصغّر هذا.",
+      "step1": "ما الذي يبدو الأهم الآن؟",
+      "step1Placeholder": "اكتب الشيء الواحد الأكثر أهمية…",
+      "step2": "ما أصغر إجراء تالٍ؟",
+      "step2Placeholder": "اكتب إجراءً من دقيقتين…",
+      "step3": "كم المدة؟",
+      "start": "ابدأ التركيز"
+    },
+    "oneStep": {
+      "title": "خطوة واحدة فقط",
+      "subtitle": "اختر إجراءً صغيرًا واحدًا. ابدأ.",
+      "placeholder": "ما الخطوة الصغيرة التي يمكنك اتخاذها؟",
+      "start": "ابدأ ٥ دقائق"
+    },
+    "transition": {
+      "title": "خذ نفسًا.",
+      "subtitle": "أغلق التبويبات غير ذات الصلة. اختر خطوتك الأولى. مستعد؟",
+      "ready": "مستعد للتركيز",
+      "skip": "تخطٍّ"
+    },
+    "history": {
+      "title": "سجل التركيز",
+      "today": "اليوم",
+      "thisWeek": "هذا الأسبوع",
+      "thisMonth": "هذا الشهر",
+      "empty": "لا جلسات تركيز بعد. حتى ٥ دقائق تُحسب.",
+      "sessionLabel": "{minutes} دقيقة · {status}",
+      "taskLabel": "المهمة: {task}"
+    },
+    "stats": {
+      "title": "إحصاءات التركيز",
+      "totalMinutes": "إجمالي وقت التركيز",
+      "totalSessions": "إجمالي الجلسات",
+      "completedSessions": "الجلسات المكتملة",
+      "averageSession": "متوسط الجلسة",
+      "longestSession": "أطول جلسة",
+      "byDay": "حسب اليوم",
+      "byTask": "التركيز حسب المهمة",
+      "noTaskFocus": "لا مهمة مرتبطة",
+      "minutes": "{count, plural, zero {لا دقائق} one {دقيقة واحدة} two {دقيقتان} few {# دقائق} many {# دقيقة} other {# دقيقة}}",
+      "sessions": "{count, plural, zero {لا جلسات} one {جلسة واحدة} two {جلستان} few {# جلسات} many {# جلسة} other {# جلسة}}",
+      "empty": "لا بيانات بعد. ابدأ أول جلسة تركيز.",
+      "trendWeek": "ركزت لـ {minutes} دقيقة هذا الأسبوع.",
+      "trendLongest": "أطول جلسة لك كانت {minutes} دقيقة."
+    },
+    "aria": {
+      "timerStarted": "بدأ التركيز. المؤقت يعمل.",
+      "timerPaused": "توقف التركيز مؤقتًا.",
+      "timerResumed": "استؤنف التركيز.",
+      "timerCompleted": "اكتمل التركيز. أحسنت.",
+      "timerEnded": "انتهى التركيز مبكرًا.",
+      "minutesRemaining": "بقيت {minutes} دقيقة.",
+      "distractionCaptured": "التُقط التشتت. عُد إلى التركيز."
+    }
+  },
+  "habits": {
+    "title": "العادات",
+    "subtitle": "روتينات صغيرة، بكرم.",
+    "add": "عادة جديدة",
+    "empty": "لا عادات بعد. ابدأ صغيرًا.",
+    "streak": "السلسلة",
+    "fields": {
+      "name": "اسم العادة",
+      "cue": "بعد هذه الإشارة…",
+      "routine": "سوف…",
+      "reward": "لأنها تكافئني بـ…"
+    },
+    "streakCount": "{count, plural, zero {لا أيام} one {يوم واحد} two {يومان} few {# أيام} many {# يومًا} other {# يوم}}"
+  },
+  "energy": {
+    "title": "سجل الطاقة",
+    "subtitle": "فحص لطيف يشكّل يومك.",
+    "levels": {
+      "1": "منهَك",
+      "2": "منخفض",
+      "3": "ثابت",
+      "4": "جيد",
+      "5": "ذروة"
+    },
+    "levelDescription": {
+      "1": "استرح أولًا. مهام صغيرة فقط.",
+      "2": "شيء صغير واحد في كل مرة.",
+      "3": "ثابت — يمكنك فعل معظم الأشياء.",
+      "4": "قوي — اختر شيئًا ذا معنى.",
+      "5": "ذروة — اذهب إلى الشيء الصعب."
+    },
+    "logged": "سُجّل. سيشكّل MindStep اقتراحاته حسب طاقتك.",
+    "viewHistory": "عرض السجل",
+    "today": "طاقة اليوم",
+    "empty": "لا فحوصات اليوم. التسجيل يستغرق نقرة.",
+    "entriesCount": "{count, plural, zero {لا فحوصات} one {فحص واحد} two {فحصان} few {# فحوصات} many {# فحصًا} other {# فحص}}"
+  },
+  "reminders": {
+    "title": "تذكيرات",
+    "subtitle": "ما يحتاج انتباهك قريبًا.",
+    "empty": "لا تذكيرات. أنت صافٍ الآن.",
+    "dueSoon": "يستحق قريبًا",
+    "overdue": "متأخر",
+    "later": "لاحقًا اليوم",
+    "tomorrow": "غدًا",
+    "thisWeek": "هذا الأسبوع",
+    "markDone": "ضع علامة كمكتمل",
+    "snooze": "أجّل ساعة",
+    "count": "{count, plural, zero {لا تذكيرات} one {تذكير واحد} two {تذكيران} few {# تذكيرات} many {# تذكيرًا} other {# تذكير}}"
+  },
+  "progress": {
+    "title": "تقدّم اليوم",
+    "subtitle": "زخم لطيف. لا احتساب نقاط.",
+    "tasksCompleted": "مهام مكتملة",
+    "focusMinutes": "دقائق التركيز",
+    "habitsDone": "عادات مكتملة",
+    "captures": "التقاطات",
+    "streak": "سلسلة الأيام",
+    "streakDescription": "الظهور — حتى briefly — يُبقي السلسلة حية.",
+    "motivations": {
+      "firstStep": "أخذت الخطوة الأولى. هذا يُحسب.",
+      "momentum": "الزخم يبني نفسه.",
+      "going": "أنت ماضٍ. استمر بلطف.",
+      "rest": "الراحة جزء من التقدّم أيضًا."
+    }
+  },
+  "planner": {
+    "title": "المخطط",
+    "subtitle": "شكّل يومك، بلطف.",
+    "day": "اليوم",
+    "week": "الأسبوع",
+    "today": "اليوم",
+    "tomorrow": "غدًا",
+    "schedule": "الجدول",
+    "timeBlock": "كتلة زمنية",
+    "routine": "روتين",
+    "availability": "التوفر",
+    "conflicts": "تعارضات",
+    "planMyDay": "خطط يومي",
+    "whatShouldIDoNow": "ماذا أفعل الآن؟",
+    "empty": "يومك مفتوح. خطط شيئًا صغيرًا.",
+    "now": "الآن",
+    "next": "التالي",
+    "later": "لاحقًا",
+    "overloaded": "لنُصغّر هذا قليلًا.",
+    "overloadedDescription": "لديك مهام مخططة أكثر من الوقت المتاح. بقيت بعض المهام دون جدولة.",
+    "unscheduled": "غير مجدول",
+    "buffer": "هامش",
+    "available": "متاح",
+    "planned": "مخطط",
+    "maxDaily": "الحد الأقصى اليومي",
+    "deadlines": "المواعيد النهائية",
+    "blocks": "كتل",
+    "generate": "أنشئ خطة",
+    "approve": "اعتمد الخطة",
+    "regenerate": "أعد الإنشاء",
+    "planSaved": "تم حفظ الخطة. يومك جاهز.",
+    "planAlreadyApproved": "الخطة معتمدة بالفعل — لا تكرارات.",
+    "nextBestAction": {
+      "continueFocus": "واصل التركيز",
+      "startScheduled": "ابدأ المهمة المجدولة",
+      "startHighValue": "الخطوة التالية المقترحة",
+      "startTiny": "ابدأ بخطوة صغيرة",
+      "rest": "لا شيء عاجل. خذ نفسًا."
+    },
+    "recover": {
+      "title": "استعد يومي",
+      "subtitle": "لنعيد بناء خطة أخف.",
+      "analyze": "حلّل الوقت المتبقي",
+      "generate": "أنشئ خطة جديدة"
+    },
+    "move": {
+      "toTomorrow": "انقل إلى الغد",
+      "toAnotherDay": "انقل إلى يوم آخر",
+      "toNextSlot": "انقل إلى الموعد المتاح التالي"
+    },
+    "missed": {
+      "title": "فاتك مهمة؟",
+      "continue": "تابع",
+      "reschedule": "أعد الجدولة",
+      "makeSmaller": "اجعلها أصغر",
+      "skip": "تخطَّ الآن"
+    },
+    "aria": {
+      "scheduleLoaded": "تم تحميل الجدول.",
+      "planGenerated": "تم إنشاء الخطة. راجع قبل الاعتماد.",
+      "planApproved": "تم اعتماد الخطة وحفظها.",
+      "blockMoved": "تم نقل الكتلة."
+    }
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "subtitle": "اجعل MindStep يناسب عقلك.",
+    "sections": {
+      "appearance": "المظهر",
+      "appearanceDescription": "السمة والحركة وحجم النص.",
+      "language": "اللغة",
+      "languageDescription": "اختر كيف يخاطبك MindStep.",
+      "accessibility": "إمكانية الوصول",
+      "accessibilityDescription": "اضبط الحركة والتباين والإيقاع.",
+      "focus": "افتراضات التركيز",
+      "focusDescription": "طول جلستك المثالي وفترات الراحة.",
+      "notifications": "الإشعارات",
+      "notificationsDescription": "قرر متى يتواصل MindStep معك.",
+      "privacy": "الخصوصية والبيانات",
+      "privacyDescription": "بياناتك ملكك. دائمًا.",
+      "ai": "المساعد الذكي",
+      "aiDescription": "كيف يظهر مساعدك.",
+      "account": "الحساب",
+      "accountDescription": "ملفك وتسجيل دخولك."
+    },
+    "options": {
+      "theme": "السمة",
+      "reducedMotion": "تقليل الحركة",
+      "highContrast": "تباين عالٍ",
+      "textScale": "حجم النص",
+      "language": "لغة الواجهة",
+      "focusLength": "طول التركيز الافتراضي (دقائق)",
+      "shortBreak": "راحة قصيرة (دقائق)",
+      "longBreak": "راحة طويلة (دقائق)",
+      "dailyStart": "يبدأ اليوم عند",
+      "dailyEnd": "ينتهي اليوم عند",
+      "notificationsEnabled": "السماح بالإشعارات",
+      "aiCoachEnabled": "تفعيل المساعد الذكي"
+    },
+    "textScale": {
+      "small": "صغير",
+      "normal": "عادي",
+      "large": "كبير",
+      "xlarge": "كبير جدًا"
+    },
+    "saved": "تم الحفظ."
+  },
+  "ai": {
+    "title": "المساعد الذكي",
+    "subtitle": "شريك تفكير داعم، لا يحل محل الرعاية المهنية أبدًا.",
+    "disclaimer": "MindStep ليس أداة طبية. لا يمكنه تشخيص أو علاج ADHD. للمخاوف السريرية، يُرجى استشارة مختص مؤهل.",
+    "placeholder": "اسأل مساعدك أي شيء…",
+    "send": "إرسال",
+    "contexts": {
+      "general": "دردشة عامة",
+      "task_breakdown": "قسّم مهمة",
+      "day_rebuilder": "أعد بناء يومي",
+      "decision": "ساعدني على الاختيار",
+      "overwhelm": "أنا مرهق"
+    },
+    "welcome": "مرحبًا، أنا مساعدك في MindStep. ما الذي يشغل ذهنك اليوم؟",
+    "thinking": "يفكّر…",
+    "retry": "حاول مرة أخرى",
+    "memory": "الذاكرة",
+    "memoryDescription": "المحادثات الأخيرة تساعد مساعدك على البقاء في السياق. المحادثات المثبّتة تُحفظ لفترة أطول.",
+    "privacy": "الخصوصية",
+    "privacyDescription": "المحادثات الأقدم من 30 يومًا تُحذف تلقائيًا ما لم تُثبَّت."
+  },
+  "notifications": {
+    "title": "الإشعارات",
+    "empty": "لا إشعارات. أنت محدّث بالكامل.",
+    "markAllRead": "ضع علامة مقروء على الكل",
+    "unread": "غير مقروء",
+    "read": "مقروء",
+    "dismiss": "تجاهل",
+    "open": "فتح",
+    "today": "اليوم",
+    "earlier": "سابقًا",
+    "all": "الكل",
+    "types": {
+      "task_due": "مهمة مستحقة",
+      "task_overdue": "مهمة تحتاج اهتمامًا",
+      "focus_start": "بدء التركيز",
+      "focus_end": "اكتمال التركيز",
+      "planning_reminder": "تذكير بالتخطيط",
+      "planned_task": "مهمة مجدولة",
+      "missed_plan": "تغيّرت الخطة",
+      "recovery_suggestion": "استعد يومك",
+      "milestone": "معلم رئيسي",
+      "project": "مشروع",
+      "system": "النظام",
+      "ai_nudge": "تذكير من المساعد",
+      "focus_reminder": "تذكير تركيز",
+      "habit": "تذكير عادة",
+      "ai_insight": "رؤى المساعد",
+      "habit_reminder": "تذكير عادة",
+      "calendar_event": "حدث في التقويم",
+      "bill_due": "فاتورة مستحقة",
+      "routine_reminder": "تذكير روتين"
+    },
+    "settings": "إعدادات الإشعارات",
+    "frequency": {
+      "label": "تكرار الإشعارات",
+      "minimal": "أدنى — فقط الأهم",
+      "balanced": "متوازن — تذكيرات مفيدة",
+      "more": "أكثر — تذكيرات متكررة"
+    },
+    "quietHours": {
+      "label": "ساعات الهدوء",
+      "start": "البداية",
+      "end": "النهاية",
+      "description": "تُؤجَّل الإشعارات غير الحرجة خلال ساعات الهدوء."
+    },
+    "budget": {
+      "label": "الحد اليومي للإشعارات",
+      "description": "أقصى عدد للإشعارات غير الحرجة يوميًا."
+    },
+    "categories": {
+      "tasks": "تذكيرات المهام",
+      "focus": "إشعارات التركيز",
+      "planner": "إشعارات المخطط",
+      "milestones": "إشعارات المعالم",
+      "aiNudges": "تذكيرات المساعد الذكي",
+      "habits": "تذكيرات العادات",
+      "calendar": "تذكيرات التقويم",
+      "bills": "تذكيرات الفواتير",
+      "routines": "تذكيرات الروتين"
+    },
+    "actions": {
+      "openTask": "فتح المهمة",
+      "startFocus": "ابدأ التركيز",
+      "openPlanner": "فتح المخطط",
+      "reschedule": "إعادة الجدولة",
+      "reviewPlan": "مراجعة الخطة",
+      "dismiss": "تجاهل",
+      "snooze": "تأجيل",
+      "complete": "إكمال"
+    },
+    "snooze": {
+      "10min": "10 دقائق",
+      "30min": "30 دقيقة",
+      "1hour": "ساعة واحدة",
+      "tomorrow": "غدًا",
+      "capped": "تم الوصول إلى حد التأجيل. جرّب إعادة الجدولة أو الإكمال بدلًا من ذلك."
+    },
+    "smartActions": {
+      "snoozeTitle": "تأجيل",
+      "rescheduleTitle": "إعادة الجدولة",
+      "completeTitle": "إكمال",
+      "dismissTitle": "تجاهل",
+      "snoozeDescription": "ذكّرني بلطف لاحقًا.",
+      "rescheduleDescription": "اختر وقتًا جديدًا.",
+      "completeDescription": "أنجزت هذا — ضع علامة إكمال.",
+      "dismissDescription": "لا تُرني هذا مرة أخرى."
+    },
+    "reschedule": {
+      "title": "إعادة الجدولة",
+      "description": "اختر وقتًا جديدًا لهذا التذكير.",
+      "newTime": "الوقت الجديد",
+      "pickTime": "اختر وقتًا",
+      "confirm": "إعادة الجدولة",
+      "cancel": "إلغاء",
+      "success": "أُعيدت جدولته لوقت لاحق.",
+      "pastTime": "يرجى اختيار وقت في المستقبل."
+    },
+    "snoozeResult": {
+      "success": "تم تأجيله لوقت لاحق.",
+      "capped": "تم الوصول إلى حد التأجيل. جرّب إعادة الجدولة أو الإكمال.",
+      "tomorrowScheduled": "تم تأجيله حتى صباح الغد."
+    },
+    "completeResult": {
+      "success": "تم وضع علامة إكمال.",
+      "taskCompleted": "تم وضع علامة إكمال على المهمة.",
+      "reminderCompleted": "تم وضع علامة إكمال على التذكير.",
+      "billPaid": "تم وضع علامة مدفوعة على الفاتورة.",
+      "habitMarkedDone": "تم وضع علامة منجزة على العادة اليوم."
+    },
+    "unreadCount": "{count, plural, zero {لا إشعارات غير مقروءة} one {# إشعار غير مقروء} two {# إشعاران غير مقروءان} few {# إشعارات غير مقروءة} many {# إشعارًا غير مقروءًا} other {# إشعار غير مقروء}}",
+    "refresh": "تحديث",
+    "aria": {
+      "notificationsLoaded": "تم تحميل الإشعارات.",
+      "markedRead": "تم وضع علامة مقروء.",
+      "markedAllRead": "تم وضع علامة مقروء على الكل.",
+      "dismissed": "تم تجاهل الإشعار.",
+      "snoozed": "تم تأجيل الإشعار.",
+      "rescheduled": "تمت إعادة جدولة الإشعار.",
+      "completed": "تم إكمال الإشعار."
+    }
+  },
+  "pwa": {
+    "install": {
+      "title": "ثبّت MindStep",
+      "description": "أضف MindStep إلى شاشتك الرئيسية للحصول على التجربة الكاملة.",
+      "accept": "تثبيت",
+      "dismiss": "ليس الآن",
+      "iosInstructions": "اضغط زر المشاركة، ثم اختر «إضافة إلى الشاشة الرئيسية»."
+    },
+    "update": {
+      "title": "تحديث متوفر",
+      "description": "هناك نسخة جديدة من MindStep جاهزة.",
+      "action": "حدّث الآن",
+      "dismiss": "لاحقًا"
+    },
+    "offline": {
+      "banner": "{count, plural, zero {أنت غير متصل. ستتم مزامنة التغييرات عند إعادة الاتصال.} one {أنت غير متصل. تم حفظ # تغيير وستتم مزامنته.} two {أنت غير متصل. تم حفظ # تغييرين وستتم مزامنتهما.} few {أنت غير متصل. تم حفظ # تغييرات وستتم مزامنتها.} many {أنت غير متصل. تم حفظ # تغييرًا وستتم مزامنتها.} other {أنت غير متصل. تم حفظ # تغيير وستتم مزامنته.}}",
+      "toast": "أنت غير متصل. تغييراتك آمنة — ستتم مزامنتها عند عودتك.",
+      "page": {
+        "title": "أنت غير متصل",
+        "body": "تغييراتك محفوظة على جهازك وستتم مزامنتها عند عودة الاتصال. يمكنك متابعة إضافة المهام والتقاط الأفكار ومراجعة خطتك.",
+        "retry": "حاول مرة أخرى"
+      }
+    },
+    "syncing": {
+      "banner": "{count, plural, one {تتم مزامنة # تغيير…} two {تتم مزامنة # تغييرين…} few {تتم مزامنة # تغييرات…} many {تتم مزامنة # تغييرًا…} other {تتم مزامنة # تغيير…}}"
+    },
+    "synced": {
+      "banner": "تمت مزامنة جميع التغييرات."
+    },
+    "failed": {
+      "banner": "تعذّرت مزامنة بعض التغييرات. اضغط إعادة المحاولة.",
+      "retry": "إعادة المحاولة"
+    },
+    "online": {
+      "reconnected": "عُدت إلى الاتصال.",
+      "reconnectedWithPending": "{count, plural, one {عُدت إلى الاتصال — تتم مزامنة # تغيير.} two {عُدت إلى الاتصال — تتم مزامنة # تغييرين.} few {عُدت إلى الاتصال — تتم مزامنة # تغييرات.} many {عُدت إلى الاتصال — تتم مزامنة # تغييرًا.} other {عُدت إلى الاتصال — تتم مزامنة # تغيير.}}"
+    },
+    "dismiss": "تجاهل",
+    "permissions": {
+      "title": "تفعيل الإشعارات؟",
+      "body": "يمكن لـ MindStep تذكيرك بلطف بالمهام وجلسات التركيز والروتين. يمكنك إيقاف ذلك في أي وقت.",
+      "accept": "سماح",
+      "deny": "ليس الآن",
+      "denied": "الإشعارات محظورة. يمكنك تفعيلها من إعدادات المتصفح.",
+      "enableInSettings": "افتح إعدادات المتصفح"
+    },
+    "push": {
+      "enabled": "إشعارات الدفع مفعّلة",
+      "disabled": "إشعارات الدفع معطّلة",
+      "enable": "تفعيل الدفع",
+      "disable": "إيقاف الدفع",
+      "devicesLabel": "أجهزتك",
+      "addDevice": "أضف هذا الجهاز",
+      "removeDevice": "إزالة"
+    }
+  },
+  "offline": {
+    "title": "المزامنة دون اتصال",
+    "description": "التغييرات المعلّقة في قائمة على جهازك وستتم مزامنتها تلقائيًا عند إعادة الاتصال.",
+    "queueLabel": "قائمة المعلّقة",
+    "emptyQueue": "لا تغييرات معلّقة.",
+    "pendingCount": "{count, plural, zero {لا تغييرات معلّقة} one {# تغيير معلّق} two {# تغييران معلّقان} few {# تغييرات معلّقة} many {# تغييرًا معلّقًا} other {# تغيير معلّق}}",
+    "retryAll": "إعادة محاولة الكل",
+    "discardAll": "تجاهل الكل",
+    "discardConfirm": "تجاهل كل التغييرات المعلّقة؟ لا يمكن التراجع عن هذا.",
+    "conflict": {
+      "title": "تم اكتشاف تعارض",
+      "description": "هذا العنصر تغيّر على جهاز آخر منذ آخر تعديل لك. اختر النسخة التي تريد الاحتفاظ بها.",
+      "keepMine": "احتفظ بنسختي",
+      "keepTheirs": "احتفظ بالنسخة الأخرى",
+      "reviewManually": "راجع يدويًا"
+    }
+  },
+  "auth": {
+    "signIn": {
+      "title": "تسجيل الدخول",
+      "subtitle": "أهلًا بعودتك.",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "submit": "تسجيل الدخول",
+      "forgotPassword": "نسيت كلمة المرور؟",
+      "noAccount": "ليس لديك حساب؟",
+      "register": "أنشئ واحدًا"
+    },
+    "register": {
+      "title": "أنشئ حسابك",
+      "subtitle": "يستغرق دقيقة.",
+      "displayName": "الاسم الظاهر",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "submit": "إنشاء الحساب",
+      "haveAccount": "لديك حساب بالفعل؟",
+      "signIn": "تسجيل الدخول"
+    },
+    "forgotPassword": {
+      "title": "نسيت كلمة المرور",
+      "subtitle": "سنرسل لك رابط إعادة الضبط.",
+      "email": "البريد الإلكتروني",
+      "submit": "أرسل رابط الإعادة",
+      "backToSignIn": "العودة لتسجيل الدخول"
+    },
+    "resetPassword": {
+      "title": "إعادة ضبط كلمة المرور",
+      "subtitle": "اختر كلمة مرور جديدة.",
+      "newPassword": "كلمة المرور الجديدة",
+      "confirmPassword": "تأكيد كلمة المرور الجديدة",
+      "submit": "إعادة ضبط كلمة المرور"
+    },
+    "verification": {
+      "title": "تحقق من بريدك",
+      "subtitle": "أرسلنا رمزًا من 6 أرقام إلى بريدك.",
+      "code": "رمز التحقق",
+      "submit": "تحقق",
+      "resend": "إعادة إرسال الرمز",
+      "resent": "تم إعادة إرسال الرمز."
+    },
+    "errors": {
+      "invalidCredentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+      "emailExists": "يوجد حساب بهذا البريد بالفعل.",
+      "weakPassword": "كلمة المرور ضعيفة. استخدم 12 حرفًا على الأقل مع مزيج من الحروف والأرقام والرموز.",
+      "codeExpired": "انتهت صلاحية الرمز. اطلب واحدًا جديدًا.",
+      "codeInvalid": "الرمز لا يطابق. حاول مرة أخرى.",
+      "tooManyAttempts": "محاولات كثيرة جدًا. انتظر لحظة."
+    }
+  },
+  "errors": {
+    "unknown": "شيء ما لم يُحمَّل. حاول مرة أخرى.",
+    "network": "تعذّر الوصول للخادم. تحقق من اتصالك.",
+    "server": "واجهنا مشكلة من جانبنا. نحن نعمل عليها.",
+    "notFound": "لم نتمكن من إيجاد ذلك.",
+    "unauthorized": "يُرجى تسجيل الدخول للمتابعة.",
+    "forbidden": "ليس لديك صلاحية لذلك.",
+    "validation": "يُرجى مراجعة الحقول المظللة.",
+    "rateLimited": "طلبات كثيرة. يُرجى الإبطاء.",
+    "consentRequired": "يُرجى مراجعة وقبول بنود الموافقة.",
+    "featureDisabled": "هذه الميزة معطّلة حاليًا.",
+    "title": "حدث خطأ ما",
+    "retryAction": "حاول مرة أخرى",
+    "codes": {
+      "VALIDATION_ERROR": "يُرجى مراجعة الحقول المظللة.",
+      "INVALID_INPUT": "هذا الإدخال لا يبدو صحيحًا.",
+      "INVALID_LOCALE": "تلك اللغة غير مدعومة.",
+      "UNAUTHORIZED": "يُرجى تسجيل الدخول للمتابعة.",
+      "SESSION_EXPIRED": "انتهت جلستك. يُرجى تسجيل الدخول مرة أخرى.",
+      "FORBIDDEN": "ليس لديك صلاحية لذلك.",
+      "NOT_OWNER": "يمكنك فقط الوصول إلى بياناتك.",
+      "CONSENT_REQUIRED": "يُرجى مراجعة وقبول بنود الموافقة.",
+      "FEATURE_DISABLED": "هذه الميزة معطّلة حاليًا.",
+      "NOT_FOUND": "لم نتمكن من إيجاد ذلك.",
+      "CONFLICT": "يتعارض ذلك مع بيانات موجودة.",
+      "DUPLICATE": "ذلك موجود بالفعل.",
+      "BUSINESS_RULE_VIOLATION": "هذا الإجراء غير مسموح به الآن.",
+      "RATE_LIMITED": "طلبات كثيرة. يُرجى الإبطاء.",
+      "INTERNAL_ERROR": "واجهنا مشكلة من جانبنا. نحن نعمل عليها.",
+      "DATABASE_ERROR": "واجهنا مشكلة من جانبنا. نحن نعمل عليها.",
+      "AI_SERVICE_ERROR": "المساعد يواجه صعوبة الآن. حاول مرة أخرى.",
+      "PI_SERVICE_ERROR": "خدمة الدفع تواجه صعوبة. حاول مرة أخرى."
+    }
+  },
+  "validation": {
+    "required": "هذا الحقل مطلوب.",
+    "email": "يُرجى إدخال بريد إلكتروني صالح.",
+    "emailTaken": "هذا البريد مستخدم بالفعل.",
+    "passwordTooShort": "يجب أن تكون كلمة المرور 12 حرفًا على الأقل.",
+    "passwordTooLong": "كلمة المرور طويلة جدًا (حد أقصى 128).",
+    "passwordMismatch": "كلمتا المرور غير متطابقتين.",
+    "nameTooShort": "يُرجى إدخال حرف واحد على الأقل.",
+    "nameTooLong": "هذا طويل قليلًا.",
+    "titleTooLong": "العنوان طويل جدًا.",
+    "notesTooLong": "الملاحظات طويلة جدًا.",
+    "invalidDate": "يُرجى إدخال تاريخ صالح.",
+    "invalidTime": "يُرجى إدخال وقت صالح.",
+    "invalidUrl": "يُرجى إدخال رابط صالح.",
+    "invalidColor": "يُرجى إدخال لون صالح (مثال: #7c9885).",
+    "numberOutOfRange": "ذلك الرقم خارج النطاق.",
+    "selectOption": "يُرجى اختيار خيار.",
+    "tooShort": "قصير جدًا.",
+    "tooLong": "طويل جدًا."
+  },
+  "emptyStates": {
+    "title": "لا شيء هنا بعد",
+    "description": "هنا تظهر بياناتك.",
+    "action": "ابدأ",
+    "tasks": "لا مهام بعد",
+    "tasksDescription": "أضف شيئًا صغيرًا تود فعله.",
+    "focus": "لا جلسات تركيز بعد",
+    "focusDescription": "حتى 5 دقائق تُحسب كجلسة.",
+    "habits": "لا عادات بعد",
+    "habitsDescription": "ابدأ صغيرًا — عادة واحدة تستطيع فعلها في دقيقتين.",
+    "brainDump": "ذهنك صافٍ",
+    "brainDumpDescription": "التقط هنا أي شيء يخطر ببالك.",
+    "reminders": "لا تذكيرات",
+    "remindersDescription": "الأشياء التي تحتاج انتباهك ستظهر هنا.",
+    "notifications": "لا إشعارات",
+    "notificationsDescription": "أنت محدّث بالكامل.",
+    "energy": "لا فحوصات طاقة",
+    "energyDescription": "فحص سريع يضبط ما يقترحه MindStep.",
+    "insights": "لا رؤى بعد",
+    "insightsDescription": "بعد بضعة أيام، ستظهر الأنماط هنا."
+  },
+  "loading": {
+    "default": "جارٍ التحميل…",
+    "saving": "جارٍ الحفظ…",
+    "fetching": "جارٍ الجلب…",
+    "sending": "جارٍ الإرسال…",
+    "starting": "جارٍ البدء…"
+  },
+  "onboarding": {
+    "welcome": "أهلًا بك في MindStep",
+    "welcomeDescription": "خطوة واحدة. تركيز واحد. يوم واحد.",
+    "step1": "تفريغ ذهني",
+    "step1Description": "أفرغ أي شيء في رأسك. صنّف لاحقًا.",
+    "step2": "أولوياتك العليا",
+    "step2Description": "اختر ثلاثة أشياء تهمك أكثر اليوم.",
+    "step3": "ابدأ صغيرًا",
+    "step3Description": "عندما تشعر بالعجز، استخدم «لا أستطيع البدء» لتقليص أي مهمة.",
+    "skip": "تخطّي",
+    "finish": "ابدأ"
+  },
+  "privacy": {
+    "title": "الخصوصية والبيانات",
+    "subtitle": "بياناتك ملكك. صدّرها، احذفها، تحكّم في كيفية استخدامها.",
+    "principles": {
+      "dataIsYours": "بياناتك ملكك",
+      "dataIsYoursDescription": "كل سجل تنشئه ينتمي إلى حسابك. لا نبيعه ولا نشاركه أبدًا. يمكنك تصدير أو حذف كل شيء في أي وقت.",
+      "noDarkPatterns": "بلا أنماط مظلمة",
+      "noDarkPatternsDescription": "MindStep لا يستخدم أبدًا الذنب أو السلاسل كتهديد أو خطافات قلق. السلاسل تحتفي الجهد؛ لا تعاقب أبدًا على الانقطاع.",
+      "localFirst": "محلي أولًا حيثما أمكن",
+      "localFirstDescription": "المرحلة 1 تخزن التفضيلات وحالة الواجهة في متصفحك. البيانات المتزامنة تعيش في حسابك، مشفّرة أثناء النقل.",
+      "noPassphrases": "بلا عبارات مرور لمحفظة Pi",
+      "noPassphrasesDescription": "MindStep لا يطلب ولا يخزّن عبارة مرور محفظة Pi. جميع دفعات Pi موثّقة عبر Pi SDK على الخادم.",
+      "strictOwnership": "حدود ملكية صارمة",
+      "strictOwnershipDescription": "كل استعلام في قاعدة البيانات مُحدّد بـ userId. لا يمكن لمستخدم قراءة أو تعديل سجلات مستخدم آخر — مُطبّق على طبقة البيانات، لا الواجهة.",
+      "calmByDesign": "هادئ بالتصميم",
+      "calmByDesignDescription": "بلا نقاط حمراء رهيبة، بلا فخاخ تمرير لا نهائي. MindStep يُظهر ما يهم الآن ويتراجع."
+    },
+    "dataRights": {
+      "title": "حقوق بياناتك",
+      "description": "ما يمكنك فعله ببيانات MindStep.",
+      "export": "صدّر كل بياناتك كأرشيف JSON.",
+      "exportDescription": "نزّل نسخة كاملة من بيانات MindStep كملف JSON. يشمل كل المهام والمشاريع وجلسات التركيز ومحادثات AI وسجل المدفوعات والمزيد.",
+      "delete": "احذف حسابك وكل السجلات المرتبطة به نهائيًا.",
+      "deleteDescription": "هذا الإجراء لا رجعة فيه. ستُحذف كل بياناتك نهائيًا. سيتم تسجيل خروجك فورًا.",
+      "withdrawConsent": "اسحب موافقتك في أي وقت.",
+      "withdrawConsentDescription": "يضبط كل أعلام الموافقة على إيقاف. تُحفظ بياناتك لكن الميزات التي تتطلب موافقة ستكون محدودة. للحذف الكامل، استخدم حذف الحساب أعلاه.",
+      "aiRetention": "احذف سجل محادثات AI.",
+      "aiRetentionDescription": "يحذف كل محادثات ورسائل AI. تُحفظ ذكريات AI (تفضيلاتك)."
+    },
+    "center": {
+      "title": "مركز الخصوصية",
+      "subtitle": "أدر بياناتك وموافقتك وتفضيلات المشاركة.",
+      "dataExport": {
+        "title": "صدّر بياناتك",
+        "description": "نزّل نسخة كاملة من بيانات MindStep كملف JSON. يشمل كل مهامك ومشاريعك وجلسات التركيز ومحادثات AI وسجل المدفوعات والتفضيلات. لا تشمل بيانات مستخدمين آخرين.",
+        "button": "نزّل بياناتي",
+        "success": "بدأ تصدير البيانات — سيبدأ التنزيل قريبًا.",
+        "failed": "تعذّر تصدير البيانات. حاول مرة أخرى."
+      },
+      "deleteAIHistory": {
+        "title": "حذف سجل محادثات AI",
+        "description": "احذف نهائيًا كل محادثات ورسائل مساعد AI. تُحفظ ذكريات AI (تفضيلات صريحة). لا يمكن التراجع عن هذا.",
+        "button": "حذف سجل AI",
+        "confirm": "حذف كل محادثات AI؟ لا يمكن التراجع عن هذا.",
+        "success": "تم حذف سجل AI.",
+        "failed": "تعذّر حذف سجل AI. حاول مرة أخرى."
+      },
+      "deleteAccount": {
+        "title": "حذف الحساب",
+        "description": "احذف نهائيًا حسابك وكل البيانات المرتبطة. يشمل كل مهمة ومشروع وجلسة تركيز ومحادثة AI وسجل دفع وتفضيل. هذا الإجراء لا رجعة فيه.",
+        "button": "احذف حسابي",
+        "confirm": "اكتب DELETE للتأكيد",
+        "confirmPlaceholder": "اكتب DELETE هنا",
+        "warning": "لا يمكن التراجع عن هذا. ستُمحى كل بياناتك نهائيًا. فكّر في تصدير بياناتك أولًا.",
+        "success": "تم حذف الحساب. تم تسجيل خروجك.",
+        "failed": "تعذّر حذف الحساب. حاول مرة أخرى أو تواصل مع الدعم."
+      },
+      "consentManagement": {
+        "title": "إدارة الموافقة",
+        "description": "تحكّم بما توافق عليه. يمكنك تغيير هذا في أي وقت.",
+        "terms": "شروط الخدمة",
+        "termsDescription": "أوافق على شروط خدمة MindStep.",
+        "privacy": "سياسة الخصوصية",
+        "privacyDescription": "أوافق على سياسة خصوصية MindStep.",
+        "ageConfirmed": "تأكيد العمر",
+        "ageConfirmedDescription": "أؤكد أنني في العمر القانوني لاستخدام هذه الخدمة في ولايتي القضائية.",
+        "marketing": "رسائل تسويقية",
+        "marketingDescription": "أرغب في تلقي تحديثات المنتج ونصائح. (اختياري — مغلق افتراضيًا.)",
+        "dataProcessing": "معالجة البيانات",
+        "dataProcessingDescription": "أوافق على معالجة MindStep لبياناتي لتقديم الخدمة. مطلوب لاستخدام MindStep.",
+        "save": "حفظ الموافقة",
+        "saved": "تم حفظ الموافقة.",
+        "withdrawAll": "سحب كل الموافقات",
+        "withdrawAllConfirm": "سحب كل الموافقات؟ تبقى بياناتك، لكن الميزات التي تتطلب موافقة ستكون محدودة. يمكنك إعادة الموافقة لاحقًا.",
+        "withdrawn": "تم سحب كل الموافقات."
+      },
+      "dataSharing": {
+        "title": "ضوابط مشاركة البيانات",
+        "description": "تحكّم في البيانات التي يمكن لـ MindStep استخدامها لميزات محددة. إيقافها قد يحدّ من الوظائف.",
+        "aiCoach": "سياق مساعد AI",
+        "aiCoachDescription": "اسمح لمساعد AI برؤية مهامك وجلسات تركيزك ومهام Brain Dump لإعطاء نصائح سياقية. مغلق = ردود عامة فقط.",
+        "insights": "الرؤى الشخصية",
+        "insightsDescription": "اسمح لـ MindStep بتحليل بيانات نشاطك لتوليد الأنماط والمراجعات الأسبوعية. مغلق = لا رؤى.",
+        "analytics": "تحليلات مجهولة",
+        "analyticsDescription": "شارك أنماط استخدام مجهولة للمساعدة في تحسين MindStep. لا تُشارك أي بيانات شخصية أبدًا. (حاليًا مغلق دائمًا — المرحلة 2.)",
+        "note": "ملاحظة: تُخزّن هذه الضوابط في تفضيلاتك. MindStep لا يبيع بياناتك لأطراف ثالثة."
+      }
+    },
+    "loading": "جارٍ تحميل إعدادات الخصوصية…"
+  },
+  "help": {
+    "crisisTitle": "إذا كنت في أزمة",
+    "crisisBody": "MindStep ليست خدمة أزمات. إذا كنت في خطر مباشر، يُرجى التواصل مع خدمات الطوارئ المحلية أو خط أزمة الصحة النفسية في بلدك.",
+    "gettingStarted": "للبدء",
+    "gettingStartedDescription": "ابدأ بالتفريغ الذهني. أضف أي شيء في رأسك. صنّف لاحقًا.",
+    "adhdTips": "نصائح ودودة لـ ADHD",
+    "adhdTipsDescription": "قلّل الاحتكاك: سمِّ المهام كأفعال (\"راسل سام\"). استخدم خطوة واحدة على أي شيء كبير.",
+    "beGentle": "كن لطيفًا مع نفسك",
+    "beGentleDescription": "السلاسل تحتفي الجهد. اليوم الفائت معلومة، لا فشل.",
+    "medicalDisclaimer": "إخلاء المسؤولية الطبية",
+    "contact": "تواصل",
+    "contactDescription": "المرحلة 2 — محادثة دعم داخل التطبيق.",
+    "bugReports": "تقارير الأخطاء: يُرجى رفعها عبر متعقب مشاكل مستودع المشروع.",
+    "privacyEmail": "أسئلة الخصوصية: privacy@mindstep.app (مؤقت حتى المرحلة 2).",
+    "securityReports": "تقارير الأمان: انظر SECURITY.md للإفصاح المسؤول."
+  },
+  "comingSoon": {
+    "title": "{name} — قادم في مرحلة مستقبلية",
+    "description": "هذا القسم جزء من بنية MindStep المخطط لها لكنه لم يُنفّذ في المرحلة الحالية. ليس رابطًا ميتًا عمدًا — التنقل حقيقي والمسار محجوز. عندما يُطلق هذا الموديل، سترى وظيفة حقيقية هنا، لا عنصرًا مؤقتًا.",
+    "badge": "مُهيّأ في المرحلة 1 · يُطلق في المرحلة 2+"
+  },
+  "insights": {
+    "title": "رؤى",
+    "subtitle": "أنماط وصفية من بياناتك. ليست تشخيصًا.",
+    "privacy": "بياناتك تبقى ملكك",
+    "privacyDescription": "تستخدم الرؤى بيانات نشاطك فقط. لا شيء يُباع أو يُشارك خارجيًا. يمكنك تجاهل أي رؤية في أي وقت.",
+    "empty": "لا يوجد نشاط كافٍ بعد",
+    "emptyDescription": "ابدأ باستخدام MindStep — جلسات التركيز والمهام وتسجيلات الطاقة ستكشف الأنماط بمرور الوقت. تظهر الأنماط بمجرد وجود بيانات كافية لتكون موثوقة.",
+    "refresh": "تحديث",
+    "tabs": {
+      "focus": "التركيز",
+      "time": "الوقت",
+      "tasks": "المهام",
+      "energy": "الطاقة",
+      "weekly": "الأسبوعية",
+      "experiments": "التجارب"
+    },
+    "categories": {
+      "focus": "التركيز",
+      "time": "أنماط الوقت",
+      "task": "أنماط المهام",
+      "energy": "الطاقة",
+      "weekly": "المراجعة الأسبوعية",
+      "general": "عام"
+    },
+    "kinds": {
+      "pattern": "نمط",
+      "observation": "ملاحظة",
+      "suggestion": "اقتراح",
+      "warning": "تنبيه",
+      "celebration": "يستحق الذكر",
+      "correlation": "ارتباط",
+      "experiment": "تجربة"
+    },
+    "dismiss": "تجاهل",
+    "dismissed": "تم التجاهل",
+    "weeklyReview": {
+      "title": "المراجعة الأسبوعية",
+      "period": "{start} – {end}",
+      "whatWorked": "ما نجح",
+      "whatWasDifficult": "ما كان صعبًا",
+      "whatChanged": "ما تغيّر",
+      "suggestedExperiment": "التجربة المقترحة",
+      "startExperiment": "ابدأ هذه التجربة",
+      "metrics": {
+        "totalFocusMinutes": "إجمالي دقائق التركيز",
+        "completedTasks": "المهام المكتملة",
+        "completedSessions": "الجلسات المكتملة",
+        "avgEnergy": "متوسط الطاقة",
+        "interruptions": "المقاطعات"
+      }
+    },
+    "aria": {
+      "chart": "رسم بياني: {title}",
+      "bars": "رسم بياني بأعمدة عددها {count}",
+      "noData": "لا توجد بيانات لعرضها"
+    },
+    "loading": "نحلّل أنماطك…",
+    "error": "تعذّر تحميل الرؤى الآن."
+  },
+  "experiments": {
+    "title": "التجارب الشخصية",
+    "subtitle": "جرّب تغييرًا واحدًا لأسبوع. سنلتقط المقاييس قبل/بعد — بدون حكم.",
+    "empty": "لا تجارب بعد",
+    "emptyDescription": "جرّب تغييرًا واحدًا لأسبوع. سيلتقط MindStep مقاييسك قبل وبعد — وصفيًا، ليس حكميًا.",
+    "start": "ابدأ تجربة",
+    "startTitle": "ابدأ تجربة شخصية",
+    "fields": {
+      "type": "ماذا تجرب",
+      "title": "الاسم (اختياري)",
+      "hypothesis": "فرضيتك (اختياري)"
+    },
+    "submit": "ابدأ التجربة",
+    "cancel": "إلغاء",
+    "types": {
+      "shorter_focus": "جلسات تركيز أقصر",
+      "longer_focus": "جلسات تركيز أطول",
+      "morning_planning": "تخطيط الصباح",
+      "evening_planning": "تخطيط المساء",
+      "smaller_steps": "خطوات مهمة أصغر",
+      "different_reminder_timing": "توقيت تذكير مختلف",
+      "earlier_breaks": "فواصل أبكر",
+      "later_breaks": "فواصل لاحقًة"
+    },
+    "descriptions": {
+      "shorter_focus": "خطط لجلسات تركيز 10 دقائق بدلًا من 25.",
+      "longer_focus": "خطط لجلسات تركيز 40 دقيقة بدلًا من 25.",
+      "morning_planning": "اقضِ 5 دقائق كل صباح لكتابة أهم 3 مهام اليوم.",
+      "evening_planning": "اقضِ 5 دقائق كل مساء لكتابة أهم 3 مهام الغد.",
+      "smaller_steps": "قسّم مهمتك التالية إلى 3 خطوات أصغر.",
+      "different_reminder_timing": "جرّب التذكيرات قبل 30 دقيقة من المعتاد.",
+      "earlier_breaks": "خذ استراحة 5 دقائق بعد كل 15 دقيقة تركيز.",
+      "later_breaks": "ادفع كتل التركيز إلى 35 دقيقة قبل أخذ استراحة."
+    },
+    "status": {
+      "active": "نشطة",
+      "completed": "مكتملة",
+      "abandoned": "متروكة"
+    },
+    "result": {
+      "baseline": "خط الأساس (قبل)",
+      "post": "بعدي (بعد)",
+      "delta": "التغيير",
+      "description": "ما تُظهره بياناتك",
+      "noDescription": "لا توجد بيانات كافية للمقارنة بعد."
+    },
+    "complete": "إكمال التجربة",
+    "abandon": "ترك",
+    "completeConfirm": "إكمال هذه التجربة؟ سيلتقط MindStep لقطة نهائية ويقارنها بخط أساسك.",
+    "abandonConfirm": "ترك هذه التجربة؟ يُحفظ خط أساسك، لكن لن تُجرى مقارنة نهائية.",
+    "started": "بدأت التجربة. جرّب التغيير لأسبوع — ثم عُد لإكمالها.",
+    "completed": "اكتملت التجربة. انظر النتائج أدناه.",
+    "abandoned": "تم ترك التجربة.",
+    "failed": "تعذّر بدء التجربة. حاول مرة أخرى.",
+    "loading": "جارٍ تحميل التجارب…",
+    "aria": {
+      "started": "بدأت التجربة.",
+      "completed": "اكتملت التجربة.",
+      "abandoned": "تم ترك التجربة."
+    }
+  },
+  "disclaimer": {
+    "notMedical": "MindStep ليس أداة طبية أو تشخيصية. لا يشخّص ADHD ولا يصف الدواء ولا يوصي بتعديل الجرعات ولا يحل محل الرعاية المهنية. إن كنت في أزمة، يُرجى التواصل مع مختص رعاية صحية أو خدمات الطوارئ المحلية."
+  },
+  "pi": {
+    "title": "حساب Pi",
+    "subtitle": "سجّل الدخول عبر Pi، وأدر اشتراكك المميز، واطّلع على سجل المدفوعات.",
+    "signedInAs": "مسجّل الدخول كـ {username}",
+    "notSignedIn": "غير مسجّل الدخول",
+    "network": "الشبكة",
+    "networkValue": "{network, select, testnet {Testnet (اختبار)} mainnet {Mainnet (إنتاج)} other {غير معروفة}}",
+    "signInWithPi": "تسجيل الدخول عبر Pi",
+    "signOut": "تسجيل الخروج",
+    "signingIn": "جارٍ تسجيل الدخول…",
+    "signingOut": "جارٍ تسجيل الخروج…",
+    "premium": {
+      "title": "MindStep المميز",
+      "active": "الاشتراك المميز نشط",
+      "expired": "انتهى الاشتراك المميز",
+      "free": "الخطة المجانية",
+      "expiresOn": "ينتهي في {date}",
+      "lifetime": "عضوية مدى الحياة",
+      "features": "الميزات المشمولة",
+      "noEntitlement": "لا اشتراك مميز بعد",
+      "noEntitlementDescription": "اختر خطة أدناه لفتح جلسات التركيز غير المحدودة، والرؤى المتقدمة، والتجارب الشخصية، والمزيد."
+    },
+    "products": {
+      "title": "اختر خطتك",
+      "subtitle": "ادفع عبر Pi. ألغِ في أي وقت.",
+      "monthly": "شهري",
+      "yearly": "سنوي",
+      "lifetime": "مدى الحياة",
+      "bestValue": "أفضل قيمة",
+      "perMonth": "شهريًا",
+      "perYear": "سنويًا",
+      "oneTime": "مرة واحدة",
+      "buy": "اشترِ عبر Pi",
+      "buyMonthly": "احصل على شهري",
+      "buyYearly": "احصل على سنوي",
+      "buyLifetime": "احصل على مدى الحياة",
+      "processing": "جارٍ معالجة الدفع…",
+      "success": "نجح الدفع — تم تفعيل المميز!",
+      "cancelled": "تم إلغاء الدفع. لم تُحسب أي رسوم.",
+      "failed": "فشل الدفع. يُرجى المحاولة مرة أخرى.",
+      "piAmount": "{amount} PI"
+    },
+    "history": {
+      "title": "سجل المدفوعات",
+      "empty": "لا مدفوعات بعد",
+      "emptyDescription": "ستظهر مدفوعاتك عبر Pi هنا بمجرد إجراء واحدة.",
+      "status": {
+        "pending": "قيد الانتظار",
+        "developer_approved": "تمت الموافقة",
+        "user_approved": "بانتظار البلوكشين",
+        "transaction_verified": "قيد التحقق",
+        "completed": "مكتمل",
+        "cancelled": "ملغى",
+        "failed": "فشل"
+      },
+      "txid": "معرّف المعاملة",
+      "amount": "المبلغ",
+      "product": "المنتج",
+      "date": "التاريخ",
+      "refresh": "تحديث"
+    },
+    "errors": {
+      "notInPiBrowser": "لست في متصفح Pi",
+      "notInPiBrowserDescription": "تسجيل الدخول عبر Pi والمدفوعات يعملان فقط داخل متصفح Pi. افتح هذه الصفحة في متصفح Pi للمتابعة.",
+      "notConfigured": "Pi غير مُهيّأ",
+      "notConfiguredDescription": "لم يتم إعداد هذا الخادم لتكامل Pi بعد. تواصل مع المسؤول.",
+      "authFailed": "فشل تسجيل الدخول. يُرجى المحاولة مرة أخرى.",
+      "authCancelled": "ألغت تسجيل الدخول عبر Pi.",
+      "paymentFailed": "فشل الدفع. يُرجى المحاولة مرة أخرى.",
+      "paymentCancelled": "تم إلغاء الدفع.",
+      "sessionExpired": "انتهت جلستك. يُرجى تسجيل الدخول مرة أخرى.",
+      "retry": "حاول مرة أخرى"
+    },
+    "compliance": {
+      "title": "الامتثال والأمان",
+      "noPassphrases": "لا عبارات مرور للمحفظة",
+      "noPassphrasesDescription": "لا يطلب MindStep أبدًا ولا يخزّن عبارة مرور محفظة Pi. تتم جميع المدفوعات في محفظة Pi، موقعة من قبلك.",
+      "serverVerified": "تحقق من جهة الخادم",
+      "serverVerifiedDescription": "تتم مراجعة كل دفعة عبر واجهة Pi Platform API قبل منح أي اشتراك. الواجهة الأمامية لا تقرر أبدًا.",
+      "testnetVsMainnet": "Test-Pi لا يمنح المميز",
+      "testnetVsMainnetDescription": "تُوسم معاملات Test-Pi بالشبكة النشطة ولا يمكنها منح اشتراك حقيقي — حتى لو وصلت إلى خادمنا."
+    },
+    "loading": "جارٍ التحميل…",
+    "loadingProducts": "جارٍ تحميل المنتجات…",
+    "loadingHistory": "جارٍ تحميل سجل المدفوعات…",
+    "loadingEntitlement": "جارٍ تحميل حالة المميز…",
+    "aria": {
+      "signedIn": "أنت مسجّل الدخول عبر Pi.",
+      "signedOut": "أنت غير مسجّل الدخول.",
+      "premiumActive": "اشتراكك المميز نشط.",
+      "paymentComplete": "الدفع مكتمل."
+    }
+  },
+  "footer": {
+    "tagline": "خطوة واحدة. تركيز واحد. يوم واحد.",
+    "rights": "صُنع بعناية. بياناتك تبقى ملكك."
+  }
+}
