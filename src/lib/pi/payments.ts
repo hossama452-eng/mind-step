@@ -1,3 +1,4 @@
+import "server-only";
 /**
  * MindStep — Pi Payment Service (Prompt 12 §3).
  *

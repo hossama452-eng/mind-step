@@ -1,3 +1,4 @@
+import "server-only";
 import { cookies, headers } from "next/headers";
 import { db } from "@/lib/db";
 import { AppError, ErrorCodes } from "@/lib/errors";

@@ -11,7 +11,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { toast } from "sonner";
 import { FlaskConical } from "lucide-react";
 import { useDialogStore } from "@/stores/dialog-store";
-import { EXPERIMENT_TYPES } from "@/lib/insights/personal-experiments";
+import { EXPERIMENT_TYPES } from "@/lib/insights/personal-experiments-types";
 
 const NOTIF_HEADERS: Record<string, string> = {
   "x-mindstep-user-id": "demo-user",

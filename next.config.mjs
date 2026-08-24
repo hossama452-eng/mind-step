@@ -1,6 +1,13 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  // NOTE: 'output: standalone' removed — that mode is for self-hosted
+  // Docker/VPS deployments and is not needed on Vercel, which uses its
+  // own serverless build/runtime and can fail or serve a broken build
+  // when this is set.
   poweredByHeader: false,
   compress: true,
   productionBrowserSourceMaps: false,
@@ -29,4 +36,4 @@ const nextConfig = {
   },
 }
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

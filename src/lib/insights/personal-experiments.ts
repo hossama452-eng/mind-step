@@ -16,48 +16,43 @@
  *
  * IMPORTANT: experiments are USER-OWNED. The user can abandon them at any
  * time. Metrics are descriptive — never "you failed" if results don't improve.
+ *
+ * SERVER-ONLY BOUNDARY:
+ *   This module imports `@/lib/db` (which imports `@prisma/client`) and is
+ *   therefore strictly server-side. The `import "server-only"` statement
+ *   below makes any Client Component that (transitively) imports this file
+ *   fail at build time with a clear, actionable error — instead of silently
+ *   pulling Prisma into the browser bundle and breaking the Vercel build
+ *   with "Module not found: Can't resolve '.prisma/client/index-browser'".
+ *
+ *   Pure types/constants live in `./personal-experiments-types` so Client
+ *   Components can import them without dragging Prisma along. This file
+ *   re-exports them so existing server-side imports keep working.
  */
+
+import "server-only";
 
 import { db } from "@/lib/db";
 import type { Locale } from "@/i18n/locale";
 
-// ============================================================
-// ALLOWED EXPERIMENT TYPES
-// ============================================================
+// Re-export client-safe constants/types so existing server-side imports of
+// this module (e.g. `import { EXPERIMENT_TYPES, type ExperimentType } from
+// "@/lib/insights/personal-experiments"`) continue to work unchanged.
+export {
+  EXPERIMENT_TYPES,
+  type ExperimentType,
+  type ExperimentMetrics,
+  type MetricDelta,
+  type ExperimentDelta,
+} from "./personal-experiments-types";
 
-export const EXPERIMENT_TYPES = [
-  "shorter_focus",
-  "longer_focus",
-  "morning_planning",
-  "evening_planning",
-  "smaller_steps",
-  "different_reminder_timing",
-  "earlier_breaks",
-  "later_breaks",
-] as const;
-
-export type ExperimentType = (typeof EXPERIMENT_TYPES)[number];
-
-// ============================================================
-// METRICS SNAPSHOT
-// ============================================================
-
-export interface ExperimentMetrics {
-  totalFocusMinutes: number;
-  completedSessions: number;
-  cancelledSessions: number;
-  completionRate: number; // 0-100
-  avgSessionMinutes: number;
-  interruptionsPerSession: number;
-  completedTasks: number;
-  avgEnergy: number | null;
-  sampleDays: number;
-  capturedAt: string; // ISO
-}
-
-// ============================================================
-// COMPUTE METRICS SNAPSHOT (for the last N days)
-// ============================================================
+// Pull the symbols we use internally so the rest of this file compiles.
+import type {
+  ExperimentType,
+  ExperimentMetrics,
+  ExperimentDelta,
+  MetricDelta,
+} from "./personal-experiments-types";
 
 export async function computeMetricsSnapshot(
   userId: string,
@@ -113,23 +108,6 @@ export async function computeMetricsSnapshot(
 // ============================================================
 // COMPUTE DELTA (baseline vs post)
 // ============================================================
-
-export interface MetricDelta {
-  baseline: number | null;
-  post: number | null;
-  delta: number | null; // post - baseline
-  pctChange: number | null; // percentage change (null if baseline is 0)
-}
-
-export interface ExperimentDelta {
-  totalFocusMinutes: MetricDelta;
-  completedSessions: MetricDelta;
-  completionRate: MetricDelta;
-  avgSessionMinutes: MetricDelta;
-  interruptionsPerSession: MetricDelta;
-  completedTasks: MetricDelta;
-  avgEnergy: MetricDelta;
-}
 
 export function computeDelta(baseline: ExperimentMetrics, post: ExperimentMetrics): ExperimentDelta {
   const calc = (key: keyof ExperimentMetrics): MetricDelta => {

@@ -8,7 +8,11 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  // Switched from sqlite to postgresql: Vercel's serverless functions have
+  // no persistent local filesystem, so a local SQLite file won't survive
+  // between requests/instances. Point DATABASE_URL at a hosted Postgres
+  // instance (e.g. Neon, Supabase, or Vercel Postgres — all have free tiers).
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 

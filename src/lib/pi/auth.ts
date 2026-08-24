@@ -1,3 +1,4 @@
+import "server-only";
 /**
  * MindStep — Pi Authentication Service (Prompt 12 §1).
  *

@@ -1,3 +1,4 @@
+import "server-only";
 /**
  * MindStep Insights Engine — Orchestrator (Prompt 11).
  *

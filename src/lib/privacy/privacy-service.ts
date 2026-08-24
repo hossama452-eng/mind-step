@@ -1,3 +1,4 @@
+import "server-only";
 /**
  * MindStep Privacy Service (Prompt 13 §Privacy).
  *

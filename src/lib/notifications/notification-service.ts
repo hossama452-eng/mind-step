@@ -1,3 +1,4 @@
+import "server-only";
 /**
  * MindStep Notification Service (Prompt 08 + Prompt 10).
  *

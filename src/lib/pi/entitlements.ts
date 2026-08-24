@@ -1,3 +1,4 @@
+import "server-only";
 /**
  * MindStep — Durable Premium Entitlement Service (Prompt 12 §4).
  *

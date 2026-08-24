@@ -1,3 +1,4 @@
+import "server-only";
 /**
  * MindStep AI Context Service (Prompt 07 §6, §7, §8, §9, §10).
  *

@@ -93,6 +93,19 @@ export function FocusSection() {
 
   const timer = useFocusTimer(timerSession);
 
+  // ===== Screen reader announcements =====
+  // Declared as a useCallback near the top so every handler below captures an
+  // already-defined binding (avoids the `react-hooks/immutability` "accessed
+  // before declared" error and is stable across renders).
+  const announce = useCallback((msg: string) => {
+    if (typeof document === "undefined") return;
+    const el = document.getElementById("locale-live-region");
+    if (el) {
+      el.textContent = "";
+      window.setTimeout(() => { el.textContent = msg; }, 50);
+    }
+  }, []);
+
   // ===== Fetch the active session on mount (refresh recovery — Prompt 05 §9) =====
   const fetchActive = useCallback(async () => {
     setLoading(true);
@@ -118,7 +131,33 @@ export function FocusSection() {
   }, [fetchActive]);
 
   // ===== Auto-complete when timer reaches zero (Prompt 05 §14) =====
+  // NOTE: `handleComplete` is declared above this effect (not below) so the
+  // effect's closure captures an already-defined binding. Reordering here is
+  // purely lexical — runtime behavior is unchanged.
   const completedRef = useRef(false);
+
+  // ===== API actions =====
+  const handleComplete = async () => {
+    if (!session) return;
+    setPendingAction(true);
+    try {
+      const res = await fetch(`/api/focus-sessions/${session.id}/complete`, {
+        method: "PATCH",
+        headers: FOCUS_HEADERS,
+        body: JSON.stringify({}),
+      });
+      if (!res.ok) throw new Error("Failed to complete session");
+      const data = await res.json();
+      setSession(data.session);
+      setShowCompletion(true);
+      announce(tFocus("aria.timerCompleted"));
+    } catch {
+      toast.error(tFocus("subtitle"));
+    } finally {
+      setPendingAction(false);
+    }
+  };
+
   useEffect(() => {
     if (timer.isExpired && session && session.status === "active" && !completedRef.current) {
       completedRef.current = true;
@@ -220,27 +259,6 @@ export function FocusSection() {
     }
   };
 
-  const handleComplete = async () => {
-    if (!session) return;
-    setPendingAction(true);
-    try {
-      const res = await fetch(`/api/focus-sessions/${session.id}/complete`, {
-        method: "PATCH",
-        headers: FOCUS_HEADERS,
-        body: JSON.stringify({}),
-      });
-      if (!res.ok) throw new Error("Failed to complete session");
-      const data = await res.json();
-      setSession(data.session);
-      setShowCompletion(true);
-      announce(tFocus("aria.timerCompleted"));
-    } catch {
-      toast.error(tFocus("subtitle"));
-    } finally {
-      setPendingAction(false);
-    }
-  };
-
   const captureDistraction = async () => {
     const trimmed = distractionDraft.trim();
     if (!trimmed || !session) return;
@@ -260,16 +278,6 @@ export function FocusSection() {
       toast.error(tFocus("subtitle"));
     }
   };
-
-  // ===== Screen reader announcements =====
-  function announce(msg: string) {
-    if (typeof document === "undefined") return;
-    const el = document.getElementById("locale-live-region");
-    if (el) {
-      el.textContent = "";
-      window.setTimeout(() => { el.textContent = msg; }, 50);
-    }
-  }
 
   // ===== RENDER =====
   if (loading) return <LoadingState lines={4} />;
