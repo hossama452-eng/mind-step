@@ -1,0 +1,1451 @@
+{
+  "app": {
+    "name": "MindStep",
+    "tagline": "One Step. One Focus. One Day.",
+    "description": "A premium ADHD-support productivity companion."
+  },
+  "nav": {
+    "dashboard": "Home",
+    "tasks": "Tasks",
+    "projects": "Projects",
+    "brainDump": "Brain Dump",
+    "focus": "Focus",
+    "planner": "Planner",
+    "calendar": "Calendar",
+    "habits": "Habits",
+    "life": "Life",
+    "sleep": "Sleep",
+    "energy": "Energy",
+    "insights": "Insights",
+    "ai": "AI Coach",
+    "family": "Family",
+    "professional": "Professional",
+    "reports": "Reports",
+    "settings": "Settings",
+    "notifications": "Notifications",
+    "piAccount": "Pi Account",
+    "privacy": "Privacy",
+    "help": "Help",
+    "bottomNav": {
+      "home": "Home",
+      "tasks": "Tasks",
+      "focus": "Focus",
+      "planner": "Planner",
+      "ai": "AI"
+    },
+    "group": {
+      "core": "Core",
+      "productivity": "Productivity",
+      "focus": "Focus",
+      "adhdSupport": "ADHD Support",
+      "life": "Life",
+      "ai": "AI",
+      "family": "Family",
+      "professional": "Professional"
+    }
+  },
+  "common": {
+    "loading": "Loading…",
+    "empty": "Nothing here yet",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "save": "Save",
+    "saved": "Saved",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "create": "Create",
+    "add": "Add",
+    "search": "Search",
+    "all": "All",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "yesterday": "Yesterday",
+    "thisWeek": "This week",
+    "more": "More",
+    "less": "Less",
+    "yes": "Yes",
+    "no": "No",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "start": "Start",
+    "continue": "Continue",
+    "open": "Open",
+    "keep": "Keep",
+    "move": "Move",
+    "drop": "Drop",
+    "done": "Done",
+    "of": "of",
+    "or": "or",
+    "items": "{count, plural, one {# item} other {# items}}"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "toggle": "Toggle theme",
+    "label": "Theme"
+  },
+  "language": {
+    "label": "Language",
+    "english": "English",
+    "arabic": "العربية",
+    "french": "Français",
+    "chinese": "简体中文",
+    "changed": "Language changed to {name}"
+  },
+  "accessibility": {
+    "skipToMain": "Skip to main content",
+    "openNavigation": "Open navigation",
+    "closeNavigation": "Close navigation",
+    "navigationLandmark": "MindStep navigation",
+    "quickActionsToolbar": "MindStep quick actions",
+    "mainContent": "Main content",
+    "currentPage": "Current page",
+    "progress": "{percent}% complete"
+  },
+  "dashboard": {
+    "hero": {
+      "greeting": {
+        "morning": "Good morning",
+        "afternoon": "Good afternoon",
+        "evening": "Good evening",
+        "night": "Resting well?"
+      },
+      "whatMattersNow": "What matters now",
+      "subtitle": "One step. One focus. One day.",
+      "aiHint": "Ask your coach"
+    },
+    "sections": {
+      "adhdSupport": "ADHD Support",
+      "adhdSupportDescription": "Gentle tools for hard moments.",
+      "nextStep": "Your next step",
+      "nextStepDescription": "One task. Nothing else needed.",
+      "brainDump": "Brain Dump",
+      "brainDumpDescription": "Capture anything in your head.",
+      "focus": "Focus",
+      "focusDescription": "Start a single-focus session.",
+      "todayRhythm": "Today's rhythm",
+      "todayRhythmDescription": "Energy, mood, and sleep at a glance.",
+      "topPriorities": "Top priorities",
+      "topPrioritiesDescription": "Only what matters most.",
+      "reminders": "Reminders",
+      "remindersDescription": "Things that need your attention soon.",
+      "progress": "Today's progress",
+      "progressDescription": "Gentle momentum, not scorekeeping.",
+      "energyCheck": "How's your energy?",
+      "energyCheckDescription": "A quick check shapes what MindStep suggests."
+    },
+    "adhdCards": {
+      "iCantStart": {
+        "title": "I can't start",
+        "description": "Get unstuck with one tiny action."
+      },
+      "oneStep": {
+        "title": "One Step",
+        "description": "Shrink any task to its first 2 minutes."
+      },
+      "resetMyDay": {
+        "title": "Reset My Day",
+        "description": "Start over, no shame."
+      },
+      "minimumViableDay": {
+        "title": "Minimum Viable Day",
+        "description": "Pick three non-negotiables."
+      },
+      "whereWasI": {
+        "title": "Where was I?",
+        "description": "Resume where you left off."
+      },
+      "overwhelmMode": {
+        "title": "Overwhelm Mode",
+        "description": "Clear the noise, one breath at a time."
+      }
+    },
+    "stats": {
+      "tasksDone": "Tasks done today",
+      "focusMinutes": "Focus minutes today",
+      "streak": "Current streak",
+      "brainDumps": "Brain dumps captured",
+      "energy": "Energy level"
+    },
+    "empty": {
+      "noTasks": "Nothing to do — perfect moment for a breath.",
+      "noFocus": "No focus session today. Even 5 minutes counts.",
+      "noReminders": "No reminders. You're clear for now."
+    }
+  },
+  "signature": {
+    "iCantStart": {
+      "title": "I can't start",
+      "step1Title": "Acknowledge",
+      "step1Body": "Starting is hard. It's not laziness — your brain is just overwhelmed. Take one breath. We'll shrink this together.",
+      "step1Action": "Let's make it smaller",
+      "step2Title": "Pick one task",
+      "step2Body": "Just one. The one that's been pulling at you.",
+      "step2Placeholder": "Type the task that's stuck (or pick one below)",
+      "step3Title": "Shrink it",
+      "step3Body": "What's the tiniest version that takes 2 minutes or less? Open the doc. Open the email. Stand up.",
+      "step3Placeholder": "Type the 2-minute version…",
+      "step4Title": "Start a 5-minute focus",
+      "step4Body": "Five minutes. You can stop after. Most of the time, you won't want to.",
+      "step4Action": "Start 5-minute focus",
+      "skipFocus": "Just give me the tiny step",
+      "success": "You started. That's the whole win for today."
+    },
+    "resetMyDay": {
+      "title": "Reset My Day",
+      "subtitle": "We'll keep what matters and let go of the rest. Nothing is deleted.",
+      "keep": "Keep",
+      "move": "Move to tomorrow",
+      "drop": "Drop for now",
+      "keepHint": "Stays on today's list",
+      "moveHint": "Snoozed — comes back tomorrow",
+      "dropHint": "Archived — recoverable from settings",
+      "summary": {
+        "title": "Here's your smaller day",
+        "kept": "Kept",
+        "moved": "Moved",
+        "dropped": "Dropped"
+      },
+      "apply": "Apply this plan",
+      "empty": "There's nothing to reset — your day is already light."
+    },
+    "startFocus": {
+      "title": "Start a focus session",
+      "subtitle": "Pick one thing. Pick how long. Begin.",
+      "pickTask": "Pick a task",
+      "orFreelance": "or work on something off-list",
+      "freelancePlaceholder": "What are you focusing on?",
+      "duration": "How long?",
+      "presets": {
+        "quick5": "5 min · Quick start",
+        "focus15": "15 min · Quick focus",
+        "focus25": "25 min · Pomodoro",
+        "focus45": "45 min · Deep work",
+        "focus90": "90 min · Flow"
+      },
+      "begin": "Begin focus",
+      "openFullFocus": "Open full focus view"
+    },
+    "quickCapture": {
+      "title": "Quick capture",
+      "subtitle": "Empty your mind in one keystroke.",
+      "placeholder": "Type anything — a thought, a reminder, an idea…",
+      "save": "Capture",
+      "saved": "Captured — sort it later in Brain Dump",
+      "shortcut": "Press C anywhere to capture"
+    }
+  },
+  "tasks": {
+    "title": "Tasks",
+    "subtitle": "Break big things into small actions.",
+    "add": "Add a task",
+    "placeholder": "What needs doing?",
+    "empty": "No tasks yet. Add your first one above.",
+    "fields": {
+      "title": "Title",
+      "description": "Description",
+      "notes": "Notes",
+      "priority": "Priority",
+      "energy": "Energy required",
+      "due": "Due date",
+      "dueTime": "Time",
+      "project": "Project",
+      "milestone": "Milestone",
+      "estimate": "Estimated time",
+      "tags": "Tags"
+    },
+    "priority": {
+      "low": "Low",
+      "normal": "Normal",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "energy": {
+      "low": "Low energy",
+      "medium": "Medium energy",
+      "high": "High energy"
+    },
+    "status": {
+      "inbox": "Inbox",
+      "planned": "Planned",
+      "in_progress": "In progress",
+      "completed": "Completed",
+      "archived": "Archived"
+    },
+    "breakdown": "Break this into smaller steps",
+    "markDone": "Mark as done",
+    "markUndone": "Mark as not done",
+    "startFocus": "Start focus on this",
+    "overdue": "Overdue",
+    "subtasks": "subtasks",
+    "subtaskCount": "{done}/{total} done",
+    "count": "{count, plural, one {# task} other {# tasks}}",
+    "filters": {
+      "all": "All tasks",
+      "today": "Today",
+      "overdue": "Overdue",
+      "completed": "Completed",
+      "snoozed": "Snoozed",
+      "archived": "Archived"
+    },
+    "sort": {
+      "label": "Sort by",
+      "manual": "Manual",
+      "due": "Due date",
+      "priority": "Priority",
+      "created": "Created date",
+      "updated": "Updated date"
+    },
+    "search": {
+      "label": "Search tasks",
+      "placeholder": "Search tasks, projects, tags…",
+      "empty": "No results. Try a different search.",
+      "clear": "Clear search"
+    },
+    "estimatePresets": {
+      "5": "5 min",
+      "10": "10 min",
+      "15": "15 min",
+      "25": "25 min",
+      "30": "30 min",
+      "45": "45 min",
+      "60": "60 min",
+      "custom": "Custom"
+    },
+    "detail": {
+      "title": "Task detail",
+      "openTask": "Open task",
+      "edit": "Edit task",
+      "save": "Save",
+      "cancel": "Cancel",
+      "addSubtask": "Add a step",
+      "subtaskPlaceholder": "What's the next step?",
+      "deleteSubtask": "Delete step",
+      "completeSubtask": "Complete step",
+      "uncompleteSubtask": "Mark step as not done",
+      "moveUp": "Move up",
+      "moveDown": "Move down",
+      "archive": "Archive",
+      "unarchive": "Restore",
+      "convertToTask": "Convert to task",
+      "convertToReminder": "Convert to reminder"
+    },
+    "confirmDelete": {
+      "title": "Delete task?",
+      "description": "This cannot be undone. Subtasks will also be deleted.",
+      "confirm": "Delete"
+    },
+    "progress": {
+      "label": "Progress",
+      "value": "{done} of {total} steps",
+      "noSubtasks": "No subtasks yet"
+    }
+  },
+  "subtasks": {
+    "title": "Subtasks",
+    "add": "Add subtask",
+    "empty": "No subtasks. Add the first step.",
+    "markDone": "Mark subtask as done",
+    "markUndone": "Mark subtask as not done",
+    "delete": "Delete subtask",
+    "reorder": "Reorder subtasks",
+    "moveUp": "Move up",
+    "moveDown": "Move down",
+    "count": "{count, plural, one {# subtask} other {# subtasks}}",
+    "completedCount": "{done} of {total} completed"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Group related tasks. Track real progress.",
+    "add": "New project",
+    "empty": "No projects yet. Group a few related tasks here.",
+    "fields": {
+      "name": "Project name",
+      "description": "Description",
+      "color": "Color"
+    },
+    "detail": {
+      "title": "Project",
+      "tasks": "Tasks",
+      "completedTasks": "Completed",
+      "activeTasks": "Active",
+      "milestones": "Milestones",
+      "noTasks": "No tasks in this project yet.",
+      "addTask": "Add task to project",
+      "progress": "Progress"
+    },
+    "status": {
+      "active": "Active",
+      "completed": "Completed",
+      "archived": "Archived"
+    },
+    "confirmDelete": {
+      "title": "Delete project?",
+      "description": "Tasks in this project will keep their data but lose the project link.",
+      "confirm": "Delete"
+    },
+    "count": "{count, plural, one {# project} other {# projects}}"
+  },
+  "milestones": {
+    "title": "Milestones",
+    "subtitle": "Group project tasks into milestones.",
+    "add": "New milestone",
+    "empty": "No milestones. Group tasks into a milestone.",
+    "fields": {
+      "name": "Milestone name",
+      "description": "Description",
+      "due": "Due date"
+    },
+    "detail": {
+      "title": "Milestone",
+      "progress": "Progress",
+      "tasks": "Tasks",
+      "noTasks": "No tasks in this milestone yet.",
+      "complete": "Mark milestone complete",
+      "reopen": "Reopen milestone"
+    },
+    "status": {
+      "active": "Active",
+      "completed": "Completed",
+      "archived": "Archived"
+    },
+    "confirmDelete": {
+      "title": "Delete milestone?",
+      "description": "Tasks in this milestone will keep their data but lose the milestone link.",
+      "confirm": "Delete"
+    },
+    "count": "{count, plural, one {# milestone} other {# milestones}}"
+  },
+  "brainDump": {
+    "title": "Brain Dump",
+    "subtitle": "Empty your mind. Sort later.",
+    "placeholder": "Type anything — a thought, an idea, a reminder…",
+    "add": "Capture",
+    "empty": "Your mind is clear. For now.",
+    "categorize": "Categorize",
+    "categories": {
+      "task": "Task",
+      "idea": "Idea",
+      "reminder": "Reminder",
+      "uncategorized": "Uncategorized"
+    },
+    "count": "{count, plural, one {# entry} other {# entries}}",
+    "convert": {
+      "toTask": "Convert to task",
+      "toReminder": "Convert to reminder",
+      "title": "Convert this entry",
+      "taskTitleLabel": "Task title",
+      "priorityLabel": "Priority",
+      "projectLabel": "Project",
+      "dueLabel": "Due date",
+      "remindAtLabel": "Remind me at",
+      "confirm": "Convert",
+      "cancel": "Cancel",
+      "success": "Converted successfully.",
+      "alreadyConverted": "Already converted."
+    },
+    "status": {
+      "inbox": "Inbox",
+      "converted": "Converted",
+      "archived": "Archived"
+    }
+  },
+  "breakdown": {
+    "title": "Smart breakdown",
+    "subtitle": "Get a starting point. Edit before approving.",
+    "trigger": "Break this down",
+    "suggest": "Suggest steps",
+    "sourceDisclosure": "Deterministic suggestion — review and edit before approving.",
+    "edit": "Edit step",
+    "delete": "Delete step",
+    "addStep": "Add step",
+    "approve": "Approve and create",
+    "cancel": "Cancel",
+    "empty": "No suggestions. Try a clearer task title.",
+    "approved": "Subtasks created.",
+    "noChanges": "Nothing was changed."
+  },
+  "focus": {
+    "title": "Focus",
+    "subtitle": "One thing at a time.",
+    "startSession": "Start a focus session",
+    "endFocus": "End focus",
+    "pause": "Pause",
+    "resume": "Resume",
+    "stop": "Stop",
+    "complete": "Complete",
+    "duration": "Duration",
+    "justFive": "Just 5 minutes",
+    "distractionCapture": "Distraction capture",
+    "distractionPlaceholder": "What's pulling at you?",
+    "captureDistraction": "Capture & keep going",
+    "distractionSaved": "Captured. Back to focus.",
+    "interruptions": "Interruptions",
+    "sessionActive": "Session active",
+    "sessionPaused": "Paused",
+    "sessionComplete": "Session complete",
+    "sessionEnded": "Focus ended",
+    "noTask": "No task selected",
+    "timerComplete": "Time's up. You did it.",
+    "preset": {
+      "focus5": "5 min · Just start",
+      "focus10": "10 min · Quick",
+      "focus15": "15 min · Quick focus",
+      "focus25": "25 min · Pomodoro",
+      "focus30": "30 min · Half hour",
+      "focus45": "45 min · Deep work",
+      "focus60": "60 min · Full hour",
+      "focus90": "90 min · Flow"
+    },
+    "interruptionsCount": "{count, plural, one {# interruption} other {# interruptions}}",
+    "welcomeBack": {
+      "title": "Welcome back.",
+      "body": "You were focusing on \"{task}\". {minutes} minutes remaining.",
+      "continue": "Continue focus",
+      "endSession": "End this session",
+      "chooseAnother": "Choose another task"
+    },
+    "whereWasI": {
+      "title": "Where was I?",
+      "noRecentSession": "No recent focus session found.",
+      "lastSession": "You were working on: {task}",
+      "lastDistraction": "Last captured thought: {thought}",
+      "nextStep": "Ready to continue?"
+    },
+    "completion": {
+      "title": "Focus complete",
+      "duration": "{minutes} minutes",
+      "whatDidYouDo": "What did you get done? (optional)",
+      "whatDidYouDoPlaceholder": "Optional note…",
+      "done": "Done",
+      "startAnother": "Start another",
+      "backToTasks": "Back to tasks"
+    },
+    "overwhelm": {
+      "title": "I'm overwhelmed",
+      "subtitle": "Let's make this smaller.",
+      "step1": "What feels most important right now?",
+      "step1Placeholder": "Type the one thing that matters most…",
+      "step2": "What's the smallest next action?",
+      "step2Placeholder": "Type a 2-minute action…",
+      "step3": "How long?",
+      "start": "Start focus"
+    },
+    "oneStep": {
+      "title": "Just one step",
+      "subtitle": "Pick one tiny action. Start.",
+      "placeholder": "What's one small step you can take?",
+      "start": "Start 5 minutes"
+    },
+    "transition": {
+      "title": "Take a breath.",
+      "subtitle": "Close unrelated tabs. Pick your first step. Ready?",
+      "ready": "Ready to focus",
+      "skip": "Skip"
+    },
+    "history": {
+      "title": "Focus history",
+      "today": "Today",
+      "thisWeek": "This week",
+      "thisMonth": "This month",
+      "empty": "No focus sessions yet. Even 5 minutes counts.",
+      "sessionLabel": "{minutes} min · {status}",
+      "taskLabel": "Task: {task}"
+    },
+    "stats": {
+      "title": "Focus statistics",
+      "totalMinutes": "Total focus time",
+      "totalSessions": "Total sessions",
+      "completedSessions": "Completed sessions",
+      "averageSession": "Average session",
+      "longestSession": "Longest session",
+      "byDay": "By day",
+      "byTask": "Focus by task",
+      "noTaskFocus": "No task associated",
+      "minutes": "{count, plural, one {# minute} other {# minutes}}",
+      "sessions": "{count, plural, one {# session} other {# sessions}}",
+      "empty": "No data yet. Start your first focus session.",
+      "trendWeek": "You focused for {minutes} minutes this week.",
+      "trendLongest": "Your longest session was {minutes} minutes."
+    },
+    "aria": {
+      "timerStarted": "Focus started. Timer is running.",
+      "timerPaused": "Focus paused.",
+      "timerResumed": "Focus resumed.",
+      "timerCompleted": "Focus completed. Well done.",
+      "timerEnded": "Focus ended early.",
+      "minutesRemaining": "{minutes} minutes remaining.",
+      "distractionCaptured": "Distraction captured. Back to focus."
+    }
+  },
+  "habits": {
+    "title": "Habits",
+    "subtitle": "Tiny routines, repeated gently.",
+    "add": "New habit",
+    "empty": "No habits yet. Start tiny.",
+    "streak": "Streak",
+    "fields": {
+      "name": "Habit name",
+      "cue": "After this cue…",
+      "routine": "I will…",
+      "reward": "Because it rewards me with…"
+    },
+    "streakCount": "{count, plural, one {# day} other {# days}}"
+  },
+  "energy": {
+    "title": "Energy log",
+    "subtitle": "A gentle check-in shapes your day.",
+    "levels": {
+      "1": "Exhausted",
+      "2": "Low",
+      "3": "Steady",
+      "4": "Good",
+      "5": "Peak"
+    },
+    "levelDescription": {
+      "1": "Rest first. Tiny tasks only.",
+      "2": "One small thing at a time.",
+      "3": "Steady — you can do most things.",
+      "4": "Strong — pick something meaningful.",
+      "5": "Peak — go for the hard thing."
+    },
+    "logged": "Logged. MindStep will shape suggestions to your energy.",
+    "viewHistory": "View history",
+    "today": "Today's energy",
+    "empty": "No check-ins today. Logging takes one tap.",
+    "entriesCount": "{count, plural, one {# check-in} other {# check-ins}}"
+  },
+  "reminders": {
+    "title": "Reminders",
+    "subtitle": "What needs your attention soon.",
+    "empty": "No reminders. You're clear for now.",
+    "dueSoon": "Due soon",
+    "overdue": "Overdue",
+    "later": "Later today",
+    "tomorrow": "Tomorrow",
+    "thisWeek": "This week",
+    "markDone": "Mark as done",
+    "snooze": "Snooze 1 hour",
+    "count": "{count, plural, one {# reminder} other {# reminders}}"
+  },
+  "progress": {
+    "title": "Today's progress",
+    "subtitle": "Gentle momentum. Not scorekeeping.",
+    "tasksCompleted": "Tasks completed",
+    "focusMinutes": "Focus minutes",
+    "habitsDone": "Habits done",
+    "captures": "Captures",
+    "streak": "Day streak",
+    "streakDescription": "Showing up — even briefly — keeps the chain alive.",
+    "motivations": {
+      "firstStep": "You took the first step. That counts.",
+      "momentum": "Momentum is building.",
+      "going": "You're going. Keep going gently.",
+      "rest": "Rest is part of progress too."
+    }
+  },
+  "planner": {
+    "title": "Planner",
+    "subtitle": "Shape your day, gently.",
+    "day": "Day",
+    "week": "Week",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "schedule": "Schedule",
+    "timeBlock": "Time block",
+    "routine": "Routine",
+    "availability": "Availability",
+    "conflicts": "Conflicts",
+    "planMyDay": "Plan my day",
+    "whatShouldIDoNow": "What should I do now?",
+    "empty": "Your day is open. Plan one small thing.",
+    "now": "NOW",
+    "next": "NEXT",
+    "later": "LATER",
+    "overloaded": "Let's make this smaller.",
+    "overloadedDescription": "You have more planned work than available time. Some tasks were left unscheduled.",
+    "unscheduled": "Unscheduled",
+    "buffer": "Buffer",
+    "available": "Available",
+    "planned": "Planned",
+    "maxDaily": "Max daily",
+    "deadlines": "Deadlines",
+    "blocks": "blocks",
+    "generate": "Generate plan",
+    "approve": "Approve plan",
+    "regenerate": "Regenerate",
+    "planSaved": "Plan saved. Your day is ready.",
+    "planAlreadyApproved": "Plan already approved — no duplicates.",
+    "nextBestAction": {
+      "continueFocus": "Continue focusing",
+      "startScheduled": "Start scheduled task",
+      "startHighValue": "Suggested next step",
+      "startTiny": "Start a tiny step",
+      "rest": "Nothing urgent. Take a breath."
+    },
+    "recover": {
+      "title": "Recover my day",
+      "subtitle": "Let's rebuild a lighter plan.",
+      "analyze": "Analyze remaining time",
+      "generate": "Generate new plan"
+    },
+    "move": {
+      "toTomorrow": "Move to tomorrow",
+      "toAnotherDay": "Move to another day",
+      "toNextSlot": "Move to next available slot"
+    },
+    "missed": {
+      "title": "Missed a task?",
+      "continue": "Continue",
+      "reschedule": "Reschedule",
+      "makeSmaller": "Make smaller",
+      "skip": "Skip for now"
+    },
+    "aria": {
+      "scheduleLoaded": "Schedule loaded.",
+      "planGenerated": "Plan generated. Review before approving.",
+      "planApproved": "Plan approved and saved.",
+      "blockMoved": "Block moved."
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Make MindStep fit your mind.",
+    "sections": {
+      "appearance": "Appearance",
+      "appearanceDescription": "Theme, motion, and text size.",
+      "language": "Language",
+      "languageDescription": "Choose how MindStep speaks to you.",
+      "accessibility": "Accessibility",
+      "accessibilityDescription": "Tune motion, contrast, and pace.",
+      "focus": "Focus defaults",
+      "focusDescription": "Your ideal session length and breaks.",
+      "notifications": "Notifications",
+      "notificationsDescription": "Decide when MindStep reaches out.",
+      "privacy": "Privacy & data",
+      "privacyDescription": "Your data is yours. Always.",
+      "ai": "AI Coach",
+      "aiDescription": "How your coach shows up.",
+      "account": "Account",
+      "accountDescription": "Your profile and sign-in."
+    },
+    "options": {
+      "theme": "Theme",
+      "reducedMotion": "Reduce motion",
+      "highContrast": "High contrast",
+      "textScale": "Text size",
+      "language": "Interface language",
+      "focusLength": "Default focus length (minutes)",
+      "shortBreak": "Short break (minutes)",
+      "longBreak": "Long break (minutes)",
+      "dailyStart": "Day starts at",
+      "dailyEnd": "Day ends at",
+      "notificationsEnabled": "Allow notifications",
+      "aiCoachEnabled": "Enable AI Coach"
+    },
+    "textScale": {
+      "small": "Small",
+      "normal": "Normal",
+      "large": "Large",
+      "xlarge": "Extra large"
+    },
+    "saved": "Saved."
+  },
+  "ai": {
+    "title": "AI Coach",
+    "subtitle": "A supportive thinking partner, never a replacement for care.",
+    "disclaimer": "MindStep is not a medical tool. It cannot diagnose or treat ADHD. For clinical concerns, please consult a qualified professional.",
+    "placeholder": "Ask your coach anything…",
+    "send": "Send",
+    "contexts": {
+      "general": "General chat",
+      "task_breakdown": "Break down a task",
+      "day_rebuilder": "Rebuild my day",
+      "decision": "Help me decide",
+      "overwhelm": "I'm overwhelmed"
+    },
+    "welcome": "Hi, I'm your MindStep coach. What's on your mind today?",
+    "thinking": "Thinking…",
+    "retry": "Try again",
+    "memory": "Memory",
+    "memoryDescription": "Recent conversations help your coach stay in context. Pinned conversations are kept longer.",
+    "privacy": "Privacy",
+    "privacyDescription": "Conversations older than 30 days are auto-purged unless pinned."
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "You're all caught up.",
+    "markAllRead": "Mark all as read",
+    "unread": "Unread",
+    "read": "Read",
+    "dismiss": "Dismiss",
+    "open": "Open",
+    "today": "Today",
+    "earlier": "Earlier",
+    "all": "All",
+    "types": {
+      "task_due": "Task due",
+      "task_overdue": "Task needs attention",
+      "focus_start": "Focus starting",
+      "focus_end": "Focus complete",
+      "planning_reminder": "Planning reminder",
+      "planned_task": "Scheduled task",
+      "missed_plan": "Plan changed",
+      "recovery_suggestion": "Recover your day",
+      "milestone": "Milestone",
+      "project": "Project",
+      "system": "System",
+      "ai_nudge": "Coach nudge",
+      "focus_reminder": "Focus reminder",
+      "habit": "Habit reminder",
+      "ai_insight": "Coach insight",
+      "habit_reminder": "Habit reminder",
+      "calendar_event": "Calendar event",
+      "bill_due": "Bill due",
+      "routine_reminder": "Routine reminder"
+    },
+    "settings": "Notification settings",
+    "frequency": {
+      "label": "Notification frequency",
+      "minimal": "Minimal — only critical",
+      "balanced": "Balanced — useful reminders",
+      "more": "More — frequent nudges"
+    },
+    "quietHours": {
+      "label": "Quiet hours",
+      "start": "Start",
+      "end": "End",
+      "description": "Non-critical notifications are delayed during quiet hours."
+    },
+    "budget": {
+      "label": "Daily notification limit",
+      "description": "Max non-critical notifications per day."
+    },
+    "categories": {
+      "tasks": "Task reminders",
+      "focus": "Focus notifications",
+      "planner": "Planner notifications",
+      "milestones": "Milestone notifications",
+      "aiNudges": "AI Coach nudges",
+      "habits": "Habit reminders",
+      "calendar": "Calendar reminders",
+      "bills": "Bill due reminders",
+      "routines": "Routine reminders"
+    },
+    "actions": {
+      "openTask": "Open task",
+      "startFocus": "Start focus",
+      "openPlanner": "Open planner",
+      "reschedule": "Reschedule",
+      "reviewPlan": "Review plan",
+      "dismiss": "Dismiss",
+      "snooze": "Snooze",
+      "complete": "Complete"
+    },
+    "snooze": {
+      "10min": "10 minutes",
+      "30min": "30 minutes",
+      "1hour": "1 hour",
+      "tomorrow": "Tomorrow",
+      "capped": "Max snoozes reached. Try rescheduling or completing instead."
+    },
+    "smartActions": {
+      "snoozeTitle": "Snooze",
+      "rescheduleTitle": "Reschedule",
+      "completeTitle": "Complete",
+      "dismissTitle": "Dismiss",
+      "snoozeDescription": "Gently remind me later.",
+      "rescheduleDescription": "Pick a new time.",
+      "completeDescription": "I've done this — mark it complete.",
+      "dismissDescription": "Don't show me this again."
+    },
+    "reschedule": {
+      "title": "Reschedule",
+      "description": "Pick a new time for this reminder.",
+      "newTime": "New time",
+      "pickTime": "Pick a time",
+      "confirm": "Reschedule",
+      "cancel": "Cancel",
+      "success": "Rescheduled for later.",
+      "pastTime": "Please pick a future time."
+    },
+    "snoozeResult": {
+      "success": "Snoozed for later.",
+      "capped": "Max snoozes reached. Try rescheduling or completing instead.",
+      "tomorrowScheduled": "Snoozed until tomorrow morning."
+    },
+    "completeResult": {
+      "success": "Marked as complete.",
+      "taskCompleted": "Task marked complete.",
+      "reminderCompleted": "Reminder marked complete.",
+      "billPaid": "Bill marked as paid.",
+      "habitMarkedDone": "Habit marked done for today."
+    },
+    "unreadCount": "{count, plural, zero {No unread} one {# unread} other {# unread}}",
+    "refresh": "Refresh",
+    "aria": {
+      "notificationsLoaded": "Notifications loaded.",
+      "markedRead": "Marked as read.",
+      "markedAllRead": "All marked as read.",
+      "dismissed": "Notification dismissed.",
+      "snoozed": "Notification snoozed.",
+      "rescheduled": "Notification rescheduled.",
+      "completed": "Notification completed."
+    }
+  },
+  "pwa": {
+    "install": {
+      "title": "Install MindStep",
+      "description": "Add MindStep to your home screen for the full experience.",
+      "accept": "Install",
+      "dismiss": "Not now",
+      "iosInstructions": "Tap the Share button, then \"Add to Home Screen\"."
+    },
+    "update": {
+      "title": "Update available",
+      "description": "A new version of MindStep is ready.",
+      "action": "Update now",
+      "dismiss": "Later"
+    },
+    "offline": {
+      "banner": "{count, plural, zero {You're offline. Changes will sync when you reconnect.} one {You're offline. # change is saved and will sync.} other {You're offline. # changes are saved and will sync.}}",
+      "toast": "You're offline. Your changes are safe — they'll sync when you're back.",
+      "page": {
+        "title": "You're offline",
+        "body": "Your changes are saved on your device and will sync when you're back online. You can keep adding tasks, capturing thoughts, and reviewing your plan.",
+        "retry": "Try again"
+      }
+    },
+    "syncing": {
+      "banner": "{count, plural, one {Syncing # change…} other {Syncing # changes…}}"
+    },
+    "synced": {
+      "banner": "All changes synced."
+    },
+    "failed": {
+      "banner": "Some changes couldn't sync. Tap retry to try again.",
+      "retry": "Retry sync"
+    },
+    "online": {
+      "reconnected": "Back online.",
+      "reconnectedWithPending": "{count, plural, one {Back online — syncing # change.} other {Back online — syncing # changes.}}"
+    },
+    "dismiss": "Dismiss",
+    "permissions": {
+      "title": "Enable notifications?",
+      "body": "MindStep can gently remind you about tasks, focus sessions, and routines. You can turn this off any time.",
+      "accept": "Allow",
+      "deny": "Not now",
+      "denied": "Notifications are blocked. You can enable them in your browser settings.",
+      "enableInSettings": "Open browser settings"
+    },
+    "push": {
+      "enabled": "Push notifications on",
+      "disabled": "Push notifications off",
+      "enable": "Enable push",
+      "disable": "Disable push",
+      "devicesLabel": "Your devices",
+      "addDevice": "Add this device",
+      "removeDevice": "Remove"
+    }
+  },
+  "offline": {
+    "title": "Offline sync",
+    "description": "Pending changes are queued on your device and will sync automatically when you reconnect.",
+    "queueLabel": "Pending queue",
+    "emptyQueue": "No pending changes.",
+    "pendingCount": "{count, plural, zero {No pending changes} one {# pending change} other {# pending changes}}",
+    "retryAll": "Retry all",
+    "discardAll": "Discard all",
+    "discardConfirm": "Discard all pending changes? This cannot be undone.",
+    "conflict": {
+      "title": "Conflict detected",
+      "description": "This item changed on another device since you last edited it. Choose which version to keep.",
+      "keepMine": "Keep my version",
+      "keepTheirs": "Keep the other version",
+      "reviewManually": "Review manually"
+    }
+  },
+  "auth": {
+    "signIn": {
+      "title": "Sign in",
+      "subtitle": "Welcome back.",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "forgotPassword": "Forgot password?",
+      "noAccount": "No account?",
+      "register": "Create one"
+    },
+    "register": {
+      "title": "Create your account",
+      "subtitle": "It takes a minute.",
+      "displayName": "Display name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "submit": "Create account",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in"
+    },
+    "forgotPassword": {
+      "title": "Forgot password",
+      "subtitle": "We'll send you a reset link.",
+      "email": "Email",
+      "submit": "Send reset link",
+      "backToSignIn": "Back to sign in"
+    },
+    "resetPassword": {
+      "title": "Reset password",
+      "subtitle": "Choose a new password.",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm new password",
+      "submit": "Reset password"
+    },
+    "verification": {
+      "title": "Verify your email",
+      "subtitle": "We sent a 6-digit code to your inbox.",
+      "code": "Verification code",
+      "submit": "Verify",
+      "resend": "Resend code",
+      "resent": "Code resent."
+    },
+    "errors": {
+      "invalidCredentials": "Email or password is incorrect.",
+      "emailExists": "An account with that email already exists.",
+      "weakPassword": "Password is too weak. Use at least 12 characters with a mix of letters, numbers, and symbols.",
+      "codeExpired": "That code has expired. Request a new one.",
+      "codeInvalid": "That code doesn't match. Try again.",
+      "tooManyAttempts": "Too many attempts. Please wait a moment."
+    }
+  },
+  "errors": {
+    "unknown": "Something didn't load. Please try again.",
+    "network": "Couldn't reach the server. Check your connection.",
+    "server": "We hit a snag on our side. We're on it.",
+    "notFound": "We couldn't find that.",
+    "unauthorized": "Please sign in to continue.",
+    "forbidden": "You don't have access to that.",
+    "validation": "Please check the highlighted fields.",
+    "rateLimited": "Too many requests. Please slow down.",
+    "consentRequired": "Please review and accept the consent terms.",
+    "featureDisabled": "That feature is currently disabled.",
+    "title": "Something went wrong",
+    "retryAction": "Try again",
+    "codes": {
+      "VALIDATION_ERROR": "Please check the highlighted fields.",
+      "INVALID_INPUT": "That input doesn't look right.",
+      "INVALID_LOCALE": "That language isn't supported.",
+      "UNAUTHORIZED": "Please sign in to continue.",
+      "SESSION_EXPIRED": "Your session expired. Please sign in again.",
+      "FORBIDDEN": "You don't have access to that.",
+      "NOT_OWNER": "You can only access your own data.",
+      "CONSENT_REQUIRED": "Please review and accept the consent terms.",
+      "FEATURE_DISABLED": "That feature is currently disabled.",
+      "NOT_FOUND": "We couldn't find that.",
+      "CONFLICT": "That conflicts with existing data.",
+      "DUPLICATE": "That already exists.",
+      "BUSINESS_RULE_VIOLATION": "That action isn't allowed right now.",
+      "RATE_LIMITED": "Too many requests. Please slow down.",
+      "INTERNAL_ERROR": "We hit a snag on our side. We're on it.",
+      "DATABASE_ERROR": "We hit a snag on our side. We're on it.",
+      "AI_SERVICE_ERROR": "The coach is having trouble right now. Please try again.",
+      "PI_SERVICE_ERROR": "The payment service is having trouble. Please try again."
+    }
+  },
+  "validation": {
+    "required": "This field is required.",
+    "email": "Please enter a valid email address.",
+    "emailTaken": "That email is already in use.",
+    "passwordTooShort": "Password must be at least 12 characters.",
+    "passwordTooLong": "Password is too long (max 128).",
+    "passwordMismatch": "Passwords don't match.",
+    "nameTooShort": "Please enter at least 1 character.",
+    "nameTooLong": "That's a bit too long.",
+    "titleTooLong": "Title is too long.",
+    "notesTooLong": "Notes are too long.",
+    "invalidDate": "Please enter a valid date.",
+    "invalidTime": "Please enter a valid time.",
+    "invalidUrl": "Please enter a valid URL.",
+    "invalidColor": "Please enter a valid color (e.g., #7c9885).",
+    "numberOutOfRange": "That number is out of range.",
+    "selectOption": "Please select an option.",
+    "tooShort": "Too short.",
+    "tooLong": "Too long."
+  },
+  "emptyStates": {
+    "title": "Nothing here yet",
+    "description": "This is where your data will appear.",
+    "action": "Get started",
+    "tasks": "No tasks yet",
+    "tasksDescription": "Add one small thing you'd like to do.",
+    "focus": "No focus sessions yet",
+    "focusDescription": "Even 5 minutes counts as a session.",
+    "habits": "No habits yet",
+    "habitsDescription": "Start tiny — one habit you can do in 2 minutes.",
+    "brainDump": "Your mind is clear",
+    "brainDumpDescription": "Capture anything that comes to mind here.",
+    "reminders": "No reminders",
+    "remindersDescription": "Things that need your attention will show up here.",
+    "notifications": "No notifications",
+    "notificationsDescription": "You're all caught up.",
+    "energy": "No energy check-ins",
+    "energyDescription": "A quick check-in shapes what MindStep suggests.",
+    "insights": "No insights yet",
+    "insightsDescription": "After a few days, patterns will appear here."
+  },
+  "loading": {
+    "default": "Loading…",
+    "saving": "Saving…",
+    "fetching": "Fetching…",
+    "sending": "Sending…",
+    "starting": "Starting…"
+  },
+  "onboarding": {
+    "welcome": "Welcome to MindStep",
+    "welcomeDescription": "One step. One focus. One day.",
+    "step1": "Brain Dump",
+    "step1Description": "Empty anything in your head. Sort later.",
+    "step2": "Top priorities",
+    "step2Description": "Pick three things that matter most today.",
+    "step3": "Start tiny",
+    "step3Description": "When stuck, use 'I can't start' to shrink any task.",
+    "skip": "Skip",
+    "finish": "Get started"
+  },
+  "privacy": {
+    "title": "Privacy & data",
+    "subtitle": "Your data is yours. Export it, delete it, control how it's used.",
+    "principles": {
+      "dataIsYours": "Data is yours",
+      "dataIsYoursDescription": "Every record you create belongs to your account. We never sell or share it. You can export or delete everything at any time.",
+      "noDarkPatterns": "No dark patterns",
+      "noDarkPatternsDescription": "MindStep never uses shame, streaks-as-threats, or anxiety hooks. Streaks celebrate effort; they never punish breaks.",
+      "localFirst": "Local-first where possible",
+      "localFirstDescription": "Phase 1 stores preferences and UI state in your browser. Synced data lives in your account, encrypted in transit.",
+      "noPassphrases": "No Pi wallet passphrases",
+      "noPassphrasesDescription": "MindStep never asks for or stores your Pi wallet passphrase. All Pi payments are verified via the Pi SDK server-side.",
+      "strictOwnership": "Strict ownership boundaries",
+      "strictOwnershipDescription": "Every database query is scoped by userId. A user can never read or modify another user's records — enforced at the data layer, not the UI.",
+      "calmByDesign": "Calm by design",
+      "calmByDesignDescription": "No red dots of dread, no infinite scroll traps. MindStep shows what matters now and steps back."
+    },
+    "dataRights": {
+      "title": "Your data rights",
+      "description": "What you can do with your MindStep data.",
+      "export": "Export all your data as a JSON archive.",
+      "exportDescription": "Download a complete copy of your data as a JSON file. Includes all tasks, projects, focus sessions, AI conversations, payment history, and more.",
+      "delete": "Permanently delete your account and all associated records.",
+      "deleteDescription": "This action is irreversible. All your data will be permanently deleted. You will be signed out immediately.",
+      "withdrawConsent": "Withdraw consent at any time.",
+      "withdrawConsentDescription": "Sets all consent flags to off. Your data is preserved but features that require consent will be limited. To fully delete, use Delete Account above.",
+      "aiRetention": "Delete AI conversation history.",
+      "aiRetentionDescription": "Deletes all your AI conversations and messages. Your AI memories (preferences) are preserved."
+    },
+    "center": {
+      "title": "Privacy Center",
+      "subtitle": "Manage your data, consent, and sharing preferences.",
+      "dataExport": {
+        "title": "Export your data",
+        "description": "Download a complete copy of your MindStep data as a JSON file. This includes all your tasks, projects, focus sessions, AI conversations, payment history, and preferences. No other users' data is included.",
+        "button": "Download my data",
+        "success": "Data export started — your download will begin shortly.",
+        "failed": "Could not export data. Please try again."
+      },
+      "deleteAIHistory": {
+        "title": "Delete AI conversation history",
+        "description": "Permanently delete all your AI coach conversations and messages. Your AI memories (explicit preferences) are preserved. This cannot be undone.",
+        "button": "Delete AI history",
+        "confirm": "Delete all AI conversations? This cannot be undone.",
+        "success": "AI history deleted.",
+        "failed": "Could not delete AI history. Please try again."
+      },
+      "deleteAccount": {
+        "title": "Delete account",
+        "description": "Permanently delete your account and ALL associated data. This includes every task, project, focus session, AI conversation, payment record, and preference. This action is IRREVERSIBLE.",
+        "button": "Delete my account",
+        "confirm": "Type DELETE to confirm",
+        "confirmPlaceholder": "Type DELETE here",
+        "warning": "This cannot be undone. All your data will be permanently erased. Consider exporting your data first.",
+        "success": "Account deleted. You have been signed out.",
+        "failed": "Could not delete account. Please try again or contact support."
+      },
+      "consentManagement": {
+        "title": "Consent management",
+        "description": "Control what you consent to. You can change these at any time.",
+        "terms": "Terms of service",
+        "termsDescription": "I agree to the MindStep terms of service.",
+        "privacy": "Privacy policy",
+        "privacyDescription": "I agree to the MindStep privacy policy.",
+        "ageConfirmed": "Age confirmation",
+        "ageConfirmedDescription": "I confirm I am of legal age to use this service in my jurisdiction.",
+        "marketing": "Marketing emails",
+        "marketingDescription": "I want to receive product updates and tips. (Optional — off by default.)",
+        "dataProcessing": "Data processing",
+        "dataProcessingDescription": "I consent to MindStep processing my data to provide the service. Required to use MindStep.",
+        "save": "Save consent",
+        "saved": "Consent saved.",
+        "withdrawAll": "Withdraw all consent",
+        "withdrawAllConfirm": "Withdraw all consent? Your data stays, but features that require consent will be limited. You can re-consent later.",
+        "withdrawn": "All consent withdrawn."
+      },
+      "dataSharing": {
+        "title": "Data sharing controls",
+        "description": "Control what data MindStep can use for specific features. Turning these off may limit functionality.",
+        "aiCoach": "AI Coach context",
+        "aiCoachDescription": "Allow the AI Coach to see your tasks, focus sessions, and brain dumps to give contextual advice. Off = generic responses only.",
+        "insights": "Personal insights",
+        "insightsDescription": "Allow MindStep to analyze your activity data to generate patterns and weekly reviews. Off = no insights.",
+        "analytics": "Anonymous analytics",
+        "analyticsDescription": "Share anonymous usage patterns to help improve MindStep. No personal data is ever shared. (Currently always off — Phase 2.)",
+        "note": "Note: These controls are stored in your preferences. MindStep never sells your data to third parties."
+      }
+    },
+    "loading": "Loading privacy settings…"
+  },
+  "help": {
+    "crisisTitle": "If you are in crisis",
+    "crisisBody": "MindStep is not a crisis service. If you are in immediate danger, please contact your local emergency services or a mental health crisis line in your country.",
+    "gettingStarted": "Getting started",
+    "gettingStartedDescription": "Start with the Brain Dump. Add anything in your head. Sort later.",
+    "adhdTips": "ADHD-friendly tips",
+    "adhdTipsDescription": "Reduce friction: name tasks as actions (\"Email Sam\"). Use One Step on anything big.",
+    "beGentle": "Be gentle with yourself",
+    "beGentleDescription": "Streaks celebrate effort. A missed day is information, not failure.",
+    "medicalDisclaimer": "Medical disclaimer",
+    "contact": "Contact",
+    "contactDescription": "Phase 2 — in-app support chat.",
+    "bugReports": "Bug reports: please file via the project repository issue tracker.",
+    "privacyEmail": "Privacy questions: privacy@mindstep.app (placeholder until Phase 2).",
+    "securityReports": "Security reports: see SECURITY.md for responsible disclosure."
+  },
+  "comingSoon": {
+    "title": "{name} — coming in a future phase",
+    "description": "This section is part of MindStep's planned architecture but has not been implemented in the current phase. It is intentionally not a dead link — the navigation is real and the route is reserved. When this module ships, you will see real functionality here, not a placeholder.",
+    "badge": "Scaffolded in Phase 1 · Ships in Phase 2+"
+  },
+  "insights": {
+    "title": "Insights",
+    "subtitle": "Descriptive patterns from your data. Not a diagnosis.",
+    "privacy": "Your data stays yours",
+    "privacyDescription": "Insights use only your activity data. Nothing is sold or shared externally. You can dismiss any insight at any time.",
+    "empty": "Not enough activity yet",
+    "emptyDescription": "Start using MindStep — focus sessions, tasks, and energy check-ins will reveal patterns over time. Patterns appear once there's enough data to be reliable.",
+    "refresh": "Refresh",
+    "tabs": {
+      "focus": "Focus",
+      "time": "Time",
+      "tasks": "Tasks",
+      "energy": "Energy",
+      "weekly": "Weekly",
+      "experiments": "Experiments"
+    },
+    "categories": {
+      "focus": "Focus",
+      "time": "Time patterns",
+      "task": "Task patterns",
+      "energy": "Energy",
+      "weekly": "Weekly review",
+      "general": "General"
+    },
+    "kinds": {
+      "pattern": "Pattern",
+      "observation": "Observation",
+      "suggestion": "Suggestion",
+      "warning": "Heads up",
+      "celebration": "Worth noting",
+      "correlation": "Association",
+      "experiment": "Experiment"
+    },
+    "dismiss": "Dismiss",
+    "dismissed": "Dismissed",
+    "weeklyReview": {
+      "title": "Weekly review",
+      "period": "{start} – {end}",
+      "whatWorked": "What worked",
+      "whatWasDifficult": "What was difficult",
+      "whatChanged": "What changed",
+      "suggestedExperiment": "Suggested experiment",
+      "startExperiment": "Start this experiment",
+      "metrics": {
+        "totalFocusMinutes": "Total focus minutes",
+        "completedTasks": "Completed tasks",
+        "completedSessions": "Completed sessions",
+        "avgEnergy": "Average energy",
+        "interruptions": "Interruptions"
+      }
+    },
+    "aria": {
+      "chart": "Chart: {title}",
+      "bars": "Bar chart with {count} bars",
+      "noData": "No data to display"
+    },
+    "loading": "Analyzing your patterns…",
+    "error": "Could not load insights right now."
+  },
+  "experiments": {
+    "title": "Personal experiments",
+    "subtitle": "Try one change for a week. We'll capture before/after metrics — no judgment.",
+    "empty": "No experiments yet",
+    "emptyDescription": "Try one change for a week. MindStep will capture your metrics before and after — descriptively, not judgmentally.",
+    "start": "Start an experiment",
+    "startTitle": "Start a personal experiment",
+    "fields": {
+      "type": "What to try",
+      "title": "Name (optional)",
+      "hypothesis": "Your hypothesis (optional)"
+    },
+    "submit": "Start experiment",
+    "cancel": "Cancel",
+    "types": {
+      "shorter_focus": "Shorter focus sessions",
+      "longer_focus": "Longer focus sessions",
+      "morning_planning": "Morning planning",
+      "evening_planning": "Evening planning",
+      "smaller_steps": "Smaller task steps",
+      "different_reminder_timing": "Different reminder timing",
+      "earlier_breaks": "Earlier breaks",
+      "later_breaks": "Later breaks"
+    },
+    "descriptions": {
+      "shorter_focus": "Plan 10-minute focus sessions instead of 25.",
+      "longer_focus": "Plan 40-minute focus sessions instead of 25.",
+      "morning_planning": "Spend 5 minutes each morning writing today's 3 most important tasks.",
+      "evening_planning": "Spend 5 minutes each evening writing tomorrow's 3 most important tasks.",
+      "smaller_steps": "Break your next task into 3 smaller steps.",
+      "different_reminder_timing": "Try reminders 30 minutes earlier than usual.",
+      "earlier_breaks": "Take a 5-minute break after every 15 minutes of focus.",
+      "later_breaks": "Push focus blocks to 35 minutes before taking a break."
+    },
+    "status": {
+      "active": "Active",
+      "completed": "Completed",
+      "abandoned": "Abandoned"
+    },
+    "result": {
+      "baseline": "Baseline (before)",
+      "post": "Post (after)",
+      "delta": "Change",
+      "description": "What your data shows",
+      "noDescription": "Not enough data to compare yet."
+    },
+    "complete": "Complete experiment",
+    "abandon": "Abandon",
+    "completeConfirm": "Complete this experiment? MindStep will capture a final snapshot and compare it to your baseline.",
+    "abandonConfirm": "Abandon this experiment? Your baseline snapshot is preserved, but no final comparison will be made.",
+    "started": "Experiment started. Try the change for a week — then come back to complete it.",
+    "completed": "Experiment completed. See the results below.",
+    "abandoned": "Experiment abandoned.",
+    "failed": "Could not start the experiment. Please try again.",
+    "loading": "Loading experiments…",
+    "aria": {
+      "started": "Experiment started.",
+      "completed": "Experiment completed.",
+      "abandoned": "Experiment abandoned."
+    }
+  },
+  "disclaimer": {
+    "notMedical": "MindStep is not a medical or diagnostic tool. It does not diagnose ADHD, prescribe medication, recommend dosage changes, or replace professional care. If you are in crisis, please contact a healthcare provider or local emergency services."
+  },
+  "pi": {
+    "title": "Pi Account",
+    "subtitle": "Sign in with Pi, manage your premium, and view payment history.",
+    "signedInAs": "Signed in as {username}",
+    "notSignedIn": "Not signed in",
+    "network": "Network",
+    "networkValue": "{network, select, testnet {Testnet (testing)} mainnet {Mainnet (production)} other {Unknown}}",
+    "signInWithPi": "Sign in with Pi",
+    "signOut": "Sign out",
+    "signingIn": "Signing in…",
+    "signingOut": "Signing out…",
+    "premium": {
+      "title": "MindStep Premium",
+      "active": "Premium active",
+      "expired": "Premium expired",
+      "free": "Free plan",
+      "expiresOn": "Expires on {date}",
+      "lifetime": "Lifetime membership",
+      "features": "Included features",
+      "noEntitlement": "No premium yet",
+      "noEntitlementDescription": "Choose a plan below to unlock unlimited focus sessions, advanced insights, personal experiments, and more."
+    },
+    "products": {
+      "title": "Choose your plan",
+      "subtitle": "Pay with Pi. Cancel anytime.",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "lifetime": "Lifetime",
+      "bestValue": "Best value",
+      "perMonth": "per month",
+      "perYear": "per year",
+      "oneTime": "one-time",
+      "buy": "Buy with Pi",
+      "buyMonthly": "Get Monthly",
+      "buyYearly": "Get Yearly",
+      "buyLifetime": "Get Lifetime",
+      "processing": "Processing payment…",
+      "success": "Payment successful — premium activated!",
+      "cancelled": "Payment cancelled. No charge was made.",
+      "failed": "Payment failed. Please try again.",
+      "piAmount": "{amount} PI"
+    },
+    "history": {
+      "title": "Payment history",
+      "empty": "No payments yet",
+      "emptyDescription": "Your Pi payments will appear here once you make one.",
+      "status": {
+        "pending": "Pending",
+        "developer_approved": "Approved",
+        "user_approved": "Awaiting blockchain",
+        "transaction_verified": "Verifying",
+        "completed": "Completed",
+        "cancelled": "Cancelled",
+        "failed": "Failed"
+      },
+      "txid": "Transaction ID",
+      "amount": "Amount",
+      "product": "Product",
+      "date": "Date",
+      "refresh": "Refresh"
+    },
+    "errors": {
+      "notInPiBrowser": "Not in Pi Browser",
+      "notInPiBrowserDescription": "Pi sign-in and payments only work inside the Pi Browser. Open this page in the Pi Browser to continue.",
+      "notConfigured": "Pi is not configured",
+      "notConfiguredDescription": "This server has not been set up for Pi integration yet. Contact the administrator.",
+      "authFailed": "Sign-in failed. Please try again.",
+      "authCancelled": "You cancelled the Pi sign-in.",
+      "paymentFailed": "Payment failed. Please try again.",
+      "paymentCancelled": "Payment cancelled.",
+      "sessionExpired": "Your session has expired. Please sign in again.",
+      "retry": "Try again"
+    },
+    "compliance": {
+      "title": "Compliance & safety",
+      "noPassphrases": "No wallet passphrases",
+      "noPassphrasesDescription": "MindStep never asks for or stores your Pi wallet passphrase. All payments happen in the Pi Wallet, signed by you.",
+      "serverVerified": "Server-side verified",
+      "serverVerifiedDescription": "Every payment is verified via the Pi Platform API before any entitlement is granted. The frontend never decides.",
+      "testnetVsMainnet": "Test-Pi never grants premium",
+      "testnetVsMainnetDescription": "Test-Pi transactions are tagged with the active network and can never grant a real entitlement — even if they reach our backend."
+    },
+    "loading": "Loading…",
+    "loadingProducts": "Loading products…",
+    "loadingHistory": "Loading payment history…",
+    "loadingEntitlement": "Loading premium status…",
+    "aria": {
+      "signedIn": "You are signed in with Pi.",
+      "signedOut": "You are not signed in.",
+      "premiumActive": "Your premium subscription is active.",
+      "paymentComplete": "Payment complete."
+    }
+  },
+  "footer": {
+    "tagline": "One step. One focus. One day.",
+    "rights": "Built with care. Your data stays yours."
+  }
+}

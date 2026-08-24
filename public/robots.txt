@@ -1,0 +1,25 @@
+# MindStep robots.txt
+# Public pages are indexable; API routes and user data are NOT.
+
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+
+User-agent: Twitterbot
+Allow: /
+Disallow: /api/
+
+User-agent: facebookexternalhit
+Allow: /
+Disallow: /api/
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap (when available)
+# Sitemap: https://mindstep.app/sitemap.xml
