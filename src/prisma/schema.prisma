@@ -1,0 +1,1059 @@
+// MindStep — Prisma Schema
+// Premium ADHD-support productivity application.
+// Every user-owned record carries a strict `userId` ownership boundary.
+// See ARCHITECTURE.md and SECURITY.md for ownership & authorization rules.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  // Switched from sqlite to postgresql: Vercel's serverless functions have
+  // no persistent local filesystem, so a local SQLite file won't survive
+  // between requests/instances. Point DATABASE_URL at a hosted Postgres
+  // instance (e.g. Neon, Supabase, or Vercel Postgres — all have free tiers).
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================
+// CORE DOMAIN
+// ============================================================
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  emailVerified DateTime?
+  image         String?
+  hashedPassword String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  // Relations — User owns everything below.
+  profile             Profile?
+  preferences         Preferences?
+  consent             Consent?
+  tasks               Task[]
+  projects            Project[]
+  milestones          Milestone[]
+  brainDumps          BrainDump[]
+  reminders           Reminder[]
+  calendarEvents      CalendarEvent[]
+  timeBlocks          TimeBlock[]
+  focusSessions       FocusSession[]
+  distractions        Distraction[]
+  habits              Habit[]
+  habitEntries        HabitEntry[]
+  sleepEntries        SleepEntry[]
+  energyEntries       EnergyEntry[]
+  moodEntries         MoodEntry[]
+  insights            Insight[]
+  aiConversations     AIConversation[]
+  aiMemories           AIMemory[]
+  routines            Routine[]
+  shoppingItems       ShoppingItem[]
+  errands             Errand[]
+  bills               Bill[]
+  subscriptions       Subscription[]
+  rewards             Reward[]
+  achievements        Achievement[]
+  familyRelationshipsSent     FamilyRelationship[] @relation("FamilyFrom")
+  familyRelationshipsReceived FamilyRelationship[] @relation("FamilyTo")
+  professionalProfile  ProfessionalProfile?
+  professionalNotes   ProfessionalNote[]
+  reports              Report[]
+  notifications        Notification[]
+  premiumEntitlement   PremiumEntitlement?
+  piPayments           PiPayment[]
+  piAccounts           PiAccount[]
+  piSessions           PiSession[]
+  auditLogs           AuditLog[]
+  offlineMutations    OfflineMutation[]
+  pushSubscriptions   PushSubscription[]
+  personalExperiments PersonalExperiment[]
+
+  @@map("users")
+}
+
+model Profile {
+  id              String   @id @default(cuid())
+  userId          String   @unique
+  displayName     String
+  avatarUrl       String?
+  bio             String?
+  timezone        String   @default("UTC")
+  preferredLanguage String  @default("en") // en | ar | fr | zh
+  onboardedAt     DateTime?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("profiles")
+}
+
+model Preferences {
+  id                  String   @id @default(cuid())
+  userId              String   @unique
+  theme               String   @default("system") // light | dark | system
+  reducedMotion       Boolean  @default(false)
+  highContrast        Boolean  @default(false)
+  textScale           Float    @default(1.0) // 0.85 | 1.0 | 1.15 | 1.25
+  dailyStartMinutes   Int      @default(480) // 8:00 AM in minutes from midnight
+  dailyEndMinutes     Int      @default(1320) // 10:00 PM
+  defaultFocusMinutes Int      @default(25)
+  shortBreakMinutes   Int      @default(5)
+  longBreakMinutes    Int      @default(15)
+  notificationsEnabled Boolean @default(true)
+  aiCoachEnabled      Boolean  @default(true)
+  // Planner preferences (Prompt 06 §44)
+  bufferPercentage    Float    @default(0.15) // 15% buffer by default
+  maxDailyFocusMinutes Int    @default(240) // 4 hours max focus per day
+  preferredFocusDuration Int  @default(25) // preferred focus block length
+  includeBreaks      Boolean  @default(false) // whether to schedule breaks
+  energyPreference   String   @default("medium") // low | medium | high
+  timezone           String   @default("UTC")
+  // Notification preferences (Prompt 08 §47, §48, §49)
+  notificationFrequency String @default("balanced") // minimal | balanced | more
+  quietHoursStart    Int      @default(1320) // 22:00 in minutes from midnight
+  quietHoursEnd      Int      @default(480)  // 08:00
+  quietHoursEnabled  Boolean  @default(true)
+  dailyNotificationBudget Int @default(10) // max non-critical notifications per day
+  notifyTaskDue      Boolean  @default(true)
+  notifyTaskOverdue  Boolean  @default(true)
+  notifyFocusStart   Boolean  @default(false)
+  notifyFocusEnd     Boolean  @default(false)
+  notifyPlanner      Boolean  @default(true)
+  notifyMilestones   Boolean  @default(true)
+  notifyAINudges     Boolean  @default(true)
+  // Prompt 10 — Granular notification controls per domain
+  notifyHabits       Boolean  @default(true)
+  notifyCalendar     Boolean  @default(true)
+  notifyBills        Boolean  @default(true)
+  notifyRoutines     Boolean  @default(true)
+  // Prompt 10 — Smart reminder snooze cap
+  maxSnoozeCount     Int      @default(3)  // hard cap to prevent infinite snoozing
+  // Prompt 10 — PWA push token
+  pushSubscriptionEndpoint String?  // VAPID endpoint
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  user                User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("preferences")
+}
+
+model Consent {
+  id              String   @id @default(cuid())
+  userId          String   @unique
+  termsAcceptedAt DateTime?
+  privacyAcceptedAt DateTime?
+  ageConfirmedAt  DateTime?
+  marketingOptIn  Boolean  @default(false)
+  dataProcessingOptIn Boolean @default(false)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("consents")
+}
+
+model Notification {
+  id            String    @id @default(cuid())
+  userId        String
+  type          String    // task_due | task_overdue | focus_start | focus_end | planning_reminder | planned_task | missed_plan | recovery_suggestion | milestone | project | system | ai_nudge | habit_reminder | calendar_event | bill_due | routine_reminder
+  title         String
+  body          String
+  entityType    String?   // task | project | milestone | focus_session | time_block | reminder | habit | calendar_event | bill | routine
+  entityId      String?
+  scheduledFor  DateTime?
+  deliveredAt   DateTime?
+  readAt        DateTime?
+  dismissedAt   DateTime?
+  dedupKey      String?   // deterministic dedup key for idempotency (Prompt 08 §19, §20)
+  metadata      String?   // JSON string
+  priority      String    @default("normal") // normal | critical
+  // Smart reminder actions (Prompt 10 — Smart Reminders)
+  snoozedUntil  DateTime?  // when snoozed, the notification is hidden until this time
+  snoozedCount  Int       @default(0)  // how many times the user has snoozed this (cap at 3 to avoid infinite snoozing)
+  actionTaken   String?   // snooze | reschedule | complete | dismiss — the most recent action
+  actionAt      DateTime?  // when the action was taken
+  createdAt     DateTime  @default(now())
+
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, readAt])
+  @@index([userId, type])
+  @@index([userId, dismissedAt])
+  @@index([userId, snoozedUntil])
+  @@index([dedupKey])
+  @@map("notifications")
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  action    String
+  resource  String
+  resourceId String?
+  metadata  String?  // JSON string
+  ipAddress String?
+  createdAt DateTime @default(now())
+
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([action])
+  @@map("audit_logs")
+}
+
+// ============================================================
+// PRODUCTIVITY DOMAIN
+// ============================================================
+
+model Project {
+  id          String   @id @default(cuid())
+  userId      String
+  title       String
+  description String?
+  color       String   @default("#7c9885") // calm sage default
+  status      String   @default("active") // active | completed | archived
+  position    Int      @default(0)
+  archivedAt  DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tasks       Task[]
+  milestones  Milestone[]
+
+  @@index([userId, status])
+  @@map("projects")
+}
+
+model Milestone {
+  id          String   @id @default(cuid())
+  projectId   String
+  userId      String
+  title       String
+  description String?
+  dueAt       DateTime?
+  status      String   @default("active") // active | completed | archived
+  completedAt DateTime?
+  position    Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  project     Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tasks       Task[]
+
+  @@index([projectId])
+  @@index([userId, status])
+  @@map("milestones")
+}
+
+model Task {
+  id            String   @id @default(cuid())
+  userId        String
+  projectId     String?
+  milestoneId   String?
+  parentTaskId  String?
+  title         String
+  description   String?
+  status        String   @default("inbox") // inbox | planned | in_progress | completed | archived
+  priority      String   @default("normal") // low | normal | high | urgent
+  energy        String   @default("medium") // low | medium | high — required executive-function energy
+  estimateMinutes Int?
+  actualMinutes Int?
+  dueAt         DateTime?
+  dueTime       String?  // "HH:mm" 24-hour format (separate from date for clarity)
+  tags          String   @default("[]") // JSON array of strings (SQLite limitation)
+  position      Int      @default(0)
+  completedAt   DateTime?
+  archivedAt    DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  project       Project? @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  milestone     Milestone? @relation(fields: [milestoneId], references: [id], onDelete: SetNull)
+  subtasks      Subtask[]
+  reminders     Reminder[]
+  timeBlocks    TimeBlock[]
+
+  @@index([userId, status])
+  @@index([userId, dueAt])
+  @@index([projectId])
+  @@index([milestoneId])
+  @@map("tasks")
+}
+
+model Subtask {
+  id          String   @id @default(cuid())
+  taskId      String
+  title       String
+  done        Boolean  @default(false)
+  position    Int      @default(0)
+  completedAt DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  task        Task     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@index([taskId])
+  @@map("subtasks")
+}
+
+model BrainDump {
+  id                  String   @id @default(cuid())
+  userId              String
+  content             String
+  category            String   @default("uncategorized") // task | idea | reminder | uncategorized
+  status              String   @default("inbox") // inbox | converted | archived
+  processedTaskId     String?
+  processedReminderId String?
+  archivedAt          DateTime?
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  user                User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, status])
+  @@index([userId, createdAt])
+  @@map("brain_dumps")
+}
+
+model Reminder {
+  id          String   @id @default(cuid())
+  userId      String
+  taskId      String?
+  title       String
+  remindAt    DateTime
+  delivered   Boolean  @default(false)
+  dismissed   Boolean  @default(false)
+  dismissedAt DateTime?
+  completed   Boolean  @default(false)
+  completedAt DateTime?
+  // Smart reminder actions (Prompt 10 — Smart Reminders)
+  snoozedUntil DateTime?  // when snoozed, the reminder is hidden until this time
+  snoozedCount Int       @default(0)
+  lastActionAt DateTime?  // last user action (snooze/reschedule/complete/dismiss)
+  originalRemindAt DateTime?  // when first scheduled — kept for history
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  task        Task?    @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@index([userId, remindAt])
+  @@index([userId, snoozedUntil])
+  @@map("reminders")
+}
+
+model CalendarEvent {
+  id          String   @id @default(cuid())
+  userId      String
+  title       String
+  description String?
+  startsAt    DateTime
+  endsAt      DateTime?
+  allDay      Boolean  @default(false)
+  location    String?
+  source      String   @default("manual") // manual | synced | imported
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, startsAt])
+  @@map("calendar_events")
+}
+
+model TimeBlock {
+  id             String   @id @default(cuid())
+  userId         String
+  taskId         String?
+  startAt        DateTime
+  endAt          DateTime
+  plannedMinutes Int
+  type           String   @default("focus") // focus | break | buffer | personal | blocked
+  status         String   @default("scheduled") // scheduled | in_progress | completed | cancelled | missed
+  position       Int      @default(0)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  task           Task?    @relation(fields: [taskId], references: [id], onDelete: SetNull)
+
+  @@index([userId, startAt])
+  @@index([userId, status])
+  @@index([taskId])
+  @@map("time_blocks")
+}
+
+// ============================================================
+// FOCUS DOMAIN
+// ============================================================
+
+model FocusSession {
+  id                 String   @id @default(cuid())
+  userId             String
+  taskId             String?
+  subtaskId          String?
+  startedAt          DateTime
+  endedAt            DateTime?
+  plannedMinutes     Int
+  actualMinutes      Int?
+  status             String   @default("active") // active | paused | completed | cancelled
+  pausedAt           DateTime?  // when currently paused (null = running or not active)
+  accumulatedPausedMs Int      @default(0) // total ms spent paused (for accurate time calculation)
+  interruptions      Int      @default(0)
+  notes              String?
+  taskTitle           String?  // denormalized for display without joins
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  distractions       Distraction[]
+
+  @@index([userId, startedAt])
+  @@index([userId, status])
+  @@map("focus_sessions")
+}
+
+model Distraction {
+  id            String   @id @default(cuid())
+  userId        String
+  focusSessionId String?
+  content       String
+  category      String   @default("thought") // thought | interruption | urge
+  acknowledged  Boolean  @default(false)
+  createdAt     DateTime @default(now())
+
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  focusSession  FocusSession? @relation(fields: [focusSessionId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@map("distractions")
+}
+
+// ============================================================
+// LIFE DOMAIN
+// ============================================================
+
+model Habit {
+  id          String   @id @default(cuid())
+  userId      String
+  name        String
+  cue         String?  // implementation intention: "After [cue] I will..."
+  routine     String?
+  reward      String?
+  frequency   String   @default("daily") // daily | weekly | custom
+  color       String   @default("#7c9885")
+  archived    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  entries     HabitEntry[]
+
+  @@index([userId, archived])
+  @@map("habits")
+}
+
+model HabitEntry {
+  id          String   @id @default(cuid())
+  habitId     String
+  userId      String
+  date        DateTime // the day (midnight UTC)
+  completed   Boolean  @default(true)
+  note        String?
+  createdAt   DateTime @default(now())
+
+  habit       Habit    @relation(fields: [habitId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([habitId, date])
+  @@index([userId, date])
+  @@map("habit_entries")
+}
+
+model SleepEntry {
+  id          String   @id @default(cuid())
+  userId      String
+  date        DateTime
+  bedTime     DateTime?
+  wakeTime    DateTime?
+  durationMinutes Int?
+  quality     Int? // 1-5
+  note        String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date])
+  @@map("sleep_entries")
+}
+
+model EnergyEntry {
+  id          String   @id @default(cuid())
+  userId      String
+  timestamp   DateTime
+  level       Int      // 1-5 (1 = exhausted, 5 = peak)
+  note        String?
+  createdAt   DateTime @default(now())
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, timestamp])
+  @@map("energy_entries")
+}
+
+model MoodEntry {
+  id          String   @id @default(cuid())
+  userId      String
+  timestamp   DateTime
+  mood        String   // calm | focused | overwhelmed | anxious | happy | tired | irritable
+  intensity   Int? // 1-5
+  note        String?
+  createdAt   DateTime @default(now())
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, timestamp])
+  @@map("mood_entries")
+}
+
+// ============================================================
+// AI DOMAIN
+// ============================================================
+
+model Insight {
+  id          String   @id @default(cuid())
+  userId      String
+  kind        String   // pattern | suggestion | warning | celebration | observation | correlation | experiment
+  title       String
+  body        String
+  // Prompt 11 — descriptive category for grouping in the UI
+  category    String   @default("general") // focus | time | task | energy | weekly | general
+  // Prompt 11 — JSON metadata (chart data, supporting numbers, etc.)
+  data        String?  // JSON string
+  dismissed   Boolean  @default(false)
+  actionable  Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, dismissed])
+  @@index([userId, category])
+  @@map("insights")
+}
+
+model AIMemory {
+  id        String   @id @default(cuid())
+  userId    String
+  key       String   // allow-listed: preferred_focus_duration | preferred_planning_window | preferred_breakdown_style | preferred_task_language
+  value     String
+  source    String   @default("ai_inferred") // ai_inferred | user_explicit
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, key])
+  @@index([userId])
+  @@map("ai_memories")
+}
+
+model AIConversation {
+  id          String   @id @default(cuid())
+  userId      String
+  title       String   @default("New conversation")
+  context     String   @default("general") // general | task_breakdown | day_rebuilder | decision | overwhelm
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  messages    AIMessage[]
+
+  @@index([userId, updatedAt])
+  @@map("ai_conversations")
+}
+
+model AIMessage {
+  id              String   @id @default(cuid())
+  conversationId  String
+  role            String   // user | assistant | system
+  content         String
+  metadata        String?  // JSON string
+  createdAt       DateTime @default(now())
+
+  conversation    AIConversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  @@index([conversationId])
+  @@map("ai_messages")
+}
+
+// ============================================================
+// LIFE — routines, shopping, errands, bills, subscriptions
+// ============================================================
+
+model Routine {
+  id          String   @id @default(cuid())
+  userId      String
+  name        String
+  timeOfDay   String   @default("morning") // morning | afternoon | evening | anytime
+  steps       String   // JSON array of strings
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, active])
+  @@map("routines")
+}
+
+model ShoppingItem {
+  id          String   @id @default(cuid())
+  userId      String
+  name        String
+  quantity    String?
+  category    String?
+  done        Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, done])
+  @@map("shopping_items")
+}
+
+model Errand {
+  id          String   @id @default(cuid())
+  userId      String
+  title       String
+  location    String?
+  estimatedMinutes Int?
+  status      String   @default("todo") // todo | doing | done
+  dueAt       DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, status])
+  @@map("errands")
+}
+
+model Bill {
+  id          String   @id @default(cuid())
+  userId      String
+  name        String
+  amount      Float
+  currency    String   @default("USD")
+  dueAt       DateTime
+  recurring   String   @default("monthly") // once | weekly | monthly | yearly
+  paid        Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, dueAt])
+  @@map("bills")
+}
+
+model Subscription {
+  id          String   @id @default(cuid())
+  userId      String
+  name        String
+  amount      Float
+  currency    String   @default("USD")
+  billingCycle String  @default("monthly")
+  nextBillingAt DateTime
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, active])
+  @@map("subscriptions")
+}
+
+// ============================================================
+// FAMILY DOMAIN
+// ============================================================
+
+model Reward {
+  id          String   @id @default(cuid())
+  userId      String
+  childUserId String?  // for family rewards assigned to a child
+  title       String
+  description String?
+  points      Int      @default(0)
+  redeemed    Boolean  @default(false)
+  redeemedAt  DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, redeemed])
+  @@index([childUserId])
+  @@map("rewards")
+}
+
+model Achievement {
+  id          String   @id @default(cuid())
+  userId      String
+  code        String   // first_task | first_focus_session | streak_7 | etc.
+  unlockedAt  DateTime @default(now())
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, code])
+  @@map("achievements")
+}
+
+model FamilyRelationship {
+  id              String   @id @default(cuid())
+  fromUserId      String
+  toUserId        String
+  relation        String   // parent | child | partner | sibling | guardian
+  status          String   @default("pending") // pending | active | revoked
+  permissions     String   @default("[]") // JSON array: ["view_tasks", "view_focus", "view_routines", "assign_tasks", "assign_rewards"]
+  consentAt      DateTime?
+  revokedAt      DateTime?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  fromUser        User     @relation("FamilyFrom", fields: [fromUserId], references: [id], onDelete: Cascade)
+  toUser          User     @relation("FamilyTo", fields: [toUserId], references: [id], onDelete: Cascade)
+  sharedRoutines  SharedRoutine[]
+
+  @@index([fromUserId, status])
+  @@index([toUserId, status])
+  @@map("family_relationships")
+}
+
+model SharedRoutine {
+  id              String   @id @default(cuid())
+  familyRelationshipId String
+  routineName     String
+  steps           String   // JSON array of strings
+  assignedToUserId String
+  createdByUserId  String
+  active          Boolean  @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  familyRelationship FamilyRelationship @relation(fields: [familyRelationshipId], references: [id], onDelete: Cascade)
+
+  @@index([familyRelationshipId])
+  @@index([assignedToUserId])
+  @@map("shared_routines")
+}
+
+// ============================================================
+// PROFESSIONAL DOMAIN
+// ============================================================
+
+model ProfessionalProfile {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  role        String?
+  organization String?
+  goals       String?  // JSON array
+  sharingEnabled Boolean @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("professional_profiles")
+}
+
+model ProfessionalNote {
+  id          String   @id @default(cuid())
+  userId      String
+  content     String
+  approved    Boolean  @default(false)
+  approvedAt  DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, approved])
+  @@map("professional_notes")
+}
+
+model Report {
+  id          String   @id @default(cuid())
+  userId      String
+  type        String   // weekly | monthly | focus | habits | energy | comprehensive
+  periodStart DateTime
+  periodEnd   DateTime
+  summary     String
+  data        String   // JSON serialized
+  label       String   @default("User activity tracking data — not a medical diagnosis")
+  shared      Boolean  @default(false)
+  createdAt   DateTime @default(now())
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, periodStart])
+  @@map("reports")
+}
+
+// ============================================================
+// PI / PREMIUM DOMAIN
+// ============================================================
+
+model PremiumEntitlement {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  plan        String   @default("free") // free | premium_monthly | premium_yearly | premium_lifetime
+  status      String   @default("active") // active | expired | cancelled | grace_period
+  // Plan duration in days (null = lifetime or free)
+  durationDays Int?
+  // When the current plan period started and ends
+  startedAt   DateTime?
+  expiresAt   DateTime?
+  // Auto-renewal flag — Pi payments are one-time, but this lets us mark a
+  // premium subscription as "will renew on expiry" (user sets up new payment).
+  autoRenew   Boolean  @default(false)
+  // The Pi payment that granted this entitlement (FK to PiPayment)
+  grantingPaymentId String?  @unique
+  // JSON array of feature keys: ["unlimited_focus", "insights", "experiments", ...]
+  features    String   @default("[]")
+  // Audit trail — last time we re-verified this entitlement
+  lastVerifiedAt DateTime?
+  lastVerifiedBy String? // "pi_payment_lookup" | "session_check" | "manual"
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  grantingPayment PiPayment? @relation("PremiumGrantingPayment", fields: [grantingPaymentId], references: [id], onDelete: SetNull)
+
+  @@index([status, expiresAt])
+  @@map("premium_entitlements")
+}
+
+model PiPayment {
+  id            String   @id @default(cuid())
+  userId        String
+  // The Pi Network payment identifier (returned by Pi.createPayment)
+  piPaymentId   String   @unique
+  amount        Float
+  currency      String   @default("PI")
+  // Product key from a centrally-configured allow-list (see src/lib/pi/products.ts)
+  product       String   // e.g. "PREMIUM_MONTHLY" | "PREMIUM_YEARLY" | "PREMIUM_LIFETIME"
+  // Lifecycle: pending → developer_approved → user_approved → transaction_verified → developer_completed
+  //            → cancelled | failed
+  status        String   @default("pending")
+  // The blockchain transaction ID — only set after Pi Server confirms the
+  // transaction was submitted to the blockchain (returned to /complete).
+  txid          String?
+  // JSON: { identifier, user_uid, amount, memo, metadata, to_address, from_address, created_at, network, status }
+  piPaymentDTO  String?  // JSON snapshot of the PaymentDTO returned by Pi
+  // JSON metadata the developer attaches to the payment (e.g. internal product ID)
+  metadata      String?
+  // Which network the payment was made on: "pi_testnet" | "pi_mainnet"
+  // Critical for compliance — prevents testnet transactions from granting real entitlements.
+  network       String   @default("pi_testnet")
+  // Idempotency key — the client generates this to prevent duplicate submission
+  // (Prompt 12 — Duplicate prevention).
+  clientPaymentIdempotencyKey String? @unique
+  verifiedAt    DateTime?
+  // When MindStep marked the payment as developer_completed (after server-side /complete success)
+  completedAt   DateTime?
+  // When MindStep cancelled the payment
+  cancelledAt   DateTime?
+  // Error details — JSON { code, message, retryable }
+  error         String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  grantedEntitlement PremiumEntitlement? @relation("PremiumGrantingPayment")
+
+  @@index([userId, status])
+  @@index([product, network])
+  @@index([network, status])
+  @@map("pi_payments")
+}
+
+// ============================================================
+// PI AUTHENTICATION (Prompt 12 §1)
+// ============================================================
+
+// Tracks a verified Pi user identity per MindStep user.
+// A MindStep user can have multiple PiAccounts across devices/sessions,
+// but only one is "primary" at a time. The uid is app-specific (per Pi's docs).
+model PiAccount {
+  id            String   @id @default(cuid())
+  userId        String   // The MindStep internal user ID (not Pi uid)
+  // The Pi Network app-specific Pioneer uid — stable per (user, app) pair
+  piUid         String
+  // The Pi username (only set if the user granted the `username` scope)
+  piUsername    String?
+  // The network this account authenticated against: "pi_testnet" | "pi_mainnet"
+  network       String   @default("pi_testnet")
+  // When we last verified this account via /me
+  lastVerifiedAt DateTime?
+  // Whether this is the user's primary Pi account (used for sign-in)
+  isPrimary     Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sessions      PiSession[]
+
+  @@unique([piUid, network])
+  @@index([userId, isPrimary])
+  @@index([network])
+  @@map("pi_accounts")
+}
+
+// ============================================================
+// PI SESSION (Prompt 12 §1 — Session)
+// ============================================================
+
+// Tracks a single Pi-authenticated session. The access token is short-lived
+// (per Pi docs); we never persist the raw access token to the database —
+// only the session identifier we issue ourselves.
+model PiSession {
+  id            String   @id @default(cuid())
+  userId        String
+  piAccountId   String
+  // MindStep-issued opaque session token (the only thing stored in the
+  // user's HTTP-only cookie — never the Pi access token itself).
+  sessionToken  String   @unique
+  // The network this session is valid for
+  network       String   @default("pi_testnet")
+  // When the session expires. We refresh the underlying Pi access token
+  // before this if the user is still active.
+  expiresAt     DateTime
+  // When the user (or our system) last used this session
+  lastUsedAt    DateTime @default(now())
+  // IP + user agent at session creation, for security audit
+  ipAddress     String?
+  userAgent     String?
+  // Whether the session has been revoked (logout)
+  revokedAt     DateTime?
+  createdAt     DateTime @default(now())
+
+  piAccount     PiAccount @relation(fields: [piAccountId], references: [id], onDelete: Cascade)
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, revokedAt])
+  @@index([expiresAt])
+  @@map("pi_sessions")
+}
+
+// ============================================================
+// OFFLINE & PWA DOMAIN (Prompt 10)
+// ============================================================
+
+// Offline mutation queue — created by the client when offline,
+// applied to the canonical store when the network returns.
+// Server-side authoritative; conflicts resolved by `clientMutationId`
+// (idempotency) and `version` (optimistic concurrency).
+model OfflineMutation {
+  id              String   @id @default(cuid())
+  userId          String
+  // Deterministic client-generated id — server uses this to dedup
+  // when the same mutation is retried after a flaky connection
+  // (Prompt 10 — Duplicate submission guard).
+  clientMutationId String  @unique
+  method          String   // POST | PATCH | DELETE
+  path            String   // e.g. /api/tasks
+  payload         String   // JSON-stringified request body
+  // Status lifecycle: pending → syncing → applied | conflict | failed
+  status          String   @default("pending")
+  attempts        Int      @default(0)
+  lastError       String?
+  // Server response stored on success/failure so the client can refresh
+  responseStatus   Int?
+  responseBody     String?
+  appliedAt       DateTime?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, status])
+  @@index([status, createdAt])
+  @@map("offline_mutations")
+}
+
+// Web Push subscriptions — one user can have multiple devices.
+model PushSubscription {
+  id          String   @id @default(cuid())
+  userId      String
+  endpoint    String   @unique
+  p256dh      String
+  auth        String
+  // Allow user to label devices ("iPhone", "Work laptop") — for transparent
+  // management. Multi-device send is supported (Prompt 10 — Mobile/PWA).
+  label       String?
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, active])
+  @@map("push_subscriptions")
+}
+
+// ============================================================
+// PERSONAL EXPERIMENTS (Prompt 11 — Personal Experiments)
+// ============================================================
+
+// A user-owned experiment — they test a change (shorter focus sessions,
+// different reminder timing, etc.) and we track before/after metrics.
+// The user starts an experiment, MindStep captures a "baseline" snapshot,
+// then a "post" snapshot when the experiment ends. We compare the two.
+model PersonalExperiment {
+  id              String   @id @default(cuid())
+  userId          String
+  // Experiment type from an allow-list:
+  //   shorter_focus | longer_focus | morning_planning | evening_planning |
+  //   smaller_steps | different_reminder_timing | earlier_breaks | later_breaks
+  type            String
+  // User-facing title — they can rename it
+  title           String
+  // Free-text hypothesis the user wrote themselves ("I think X will help Y")
+  hypothesis      String?
+  status          String   @default("active") // active | completed | abandoned
+  // When the experiment started (captures baseline metrics just before this).
+  startedAt       DateTime  @default(now())
+  // When the user marked it complete or abandoned.
+  endedAt         DateTime?
+  // JSON snapshots of metrics at baseline (just before start) and post (at end).
+  // Contains: avgFocusMinutes, completionRate, interruptionsPerSession, etc.
+  baselineSnapshot String?  // JSON
+  postSnapshot    String?   // JSON
+  // Result summary the user wrote or that was computed ("Mixed — focus went up, completion went down")
+  resultSummary   String?
+  // Auto-computed delta: post vs baseline, JSON {metric: {baseline, post, delta}}
+  delta           String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, status])
+  @@index([userId, type])
+  @@map("personal_experiments")
+}

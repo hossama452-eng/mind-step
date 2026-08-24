@@ -1,0 +1,1451 @@
+{
+  "app": {
+    "name": "MindStep",
+    "tagline": "一步。一念。一日。",
+    "description": "面向 ADHD 支持的高质感效率伙伴。"
+  },
+  "nav": {
+    "dashboard": "首页",
+    "tasks": "任务",
+    "projects": "项目",
+    "brainDump": "灵感速记",
+    "focus": "专注",
+    "planner": "规划",
+    "calendar": "日历",
+    "habits": "习惯",
+    "life": "生活",
+    "sleep": "睡眠",
+    "energy": "能量",
+    "insights": "洞察",
+    "ai": "AI 教练",
+    "family": "家庭",
+    "professional": "工作",
+    "reports": "报告",
+    "settings": "设置",
+    "notifications": "通知",
+    "piAccount": "Pi 账户",
+    "privacy": "隐私",
+    "help": "帮助",
+    "bottomNav": {
+      "home": "首页",
+      "tasks": "任务",
+      "focus": "专注",
+      "planner": "规划",
+      "ai": "AI"
+    },
+    "group": {
+      "core": "核心",
+      "productivity": "效率",
+      "focus": "专注",
+      "adhdSupport": "ADHD 支持",
+      "life": "生活",
+      "ai": "AI",
+      "family": "家庭",
+      "professional": "工作"
+    }
+  },
+  "common": {
+    "loading": "加载中…",
+    "empty": "这里还没有内容",
+    "error": "出错了",
+    "retry": "重试",
+    "save": "保存",
+    "saved": "已保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "close": "关闭",
+    "create": "创建",
+    "add": "添加",
+    "search": "搜索",
+    "all": "全部",
+    "today": "今天",
+    "tomorrow": "明天",
+    "yesterday": "昨天",
+    "thisWeek": "本周",
+    "more": "更多",
+    "less": "更少",
+    "yes": "是",
+    "no": "否",
+    "back": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "start": "开始",
+    "continue": "继续",
+    "open": "打开",
+    "keep": "保留",
+    "move": "推迟",
+    "drop": "放下",
+    "done": "完成",
+    "of": "/",
+    "or": "或",
+    "items": "{count} 项"
+  },
+  "theme": {
+    "light": "浅色",
+    "dark": "深色",
+    "system": "跟随系统",
+    "toggle": "切换主题",
+    "label": "主题"
+  },
+  "language": {
+    "label": "语言",
+    "english": "English",
+    "arabic": "العربية",
+    "french": "Français",
+    "chinese": "简体中文",
+    "changed": "语言已切换为 {name}"
+  },
+  "accessibility": {
+    "skipToMain": "跳到主要内容",
+    "openNavigation": "打开导航",
+    "closeNavigation": "关闭导航",
+    "navigationLandmark": "MindStep 导航",
+    "quickActionsToolbar": "MindStep 快捷操作",
+    "mainContent": "主要内容",
+    "currentPage": "当前页",
+    "progress": "已完成 {percent}%"
+  },
+  "dashboard": {
+    "hero": {
+      "greeting": {
+        "morning": "早上好",
+        "afternoon": "下午好",
+        "evening": "晚上好",
+        "night": "在好好休息吗？"
+      },
+      "whatMattersNow": "此刻重要的事",
+      "subtitle": "一步。一念。一日。",
+      "aiHint": "问你的教练"
+    },
+    "sections": {
+      "adhdSupport": "ADHD 支持",
+      "adhdSupportDescription": "为艰难时刻准备的温柔工具。",
+      "nextStep": "你的下一步",
+      "nextStepDescription": "只一件事，别无其他。",
+      "brainDump": "灵感速记",
+      "brainDumpDescription": "把脑中的一切倾倒出来。",
+      "focus": "专注",
+      "focusDescription": "开启一段单点专注。",
+      "todayRhythm": "今日节奏",
+      "todayRhythmDescription": "一眼看尽能量、情绪与睡眠。",
+      "topPriorities": "首要任务",
+      "topPrioritiesDescription": "只显示最重要的。",
+      "reminders": "提醒",
+      "remindersDescription": "很快需要你关注的事。",
+      "progress": "今日进展",
+      "progressDescription": "温柔的动能，不是计分。",
+      "energyCheck": "你的能量如何？",
+      "energyCheckDescription": "一次快速自查会塑造 MindStep 的建议。"
+    },
+    "adhdCards": {
+      "iCantStart": {
+        "title": "我无法开始",
+        "description": "用一个极小的动作解冻自己。"
+      },
+      "oneStep": {
+        "title": "一步",
+        "description": "把任务缩到最初的两分钟。"
+      },
+      "resetMyDay": {
+        "title": "重启我的一天",
+        "description": "重新开始，不必自责。"
+      },
+      "minimumViableDay": {
+        "title": "最小可行日",
+        "description": "只挑三件不可妥协的事。"
+      },
+      "whereWasI": {
+        "title": "我刚才到哪了？",
+        "description": "从你停下的地方继续。"
+      },
+      "overwhelmMode": {
+        "title": "过载模式",
+        "description": "清理噪音，一次一息。"
+      }
+    },
+    "stats": {
+      "tasksDone": "今日完成任务",
+      "focusMinutes": "今日专注分钟",
+      "streak": "连续达成",
+      "brainDumps": "已捕捉想法",
+      "energy": "能量水平"
+    },
+    "empty": {
+      "noTasks": "没事可做 — 正适合深呼吸一下。",
+      "noFocus": "今天还没专注会话。5 分钟也算。",
+      "noReminders": "没有提醒。现在清爽。"
+    }
+  },
+  "signature": {
+    "iCantStart": {
+      "title": "我无法开始",
+      "step1Title": "承认",
+      "step1Body": "开始很难。这不是懒 — 是你的大脑过载了。深呼吸一次。我们一起把它缩小。",
+      "step1Action": "让我们把它缩小",
+      "step2Title": "选一件任务",
+      "step2Body": "只一件。那件一直拽着你的。",
+      "step2Placeholder": "写下卡住的任务（或从下方选一件）",
+      "step3Title": "缩小它",
+      "step3Body": "最小到 2 分钟以内的版本是什么？打开文档。打开邮件。站起来。",
+      "step3Placeholder": "写下 2 分钟版本…",
+      "step4Title": "开始 5 分钟专注",
+      "step4Body": "5 分钟。之后你可以停。多数时候，你不会想停。",
+      "step4Action": "开始 5 分钟专注",
+      "skipFocus": "只给我那一步",
+      "success": "你开始了。这就是今天全部的胜利。"
+    },
+    "resetMyDay": {
+      "title": "重启我的一天",
+      "subtitle": "我们保留重要的，放下其余的。不会删除任何东西。",
+      "keep": "保留",
+      "move": "推迟到明天",
+      "drop": "暂时放下",
+      "keepHint": "留在今天的列表里",
+      "moveHint": "已暂缓 — 明天再回来",
+      "dropHint": "已归档 — 可在设置中恢复",
+      "summary": {
+        "title": "这是你更轻的一天",
+        "kept": "保留",
+        "moved": "推迟",
+        "dropped": "放下"
+      },
+      "apply": "应用这个计划",
+      "empty": "没有什么要重启 — 你的一天已经很轻了。"
+    },
+    "startFocus": {
+      "title": "开启专注会话",
+      "subtitle": "选一件事。选时长。开始。",
+      "pickTask": "选一件任务",
+      "orFreelance": "或做清单之外的事",
+      "freelancePlaceholder": "你专注什么？",
+      "duration": "多久？",
+      "presets": {
+        "quick5": "5 分钟 · 快速开始",
+        "focus15": "15 分钟 · 快速专注",
+        "focus25": "25 分钟 · 番茄钟",
+        "focus45": "45 分钟 · 深度工作",
+        "focus90": "90 分钟 · 心流"
+      },
+      "begin": "开始专注",
+      "openFullFocus": "打开完整专注视图"
+    },
+    "quickCapture": {
+      "title": "快速捕捉",
+      "subtitle": "一个键清空大脑。",
+      "placeholder": "随便写 — 想法、提醒、灵感…",
+      "save": "捕捉",
+      "saved": "已捕捉 — 稍后在灵感速记里分类",
+      "shortcut": "在任意处按 C 即可捕捉"
+    }
+  },
+  "tasks": {
+    "title": "任务",
+    "subtitle": "把大事拆成小动作。",
+    "add": "添加任务",
+    "placeholder": "需要做什么？",
+    "empty": "还没有任务。在上方添加你的第一个。",
+    "fields": {
+      "title": "标题",
+      "description": "描述",
+      "notes": "备注",
+      "priority": "优先级",
+      "energy": "所需精力",
+      "due": "截止日期",
+      "dueTime": "时间",
+      "project": "项目",
+      "milestone": "里程碑",
+      "estimate": "预估时间",
+      "tags": "标签"
+    },
+    "priority": {
+      "low": "低",
+      "normal": "中",
+      "high": "高",
+      "urgent": "紧急"
+    },
+    "energy": {
+      "low": "低能量",
+      "medium": "中等能量",
+      "high": "高能量"
+    },
+    "status": {
+      "inbox": "收件箱",
+      "planned": "已计划",
+      "in_progress": "进行中",
+      "completed": "已完成",
+      "archived": "已归档"
+    },
+    "breakdown": "拆解为更小的步骤",
+    "markDone": "标记为完成",
+    "markUndone": "标记为未完成",
+    "startFocus": "对此开启专注",
+    "overdue": "逾期",
+    "subtasks": "子任务",
+    "subtaskCount": "{done}/{total} 完成",
+    "count": "{count} 个任务",
+    "filters": {
+      "all": "全部任务",
+      "today": "今天",
+      "overdue": "逾期",
+      "completed": "已完成",
+      "snoozed": "已暂缓",
+      "archived": "已归档"
+    },
+    "sort": {
+      "label": "排序",
+      "manual": "手动",
+      "due": "截止日期",
+      "priority": "优先级",
+      "created": "创建日期",
+      "updated": "更新日期"
+    },
+    "search": {
+      "label": "搜索任务",
+      "placeholder": "搜索任务、项目、标签…",
+      "empty": "没有结果。换个搜索词试试。",
+      "clear": "清除搜索"
+    },
+    "estimatePresets": {
+      "5": "5 分钟",
+      "10": "10 分钟",
+      "15": "15 分钟",
+      "25": "25 分钟",
+      "30": "30 分钟",
+      "45": "45 分钟",
+      "60": "60 分钟",
+      "custom": "自定义"
+    },
+    "detail": {
+      "title": "任务详情",
+      "openTask": "打开任务",
+      "edit": "编辑任务",
+      "save": "保存",
+      "cancel": "取消",
+      "addSubtask": "添加步骤",
+      "subtaskPlaceholder": "下一步是什么？",
+      "deleteSubtask": "删除步骤",
+      "completeSubtask": "完成步骤",
+      "uncompleteSubtask": "标记步骤为未完成",
+      "moveUp": "上移",
+      "moveDown": "下移",
+      "archive": "归档",
+      "unarchive": "恢复",
+      "convertToTask": "转为任务",
+      "convertToReminder": "转为提醒"
+    },
+    "confirmDelete": {
+      "title": "删除任务？",
+      "description": "此操作不可撤销。子任务也会被删除。",
+      "confirm": "删除"
+    },
+    "progress": {
+      "label": "进度",
+      "value": "{total} 步中的 {done}",
+      "noSubtasks": "还没有子任务"
+    }
+  },
+  "subtasks": {
+    "title": "子任务",
+    "add": "添加子任务",
+    "empty": "没有子任务。添加第一步。",
+    "markDone": "标记子任务为完成",
+    "markUndone": "标记子任务为未完成",
+    "delete": "删除子任务",
+    "reorder": "重排子任务",
+    "moveUp": "上移",
+    "moveDown": "下移",
+    "count": "{count} 个子任务",
+    "completedCount": "{total} 中 {done} 完成"
+  },
+  "projects": {
+    "title": "项目",
+    "subtitle": "把相关任务分组。追踪真实进度。",
+    "add": "新建项目",
+    "empty": "还没有项目。在这里把几个相关任务分组。",
+    "fields": {
+      "name": "项目名称",
+      "description": "描述",
+      "color": "颜色"
+    },
+    "detail": {
+      "title": "项目",
+      "tasks": "任务",
+      "completedTasks": "已完成",
+      "activeTasks": "进行中",
+      "milestones": "里程碑",
+      "noTasks": "该项目还没有任务。",
+      "addTask": "向项目添加任务",
+      "progress": "进度"
+    },
+    "status": {
+      "active": "进行中",
+      "completed": "已完成",
+      "archived": "已归档"
+    },
+    "confirmDelete": {
+      "title": "删除项目？",
+      "description": "项目内的任务会保留数据但失去项目关联。",
+      "confirm": "删除"
+    },
+    "count": "{count} 个项目"
+  },
+  "milestones": {
+    "title": "里程碑",
+    "subtitle": "把项目任务分组为里程碑。",
+    "add": "新建里程碑",
+    "empty": "没有里程碑。把任务分组为里程碑。",
+    "fields": {
+      "name": "里程碑名称",
+      "description": "描述",
+      "due": "截止日期"
+    },
+    "detail": {
+      "title": "里程碑",
+      "progress": "进度",
+      "tasks": "任务",
+      "noTasks": "该里程碑还没有任务。",
+      "complete": "标记里程碑完成",
+      "reopen": "重开里程碑"
+    },
+    "status": {
+      "active": "进行中",
+      "completed": "已完成",
+      "archived": "已归档"
+    },
+    "confirmDelete": {
+      "title": "删除里程碑？",
+      "description": "里程碑内的任务会保留数据但失去里程碑关联。",
+      "confirm": "删除"
+    },
+    "count": "{count} 个里程碑"
+  },
+  "brainDump": {
+    "title": "灵感速记",
+    "subtitle": "先倒空大脑，稍后再分类。",
+    "placeholder": "随便写 — 想法、灵感、提醒…",
+    "add": "捕捉",
+    "empty": "你的头脑很清澈。此刻。",
+    "categorize": "分类",
+    "categories": {
+      "task": "任务",
+      "idea": "灵感",
+      "reminder": "提醒",
+      "uncategorized": "未分类"
+    },
+    "count": "{count} 条",
+    "convert": {
+      "toTask": "转为任务",
+      "toReminder": "转为提醒",
+      "title": "转换此条目",
+      "taskTitleLabel": "任务标题",
+      "priorityLabel": "优先级",
+      "projectLabel": "项目",
+      "dueLabel": "截止日期",
+      "remindAtLabel": "提醒时间",
+      "confirm": "转换",
+      "cancel": "取消",
+      "success": "转换成功。",
+      "alreadyConverted": "已转换过。"
+    },
+    "status": {
+      "inbox": "收件箱",
+      "converted": "已转换",
+      "archived": "已归档"
+    }
+  },
+  "breakdown": {
+    "title": "智能拆解",
+    "subtitle": "先获得起点。批准前请编辑。",
+    "trigger": "拆解此任务",
+    "suggest": "建议步骤",
+    "sourceDisclosure": "确定性建议 — 批准前请审查与编辑。",
+    "edit": "编辑步骤",
+    "delete": "删除步骤",
+    "addStep": "添加步骤",
+    "approve": "批准并创建",
+    "cancel": "取消",
+    "empty": "没有建议。请尝试更清晰的任务标题。",
+    "approved": "子任务已创建。",
+    "noChanges": "没有任何变更。"
+  },
+  "focus": {
+    "title": "专注",
+    "subtitle": "一次只做一件事。",
+    "startSession": "开始一段专注",
+    "endFocus": "结束专注",
+    "pause": "暂停",
+    "resume": "继续",
+    "stop": "停止",
+    "complete": "完成",
+    "duration": "时长",
+    "justFive": "就 5 分钟",
+    "distractionCapture": "走神记录",
+    "distractionPlaceholder": "什么在拉扯你？",
+    "captureDistraction": "记下，然后继续",
+    "distractionSaved": "已记下。回到专注。",
+    "interruptions": "被打断次数",
+    "sessionActive": "进行中",
+    "sessionPaused": "已暂停",
+    "sessionComplete": "已完成",
+    "sessionEnded": "专注已结束",
+    "noTask": "未选择任务",
+    "timerComplete": "时间到了。你做到了。",
+    "preset": {
+      "focus5": "5 分钟 · 先开始",
+      "focus10": "10 分钟 · 快",
+      "focus15": "15 分钟 · 快速专注",
+      "focus25": "25 分钟 · 番茄钟",
+      "focus30": "30 分钟 · 半小时",
+      "focus45": "45 分钟 · 深度工作",
+      "focus60": "60 分钟 · 一整小时",
+      "focus90": "90 分钟 · 心流"
+    },
+    "interruptionsCount": "{count} 次打断",
+    "welcomeBack": {
+      "title": "欢迎回来。",
+      "body": "你正在专注「{task}」。还剩 {minutes} 分钟。",
+      "continue": "继续专注",
+      "endSession": "结束本次会话",
+      "chooseAnother": "选择另一个任务"
+    },
+    "whereWasI": {
+      "title": "我刚才在哪儿？",
+      "noRecentSession": "未找到最近的专注会话。",
+      "lastSession": "你正在做：{task}",
+      "lastDistraction": "上一次记下的念头：{thought}",
+      "nextStep": "准备好继续了吗？"
+    },
+    "completion": {
+      "title": "专注完成",
+      "duration": "{minutes} 分钟",
+      "whatDidYouDo": "你完成了什么？（可选）",
+      "whatDidYouDoPlaceholder": "可选备注…",
+      "done": "完成",
+      "startAnother": "再开一段",
+      "backToTasks": "回到任务"
+    },
+    "overwhelm": {
+      "title": "我不知所措",
+      "subtitle": "让我们把它变小。",
+      "step1": "现在什么最重要？",
+      "step1Placeholder": "写下最关键的那一件事…",
+      "step2": "最小的一步是什么？",
+      "step2Placeholder": "写下一个 2 分钟动作…",
+      "step3": "多久？",
+      "start": "开始专注"
+    },
+    "oneStep": {
+      "title": "就一步",
+      "subtitle": "选一个小动作。开始。",
+      "placeholder": "你能迈出哪一小步？",
+      "start": "开始 5 分钟"
+    },
+    "transition": {
+      "title": "深呼吸。",
+      "subtitle": "关掉无关的标签页。选出你的第一步。准备好了？",
+      "ready": "准备好专注",
+      "skip": "跳过"
+    },
+    "history": {
+      "title": "专注历史",
+      "today": "今天",
+      "thisWeek": "本周",
+      "thisMonth": "本月",
+      "empty": "还没有专注会话。5 分钟也算。",
+      "sessionLabel": "{minutes} 分钟 · {status}",
+      "taskLabel": "任务：{task}"
+    },
+    "stats": {
+      "title": "专注统计",
+      "totalMinutes": "总专注时长",
+      "totalSessions": "总会话数",
+      "completedSessions": "已完成会话",
+      "averageSession": "平均会话",
+      "longestSession": "最长会话",
+      "byDay": "按天",
+      "byTask": "按任务专注",
+      "noTaskFocus": "无关联任务",
+      "minutes": "{count} 分钟",
+      "sessions": "{count} 次会话",
+      "empty": "还没有数据。开始你的第一段专注。",
+      "trendWeek": "本周你专注了 {minutes} 分钟。",
+      "trendLongest": "你最长的会话是 {minutes} 分钟。"
+    },
+    "aria": {
+      "timerStarted": "专注已开始。计时进行中。",
+      "timerPaused": "专注已暂停。",
+      "timerResumed": "专注已继续。",
+      "timerCompleted": "专注完成。做得好。",
+      "timerEnded": "专注提前结束。",
+      "minutesRemaining": "还剩 {minutes} 分钟。",
+      "distractionCaptured": "已记下走神。回到专注。"
+    }
+  },
+  "habits": {
+    "title": "习惯",
+    "subtitle": "微小的日常，温柔地重复。",
+    "add": "新建习惯",
+    "empty": "还没有习惯。从极小开始。",
+    "streak": "连续",
+    "fields": {
+      "name": "习惯名称",
+      "cue": "在此线索之后…",
+      "routine": "我会…",
+      "reward": "因为它让我获得…"
+    },
+    "streakCount": "{count} 天"
+  },
+  "energy": {
+    "title": "能量记录",
+    "subtitle": "温柔的自查会塑造你的一天。",
+    "levels": {
+      "1": "耗尽",
+      "2": "低",
+      "3": "稳定",
+      "4": "好",
+      "5": "巅峰"
+    },
+    "levelDescription": {
+      "1": "先休息。只做微型任务。",
+      "2": "一次一件小事。",
+      "3": "稳定 — 你能做大部分事。",
+      "4": "充沛 — 选件有意义的事。",
+      "5": "巅峰 — 去攻那件难的。"
+    },
+    "logged": "已记录。MindStep 会按你的能量调整建议。",
+    "viewHistory": "查看历史",
+    "today": "今日能量",
+    "empty": "今天还没自查。记录只需一次点击。",
+    "entriesCount": "{count} 次自查"
+  },
+  "reminders": {
+    "title": "提醒",
+    "subtitle": "很快需要你关注的事。",
+    "empty": "没有提醒。现在清爽。",
+    "dueSoon": "即将到期",
+    "overdue": "逾期",
+    "later": "稍后今天",
+    "tomorrow": "明天",
+    "thisWeek": "本周",
+    "markDone": "标记为完成",
+    "snooze": "暂缓 1 小时",
+    "count": "{count} 条提醒"
+  },
+  "progress": {
+    "title": "今日进展",
+    "subtitle": "温柔的动能。不是计分。",
+    "tasksCompleted": "已完成任务",
+    "focusMinutes": "专注分钟",
+    "habitsDone": "已完成习惯",
+    "captures": "捕捉",
+    "streak": "连续天数",
+    "streakDescription": "出现 — 哪怕片刻 — 让链条继续。",
+    "motivations": {
+      "firstStep": "你迈出了第一步。这就算。",
+      "momentum": "动能在累积。",
+      "going": "你在前进。温柔地继续。",
+      "rest": "休息也是进展的一部分。"
+    }
+  },
+  "planner": {
+    "title": "规划",
+    "subtitle": "温柔地塑造你的一天。",
+    "day": "天",
+    "week": "周",
+    "today": "今天",
+    "tomorrow": "明天",
+    "schedule": "日程",
+    "timeBlock": "时间块",
+    "routine": "例行",
+    "availability": "可用性",
+    "conflicts": "冲突",
+    "planMyDay": "规划我的一天",
+    "whatShouldIDoNow": "我现在该做什么？",
+    "empty": "你的一天是开放的。先规划一件小事。",
+    "now": "现在",
+    "next": "下一个",
+    "later": "稍后",
+    "overloaded": "让我们把它变小一些。",
+    "overloadedDescription": "你计划的任务超过了可用时间。部分任务未排入日程。",
+    "unscheduled": "未安排",
+    "buffer": "缓冲",
+    "available": "可用",
+    "planned": "已计划",
+    "maxDaily": "每日上限",
+    "deadlines": "截止日期",
+    "blocks": "个时间块",
+    "generate": "生成计划",
+    "approve": "批准计划",
+    "regenerate": "重新生成",
+    "planSaved": "计划已保存。你的一天已就绪。",
+    "planAlreadyApproved": "计划已批准——无重复项。",
+    "nextBestAction": {
+      "continueFocus": "继续保持专注",
+      "startScheduled": "开始已安排的任务",
+      "startHighValue": "建议的下一步",
+      "startTiny": "开始一小步",
+      "rest": "没有紧急事项。深呼吸一下。"
+    },
+    "recover": {
+      "title": "挽救我的一天",
+      "subtitle": "让我们重建一个更轻盈的计划。",
+      "analyze": "分析剩余时间",
+      "generate": "生成新计划"
+    },
+    "move": {
+      "toTomorrow": "移至明天",
+      "toAnotherDay": "移至另一天",
+      "toNextSlot": "移至下一个可用时段"
+    },
+    "missed": {
+      "title": "错过了任务？",
+      "continue": "继续",
+      "reschedule": "重新安排",
+      "makeSmaller": "变小一些",
+      "skip": "暂时跳过"
+    },
+    "aria": {
+      "scheduleLoaded": "日程已加载。",
+      "planGenerated": "计划已生成。批准前请先查阅。",
+      "planApproved": "计划已批准并保存。",
+      "blockMoved": "时间块已移动。"
+    }
+  },
+  "settings": {
+    "title": "设置",
+    "subtitle": "让 MindStep 贴合你的心智。",
+    "sections": {
+      "appearance": "外观",
+      "appearanceDescription": "主题、动效与字号。",
+      "language": "语言",
+      "languageDescription": "选择 MindStep 与你对话的方式。",
+      "accessibility": "无障碍",
+      "accessibilityDescription": "调节动效、对比度与节奏。",
+      "focus": "专注默认值",
+      "focusDescription": "你理想的专注时长与休息。",
+      "notifications": "通知",
+      "notificationsDescription": "决定 MindStep 何时打扰你。",
+      "privacy": "隐私与数据",
+      "privacyDescription": "你的数据归你。永远。",
+      "ai": "AI 教练",
+      "aiDescription": "你的教练如何出现。",
+      "account": "账户",
+      "accountDescription": "你的资料与登录。"
+    },
+    "options": {
+      "theme": "主题",
+      "reducedMotion": "减少动效",
+      "highContrast": "高对比",
+      "textScale": "字号",
+      "language": "界面语言",
+      "focusLength": "默认专注时长（分钟）",
+      "shortBreak": "短休息（分钟）",
+      "longBreak": "长休息（分钟）",
+      "dailyStart": "一天开始于",
+      "dailyEnd": "一天结束于",
+      "notificationsEnabled": "允许通知",
+      "aiCoachEnabled": "启用 AI 教练"
+    },
+    "textScale": {
+      "small": "小",
+      "normal": "标准",
+      "large": "大",
+      "xlarge": "特大"
+    },
+    "saved": "已保存。"
+  },
+  "ai": {
+    "title": "AI 教练",
+    "subtitle": "一个支持你的思考伙伴，绝不替代专业照护。",
+    "disclaimer": "MindStep 不是医疗工具。它无法诊断或治疗 ADHD。如有临床疑虑，请咨询合格专业人士。",
+    "placeholder": "向你的教练询问任何事…",
+    "send": "发送",
+    "contexts": {
+      "general": "通用对话",
+      "task_breakdown": "帮我拆解任务",
+      "day_rebuilder": "重建我的一天",
+      "decision": "帮我决定",
+      "overwhelm": "我 overwhelmed 了"
+    },
+    "welcome": "嗨，我是你的 MindStep 教练。今天在想什么？",
+    "thinking": "思考中…",
+    "retry": "重试",
+    "memory": "记忆",
+    "memoryDescription": "最近的对话让教练保持上下文。置顶的对话保留更久。",
+    "privacy": "隐私",
+    "privacyDescription": "超过 30 天的对话会被自动清除，除非置顶。"
+  },
+  "notifications": {
+    "title": "通知",
+    "empty": "没有通知。你已全部看过。",
+    "markAllRead": "全部标记为已读",
+    "unread": "未读",
+    "read": "已读",
+    "dismiss": "忽略",
+    "open": "打开",
+    "today": "今天",
+    "earlier": "更早",
+    "all": "全部",
+    "types": {
+      "task_due": "任务到期",
+      "task_overdue": "任务需关注",
+      "focus_start": "专注开始",
+      "focus_end": "专注结束",
+      "planning_reminder": "规划提醒",
+      "planned_task": "已安排任务",
+      "missed_plan": "计划已变更",
+      "recovery_suggestion": "挽回你的一天",
+      "milestone": "里程碑",
+      "project": "项目",
+      "system": "系统",
+      "ai_nudge": "教练提醒",
+      "focus_reminder": "专注提醒",
+      "habit": "习惯提醒",
+      "ai_insight": "教练洞察",
+      "habit_reminder": "习惯提醒",
+      "calendar_event": "日程事件",
+      "bill_due": "账单到期",
+      "routine_reminder": "例行程序提醒"
+    },
+    "settings": "通知设置",
+    "frequency": {
+      "label": "通知频率",
+      "minimal": "最低 — 仅关键",
+      "balanced": "均衡 — 实用提醒",
+      "more": "更多 — 频繁提醒"
+    },
+    "quietHours": {
+      "label": "免打扰时段",
+      "start": "开始",
+      "end": "结束",
+      "description": "免打扰时段内会延迟非关键通知。"
+    },
+    "budget": {
+      "label": "每日通知上限",
+      "description": "每天非关键通知的最大数量。"
+    },
+    "categories": {
+      "tasks": "任务提醒",
+      "focus": "专注通知",
+      "planner": "规划通知",
+      "milestones": "里程碑通知",
+      "aiNudges": "AI 教练提醒",
+      "habits": "习惯提醒",
+      "calendar": "日程提醒",
+      "bills": "账单到期提醒",
+      "routines": "例行程序提醒"
+    },
+    "actions": {
+      "openTask": "打开任务",
+      "startFocus": "开始专注",
+      "openPlanner": "打开规划",
+      "reschedule": "重新安排",
+      "reviewPlan": "回顾计划",
+      "dismiss": "忽略",
+      "snooze": "稍后提醒",
+      "complete": "完成"
+    },
+    "snooze": {
+      "10min": "10 分钟",
+      "30min": "30 分钟",
+      "1hour": "1 小时",
+      "tomorrow": "明天",
+      "capped": "已达到最大稍后次数。请改用重新安排或完成。"
+    },
+    "smartActions": {
+      "snoozeTitle": "稍后提醒",
+      "rescheduleTitle": "重新安排",
+      "completeTitle": "完成",
+      "dismissTitle": "忽略",
+      "snoozeDescription": "稍后温柔提醒我。",
+      "rescheduleDescription": "选一个新的时间。",
+      "completeDescription": "我已完成 — 标记为完成。",
+      "dismissDescription": "不再显示。"
+    },
+    "reschedule": {
+      "title": "重新安排",
+      "description": "为这条提醒选一个新时间。",
+      "newTime": "新时间",
+      "pickTime": "选择时间",
+      "confirm": "重新安排",
+      "cancel": "取消",
+      "success": "已重新安排到稍后。",
+      "pastTime": "请选择未来的时间。"
+    },
+    "snoozeResult": {
+      "success": "已稍后提醒。",
+      "capped": "已达到最大稍后次数。请改用重新安排或完成。",
+      "tomorrowScheduled": "已稍后至明天上午。"
+    },
+    "completeResult": {
+      "success": "已标记为完成。",
+      "taskCompleted": "任务已标记为完成。",
+      "reminderCompleted": "提醒已标记为完成。",
+      "billPaid": "账单已标记为已付。",
+      "habitMarkedDone": "习惯今日已标记为完成。"
+    },
+    "unreadCount": "{count, plural, other {# 条未读}}",
+    "refresh": "刷新",
+    "aria": {
+      "notificationsLoaded": "通知已加载。",
+      "markedRead": "已标记为已读。",
+      "markedAllRead": "全部已标记为已读。",
+      "dismissed": "通知已忽略。",
+      "snoozed": "通知已稍后。",
+      "rescheduled": "通知已重新安排。",
+      "completed": "通知已完成。"
+    }
+  },
+  "pwa": {
+    "install": {
+      "title": "安装 MindStep",
+      "description": "将 MindStep 添加到主屏幕以获得完整体验。",
+      "accept": "安装",
+      "dismiss": "暂时不",
+      "iosInstructions": "点击分享按钮，然后选择\"添加到主屏幕\"。"
+    },
+    "update": {
+      "title": "有可用更新",
+      "description": "MindStep 的新版本已就绪。",
+      "action": "立即更新",
+      "dismiss": "稍后"
+    },
+    "offline": {
+      "banner": "{count, plural, zero {你处于离线状态。重新联网后会自动同步。} one {你处于离线状态。# 项改动已保存，将同步。} other {你处于离线状态。# 项改动已保存，将同步。}}",
+      "toast": "你已离线。你的改动是安全的 — 联网后会自动同步。",
+      "page": {
+        "title": "你处于离线状态",
+        "body": "你的改动已保存在本设备，联网后会自动同步。你可以继续添加任务、捕捉想法、回顾计划。",
+        "retry": "重试"
+      }
+    },
+    "syncing": {
+      "banner": "{count, plural, one {正在同步 # 项改动…} other {正在同步 # 项改动…}}"
+    },
+    "synced": {
+      "banner": "所有改动已同步。"
+    },
+    "failed": {
+      "banner": "部分改动未能同步。点击重试。",
+      "retry": "重新同步"
+    },
+    "online": {
+      "reconnected": "已重新联网。",
+      "reconnectedWithPending": "{count, plural, one {已重新联网 — 正在同步 # 项改动。} other {已重新联网 — 正在同步 # 项改动。}}"
+    },
+    "dismiss": "忽略",
+    "permissions": {
+      "title": "启用通知？",
+      "body": "MindStep 可以温柔地提醒你任务、专注会话和例行程序。你可以随时关闭。",
+      "accept": "允许",
+      "deny": "暂时不",
+      "denied": "通知已被阻止。你可以在浏览器设置中启用。",
+      "enableInSettings": "打开浏览器设置"
+    },
+    "push": {
+      "enabled": "推送通知已开启",
+      "disabled": "推送通知已关闭",
+      "enable": "开启推送",
+      "disable": "关闭推送",
+      "devicesLabel": "你的设备",
+      "addDevice": "添加此设备",
+      "removeDevice": "移除"
+    }
+  },
+  "offline": {
+    "title": "离线同步",
+    "description": "待处理的改动排队在本设备，重新联网后会自动同步。",
+    "queueLabel": "待处理队列",
+    "emptyQueue": "没有待处理改动。",
+    "pendingCount": "{count, plural, zero {没有待处理改动} one {# 项待处理改动} other {# 项待处理改动}}",
+    "retryAll": "全部重试",
+    "discardAll": "全部丢弃",
+    "discardConfirm": "丢弃所有待处理改动？此操作不可撤销。",
+    "conflict": {
+      "title": "检测到冲突",
+      "description": "自你上次编辑以来，此项已在另一台设备上被修改。请选择保留哪个版本。",
+      "keepMine": "保留我的版本",
+      "keepTheirs": "保留另一个版本",
+      "reviewManually": "手动审查"
+    }
+  },
+  "auth": {
+    "signIn": {
+      "title": "登录",
+      "subtitle": "欢迎回来。",
+      "email": "邮箱",
+      "password": "密码",
+      "submit": "登录",
+      "forgotPassword": "忘记密码？",
+      "noAccount": "还没有账户？",
+      "register": "创建一个"
+    },
+    "register": {
+      "title": "创建账户",
+      "subtitle": "只需一分钟。",
+      "displayName": "显示名称",
+      "email": "邮箱",
+      "password": "密码",
+      "confirmPassword": "确认密码",
+      "submit": "创建账户",
+      "haveAccount": "已经有账户？",
+      "signIn": "登录"
+    },
+    "forgotPassword": {
+      "title": "忘记密码",
+      "subtitle": "我们会给你发送重置链接。",
+      "email": "邮箱",
+      "submit": "发送重置链接",
+      "backToSignIn": "返回登录"
+    },
+    "resetPassword": {
+      "title": "重置密码",
+      "subtitle": "选择一个新密码。",
+      "newPassword": "新密码",
+      "confirmPassword": "确认新密码",
+      "submit": "重置密码"
+    },
+    "verification": {
+      "title": "验证你的邮箱",
+      "subtitle": "我们已向你的收件箱发送 6 位验证码。",
+      "code": "验证码",
+      "submit": "验证",
+      "resend": "重新发送验证码",
+      "resent": "验证码已重新发送。"
+    },
+    "errors": {
+      "invalidCredentials": "邮箱或密码不正确。",
+      "emailExists": "该邮箱的账户已存在。",
+      "weakPassword": "密码太弱。至少使用 12 个字符，混合字母、数字与符号。",
+      "codeExpired": "验证码已过期。请重新申请。",
+      "codeInvalid": "验证码不匹配。请重试。",
+      "tooManyAttempts": "尝试次数过多。请稍等片刻。"
+    }
+  },
+  "errors": {
+    "unknown": "有些内容没加载出来。请重试。",
+    "network": "无法连接到服务器。请检查你的网络。",
+    "server": "我们这边出了点问题。正在处理。",
+    "notFound": "我们找不到那个。",
+    "unauthorized": "请登录后继续。",
+    "forbidden": "你没有访问权限。",
+    "validation": "请检查高亮的字段。",
+    "rateLimited": "请求过多。请放慢。",
+    "consentRequired": "请审阅并接受同意条款。",
+    "featureDisabled": "该功能当前已禁用。",
+    "title": "出错了",
+    "retryAction": "重试",
+    "codes": {
+      "VALIDATION_ERROR": "请检查高亮的字段。",
+      "INVALID_INPUT": "那个输入看起来不对。",
+      "INVALID_LOCALE": "不支持该语言。",
+      "UNAUTHORIZED": "请登录后继续。",
+      "SESSION_EXPIRED": "你的会话已过期。请重新登录。",
+      "FORBIDDEN": "你没有访问权限。",
+      "NOT_OWNER": "你只能访问自己的数据。",
+      "CONSENT_REQUIRED": "请审阅并接受同意条款。",
+      "FEATURE_DISABLED": "该功能当前已禁用。",
+      "NOT_FOUND": "我们找不到那个。",
+      "CONFLICT": "与已有数据冲突。",
+      "DUPLICATE": "那已经存在。",
+      "BUSINESS_RULE_VIOLATION": "该操作现在不允许。",
+      "RATE_LIMITED": "请求过多。请放慢。",
+      "INTERNAL_ERROR": "我们这边出了点问题。正在处理。",
+      "DATABASE_ERROR": "我们这边出了点问题。正在处理。",
+      "AI_SERVICE_ERROR": "教练现在遇到点麻烦。请重试。",
+      "PI_SERVICE_ERROR": "支付服务遇到点麻烦。请重试。"
+    }
+  },
+  "validation": {
+    "required": "此字段为必填。",
+    "email": "请输入有效的邮箱地址。",
+    "emailTaken": "该邮箱已被使用。",
+    "passwordTooShort": "密码至少要 12 个字符。",
+    "passwordTooLong": "密码太长（最多 128）。",
+    "passwordMismatch": "两次密码不一致。",
+    "nameTooShort": "请输入至少 1 个字符。",
+    "nameTooLong": "稍微有点太长了。",
+    "titleTooLong": "标题太长。",
+    "notesTooLong": "备注太长。",
+    "invalidDate": "请输入有效日期。",
+    "invalidTime": "请输入有效时间。",
+    "invalidUrl": "请输入有效的 URL。",
+    "invalidColor": "请输入有效颜色（例如 #7c9885）。",
+    "numberOutOfRange": "该数字超出范围。",
+    "selectOption": "请选择一个选项。",
+    "tooShort": "太短。",
+    "tooLong": "太长。"
+  },
+  "emptyStates": {
+    "title": "这里还没有内容",
+    "description": "这里会显示你的数据。",
+    "action": "开始",
+    "tasks": "还没有任务",
+    "tasksDescription": "添加一件你想做的小事。",
+    "focus": "还没有专注会话",
+    "focusDescription": "5 分钟也算一次会话。",
+    "habits": "还没有习惯",
+    "habitsDescription": "从极小开始 — 一件 2 分钟内能做完的习惯。",
+    "brainDump": "头脑很清澈",
+    "brainDumpDescription": "在这里捕捉脑中闪过的任何想法。",
+    "reminders": "没有提醒",
+    "remindersDescription": "需要你关注的事会显示在这里。",
+    "notifications": "没有通知",
+    "notificationsDescription": "你已全部看过。",
+    "energy": "没有能量自查",
+    "energyDescription": "一次快速自查会塑造 MindStep 的建议。",
+    "insights": "还没有洞察",
+    "insightsDescription": "几天后，规律会出现在这里。"
+  },
+  "loading": {
+    "default": "加载中…",
+    "saving": "保存中…",
+    "fetching": "获取中…",
+    "sending": "发送中…",
+    "starting": "开始中…"
+  },
+  "onboarding": {
+    "welcome": "欢迎来到 MindStep",
+    "welcomeDescription": "一步。一念。一日。",
+    "step1": "灵感速记",
+    "step1Description": "把脑中的东西倒出来。稍后再分类。",
+    "step2": "首要任务",
+    "step2Description": "挑三件今天最重要的事。",
+    "step3": "从极小开始",
+    "step3Description": "卡住时，用「我无法开始」把任何任务缩小。",
+    "skip": "跳过",
+    "finish": "开始"
+  },
+  "privacy": {
+    "title": "隐私与数据",
+    "subtitle": "你的数据归你。导出、删除、控制如何使用。",
+    "principles": {
+      "dataIsYours": "数据归你",
+      "dataIsYoursDescription": "你创建的每条记录都属于你的账户。我们绝不出售或分享。你可以随时导出或删除一切。",
+      "noDarkPatterns": "没有暗黑模式",
+      "noDarkPatternsDescription": "MindStep 从不使用愧疚、用连续打卡威胁或焦虑诱饵。连续打卡庆祝努力；从不惩罚中断。",
+      "localFirst": "能本地优先就本地优先",
+      "localFirstDescription": "Phase 1 把偏好与界面状态存在你的浏览器里。同步的数据存在你的账户里，传输时加密。",
+      "noPassphrases": "不索取 Pi 钱包助记词",
+      "noPassphrasesDescription": "MindStep 从不索取或存储你的 Pi 钱包助记词。所有 Pi 支付都通过服务端 Pi SDK 验证。",
+      "strictOwnership": "严格的归属边界",
+      "strictOwnershipDescription": "每个数据库查询都以 userId 限定。一个用户永远无法读写另一个用户的记录 — 在数据层强制，而非 UI 层。",
+      "calmByDesign": "设计上平静",
+      "calmByDesignDescription": "没有恐怖的红点，没有无限滚动陷阱。MindStep 显示当下重要的事，然后退后。"
+    },
+    "dataRights": {
+      "title": "你的数据权利",
+      "description": "你可以对 MindStep 数据做的事。",
+      "export": "导出全部数据为 JSON 归档。",
+      "exportDescription": "下载你的 MindStep 数据的完整副本（JSON）。包括所有任务、项目、专注会话、AI 对话、支付历史等。",
+      "delete": "永久删除你的账户与所有相关记录。",
+      "deleteDescription": "此操作不可逆。你的所有数据将被永久删除。你将立即被登出。",
+      "withdrawConsent": "随时撤回同意。",
+      "withdrawConsentDescription": "将所有同意标志置为关闭。你的数据保留，但需要同意的功能将受限。要完全删除，请使用上方的删除账户。",
+      "aiRetention": "删除 AI 对话历史。",
+      "aiRetentionDescription": "删除你的所有 AI 对话与消息。你的 AI 记忆（偏好）保留。"
+    },
+    "center": {
+      "title": "隐私中心",
+      "subtitle": "管理你的数据、同意和分享偏好。",
+      "dataExport": {
+        "title": "导出你的数据",
+        "description": "下载你的 MindStep 数据的完整 JSON 副本。包括你所有任务、项目、专注会话、AI 对话、支付历史和偏好。不包含其他用户的数据。",
+        "button": "下载我的数据",
+        "success": "数据导出已开始 — 下载即将开始。",
+        "failed": "无法导出数据。请重试。"
+      },
+      "deleteAIHistory": {
+        "title": "删除 AI 对话历史",
+        "description": "永久删除你与 AI 教练的所有对话和消息。你的 AI 记忆（显式偏好）保留。此操作不可撤销。",
+        "button": "删除 AI 历史",
+        "confirm": "删除所有 AI 对话？此操作不可撤销。",
+        "success": "AI 历史已删除。",
+        "failed": "无法删除 AI 历史。请重试。"
+      },
+      "deleteAccount": {
+        "title": "删除账户",
+        "description": "永久删除你的账户和所有相关数据。包括每个任务、项目、专注会话、AI 对话、支付记录和偏好。此操作不可逆。",
+        "button": "删除我的账户",
+        "confirm": "输入 DELETE 确认",
+        "confirmPlaceholder": "在此输入 DELETE",
+        "warning": "此操作不可撤销。你的所有数据将被永久擦除。请考虑先导出数据。",
+        "success": "账户已删除。你已登出。",
+        "failed": "无法删除账户。请重试或联系支持。"
+      },
+      "consentManagement": {
+        "title": "同意管理",
+        "description": "控制你同意的内容。你可以随时更改。",
+        "terms": "服务条款",
+        "termsDescription": "我同意 MindStep 的服务条款。",
+        "privacy": "隐私政策",
+        "privacyDescription": "我同意 MindStep 的隐私政策。",
+        "ageConfirmed": "年龄确认",
+        "ageConfirmedDescription": "我确认在我所在司法管辖区已达到使用此服务的法定年龄。",
+        "marketing": "营销邮件",
+        "marketingDescription": "我想收到产品更新和提示。（可选 — 默认关闭。）",
+        "dataProcessing": "数据处理",
+        "dataProcessingDescription": "我同意 MindStep 处理我的数据以提供服务。使用 MindStep 必须同意。",
+        "save": "保存同意",
+        "saved": "同意已保存。",
+        "withdrawAll": "撤回所有同意",
+        "withdrawAllConfirm": "撤回所有同意？你的数据保留，但需要同意的功能将受限。你可以稍后重新同意。",
+        "withdrawn": "已撤回所有同意。"
+      },
+      "dataSharing": {
+        "title": "数据分享控制",
+        "description": "控制 MindStep 可以为特定功能使用哪些数据。关闭可能限制功能。",
+        "aiCoach": "AI 教练上下文",
+        "aiCoachDescription": "允许 AI 教练查看你的任务、专注会话和脑内倾倒以提供上下文建议。关闭 = 仅通用回复。",
+        "insights": "个人洞察",
+        "insightsDescription": "允许 MindStep 分析你的活动数据以生成模式和周回顾。关闭 = 无洞察。",
+        "analytics": "匿名分析",
+        "analyticsDescription": "分享匿名使用模式以帮助改进 MindStep。绝不分享个人数据。（目前始终关闭 — Phase 2。）",
+        "note": "注：这些控件存储在你的偏好中。MindStep 绝不出售你的数据给第三方。"
+      }
+    },
+    "loading": "正在加载隐私设置…"
+  },
+  "help": {
+    "crisisTitle": "如果你正处于危机",
+    "crisisBody": "MindStep 不是危机服务。如果你正处于直接危险，请联系当地紧急服务或你所在国家/地区的心理健康危机热线。",
+    "gettingStarted": "入门",
+    "gettingStartedDescription": "从灵感速记开始。把脑中的东西都加进去。稍后再分类。",
+    "adhdTips": "ADHD 友好提示",
+    "adhdTipsDescription": "降低摩擦：把任务命名为动作（\"给 Sam 发邮件\"）。对大任务用「一步」。",
+    "beGentle": "对自己温柔一点",
+    "beGentleDescription": "连续打卡庆祝努力。漏掉一天是信息，不是失败。",
+    "medicalDisclaimer": "医疗免责声明",
+    "contact": "联系",
+    "contactDescription": "Phase 2 — 应用内支持聊天。",
+    "bugReports": "Bug 报告：请通过项目仓库的 issue tracker 提交。",
+    "privacyEmail": "隐私问题：privacy@mindstep.app（Phase 2 之前的占位）。",
+    "securityReports": "安全报告：见 SECURITY.md 负责任披露。"
+  },
+  "comingSoon": {
+    "title": "{name} — 将在未来阶段推出",
+    "description": "本节是 MindStep 规划架构的一部分，但尚未在当前阶段实现。它故意不是死链 — 导航是真实的，路由已预留。当该模块上线时，你会看到真实功能，而不是占位符。",
+    "badge": "Phase 1 已搭建 · Phase 2+ 上线"
+  },
+  "insights": {
+    "title": "洞察",
+    "subtitle": "来自你数据的描述性模式。不是诊断。",
+    "privacy": "你的数据归你",
+    "privacyDescription": "洞察仅使用你的活动数据。不会出售或外部分享。你可以随时关闭任何洞察。",
+    "empty": "暂无足够活动",
+    "emptyDescription": "开始使用 MindStep — 专注会话、任务、能量打卡会逐渐揭示模式。数据足够可靠时模式就会出现。",
+    "refresh": "刷新",
+    "tabs": {
+      "focus": "专注",
+      "time": "时间",
+      "tasks": "任务",
+      "energy": "能量",
+      "weekly": "周回顾",
+      "experiments": "实验"
+    },
+    "categories": {
+      "focus": "专注",
+      "time": "时间模式",
+      "task": "任务模式",
+      "energy": "能量",
+      "weekly": "周回顾",
+      "general": "通用"
+    },
+    "kinds": {
+      "pattern": "模式",
+      "observation": "观察",
+      "suggestion": "建议",
+      "warning": "提示",
+      "celebration": "值得一提",
+      "correlation": "关联",
+      "experiment": "实验"
+    },
+    "dismiss": "忽略",
+    "dismissed": "已忽略",
+    "weeklyReview": {
+      "title": "周回顾",
+      "period": "{start} – {end}",
+      "whatWorked": "起作用的",
+      "whatWasDifficult": "困难的",
+      "whatChanged": "变化的",
+      "suggestedExperiment": "建议的实验",
+      "startExperiment": "开始这个实验",
+      "metrics": {
+        "totalFocusMinutes": "总专注分钟",
+        "completedTasks": "已完成的任务",
+        "completedSessions": "已完成的会话",
+        "avgEnergy": "平均能量",
+        "interruptions": "中断次数"
+      }
+    },
+    "aria": {
+      "chart": "图表：{title}",
+      "bars": "柱状图，共 {count} 个柱",
+      "noData": "无可显示的数据"
+    },
+    "loading": "正在分析你的模式…",
+    "error": "暂时无法加载洞察。"
+  },
+  "experiments": {
+    "title": "个人实验",
+    "subtitle": "试一周一个改变。我们会记录前后指标 — 不做评判。",
+    "empty": "暂无实验",
+    "emptyDescription": "试一周一个改变。MindStep 会记录你前后指标 — 描述性地，不做评判。",
+    "start": "开始一个实验",
+    "startTitle": "开始一个个人实验",
+    "fields": {
+      "type": "尝试什么",
+      "title": "名称（可选）",
+      "hypothesis": "你的假设（可选）"
+    },
+    "submit": "开始实验",
+    "cancel": "取消",
+    "types": {
+      "shorter_focus": "更短的专注会话",
+      "longer_focus": "更长的专注会话",
+      "morning_planning": "早晨规划",
+      "evening_planning": "晚上规划",
+      "smaller_steps": "更小的任务步骤",
+      "different_reminder_timing": "不同的提醒时间",
+      "earlier_breaks": "更早的休息",
+      "later_breaks": "更晚的休息"
+    },
+    "descriptions": {
+      "shorter_focus": "把专注会话从 25 分钟改为 10 分钟。",
+      "longer_focus": "把专注会话从 25 分钟改为 40 分钟。",
+      "morning_planning": "每天早上花 5 分钟写下今天最重要的 3 个任务。",
+      "evening_planning": "每天晚上花 5 分钟写下明天最重要的 3 个任务。",
+      "smaller_steps": "把下一个任务拆成 3 个更小的步骤。",
+      "different_reminder_timing": "把提醒时间提前 30 分钟。",
+      "earlier_breaks": "每专注 15 分钟休息 5 分钟。",
+      "later_breaks": "把专注块延长到 35 分钟再休息。"
+    },
+    "status": {
+      "active": "进行中",
+      "completed": "已完成",
+      "abandoned": "已放弃"
+    },
+    "result": {
+      "baseline": "基线（前）",
+      "post": "后测（后）",
+      "delta": "变化",
+      "description": "你的数据显示",
+      "noDescription": "暂无足够数据可比较。"
+    },
+    "complete": "完成实验",
+    "abandon": "放弃",
+    "completeConfirm": "完成此实验？MindStep 会记录最终快照并与基线比较。",
+    "abandonConfirm": "放弃此实验？会保留你的基线，但不会做最终比较。",
+    "started": "实验已开始。试一周这个改变 — 然后回来完成它。",
+    "completed": "实验已完成。下面查看结果。",
+    "abandoned": "实验已放弃。",
+    "failed": "无法开始实验。请重试。",
+    "loading": "正在加载实验…",
+    "aria": {
+      "started": "实验已开始。",
+      "completed": "实验已完成。",
+      "abandoned": "实验已放弃。"
+    }
+  },
+  "disclaimer": {
+    "notMedical": "MindStep 不是医疗或诊断工具。它不诊断 ADHD、不开处方、不推荐剂量调整、也不替代专业照护。若你正处于危机，请联系医疗服务提供者或当地紧急服务。"
+  },
+  "pi": {
+    "title": "Pi 账户",
+    "subtitle": "通过 Pi 登录、管理你的会员、查看支付历史。",
+    "signedInAs": "已登录为 {username}",
+    "notSignedIn": "未登录",
+    "network": "网络",
+    "networkValue": "{network, select, testnet {Testnet（测试）} mainnet {Mainnet（生产）} other {未知}}",
+    "signInWithPi": "通过 Pi 登录",
+    "signOut": "登出",
+    "signingIn": "正在登录…",
+    "signingOut": "正在登出…",
+    "premium": {
+      "title": "MindStep 会员",
+      "active": "会员已激活",
+      "expired": "会员已过期",
+      "free": "免费计划",
+      "expiresOn": "到期于 {date}",
+      "lifetime": "终身会员",
+      "features": "包含的功能",
+      "noEntitlement": "暂无会员",
+      "noEntitlementDescription": "选择下面的计划，解锁无限专注会话、高级洞察、个人实验等。"
+    },
+    "products": {
+      "title": "选择你的计划",
+      "subtitle": "用 Pi 支付。可随时取消。",
+      "monthly": "月付",
+      "yearly": "年付",
+      "lifetime": "终身",
+      "bestValue": "最划算",
+      "perMonth": "每月",
+      "perYear": "每年",
+      "oneTime": "一次性",
+      "buy": "用 Pi 购买",
+      "buyMonthly": "购买月付",
+      "buyYearly": "购买年付",
+      "buyLifetime": "购买终身",
+      "processing": "正在处理支付…",
+      "success": "支付成功 — 会员已激活！",
+      "cancelled": "支付已取消。未产生任何扣款。",
+      "failed": "支付失败。请重试。",
+      "piAmount": "{amount} PI"
+    },
+    "history": {
+      "title": "支付历史",
+      "empty": "暂无支付",
+      "emptyDescription": "你用 Pi 的支付将出现在这里。",
+      "status": {
+        "pending": "待处理",
+        "developer_approved": "已批准",
+        "user_approved": "等待区块链",
+        "transaction_verified": "正在验证",
+        "completed": "已完成",
+        "cancelled": "已取消",
+        "failed": "已失败"
+      },
+      "txid": "交易 ID",
+      "amount": "金额",
+      "product": "产品",
+      "date": "日期",
+      "refresh": "刷新"
+    },
+    "errors": {
+      "notInPiBrowser": "不在 Pi 浏览器中",
+      "notInPiBrowserDescription": "Pi 登录和支付仅在 Pi 浏览器内可用。请在 Pi 浏览器中打开此页面继续。",
+      "notConfigured": "Pi 未配置",
+      "notConfiguredDescription": "本服务器尚未配置 Pi 集成。请联系管理员。",
+      "authFailed": "登录失败。请重试。",
+      "authCancelled": "你取消了 Pi 登录。",
+      "paymentFailed": "支付失败。请重试。",
+      "paymentCancelled": "支付已取消。",
+      "sessionExpired": "会话已过期。请重新登录。",
+      "retry": "重试"
+    },
+    "compliance": {
+      "title": "合规与安全",
+      "noPassphrases": "不收集钱包口令",
+      "noPassphrasesDescription": "MindStep 永远不会要求或存储你的 Pi 钱包口令。所有支付都在 Pi 钱包中完成，由你签名。",
+      "serverVerified": "服务端验证",
+      "serverVerifiedDescription": "每笔支付都通过 Pi Platform API 验证后才会授予任何会员资格。前端从不做决定。",
+      "testnetVsMainnet": "测试 Pi 永不授会员",
+      "testnetVsMainnetDescription": "测试 Pi 交易会用当前网络标记，永不能授予真实会员资格 — 即便它们到达我们的后端。"
+    },
+    "loading": "正在加载…",
+    "loadingProducts": "正在加载产品…",
+    "loadingHistory": "正在加载支付历史…",
+    "loadingEntitlement": "正在加载会员状态…",
+    "aria": {
+      "signedIn": "你已通过 Pi 登录。",
+      "signedOut": "你未登录。",
+      "premiumActive": "你的会员订阅已激活。",
+      "paymentComplete": "支付完成。"
+    }
+  },
+  "footer": {
+    "tagline": "一步。一念。一日。",
+    "rights": "用心打造。你的数据归你。"
+  }
+}

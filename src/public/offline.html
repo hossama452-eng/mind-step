@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#faf6ef" />
+  <title>Offline — MindStep</title>
+  <style>
+    /* Inline-styled — works even when CSS fails to load. */
+    :root { color-scheme: light dark; }
+    html, body {
+      margin: 0; padding: 0; min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #faf6ef; color: #2b2a26;
+    }
+    @media (prefers-color-scheme: dark) {
+      html, body { background: #211d18; color: #f0e6d0; }
+      .card { background: #2b2820 !important; border-color: #3a3530 !important; }
+      .icon-bg { background: #3a4a3e !important; }
+    }
+    .container {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      max-width: 420px; width: 100%;
+      background: #ffffff; border: 1px solid #e8d9b5; border-radius: 16px;
+      padding: 32px 24px; text-align: center;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+    .icon-bg {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #e8efe5; margin: 0 auto 16px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .icon-bg svg { width: 28px; height: 28px; color: #5e7a6a; }
+    h1 { font-size: 22px; font-weight: 600; margin: 0 0 8px; }
+    p { font-size: 14px; line-height: 1.5; margin: 0 0 16px; opacity: 0.85; }
+    .disclaimer {
+      font-size: 11px; opacity: 0.6; margin-top: 24px;
+      padding-top: 12px; border-top: 1px solid #e8d9b5;
+    }
+    button {
+      background: #7c9885; color: white; border: none; border-radius: 8px;
+      padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer;
+      width: 100%; max-width: 200px;
+    }
+    button:hover { background: #6a8a73; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="icon-bg" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+          <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+          <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+          <line x1="12" y1="20" x2="12.01" y2="20" />
+        </svg>
+      </div>
+      <h1>You're offline</h1>
+      <p>
+        Your changes are saved on your device and will sync when you're back online.
+        You can keep adding tasks, capturing thoughts, and reviewing your plan.
+      </p>
+      <button onclick="location.href='/'">Try again</button>
+      <p class="disclaimer">
+        MindStep is not a medical or diagnostic tool. It does not diagnose ADHD,
+        prescribe treatment, or replace professional care.
+      </p>
+    </div>
+  </div>
+  <script>
+    // Auto-retry when the network returns.
+    window.addEventListener("online", () => location.href = "/");
+    // Also retry every 30s while offline — graceful recovery.
+    setTimeout(() => { if (navigator.onLine) location.href = "/"; }, 30000);
+  </script>
+</body>
+</html>

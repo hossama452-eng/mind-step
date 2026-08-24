@@ -1,0 +1,1451 @@
+{
+  "app": {
+    "name": "MindStep",
+    "tagline": "Un pas. Un focus. Un jour.",
+    "description": "Un compagnon de productivité premium de soutien au TDAH."
+  },
+  "nav": {
+    "dashboard": "Accueil",
+    "tasks": "Tâches",
+    "projects": "Projets",
+    "brainDump": "Vidage mental",
+    "focus": "Concentration",
+    "planner": "Planificateur",
+    "calendar": "Calendrier",
+    "habits": "Habitudes",
+    "life": "Vie",
+    "sleep": "Sommeil",
+    "energy": "Énergie",
+    "insights": "Insights",
+    "ai": "Coach IA",
+    "family": "Famille",
+    "professional": "Pro",
+    "reports": "Rapports",
+    "settings": "Réglages",
+    "notifications": "Notifications",
+    "piAccount": "Compte Pi",
+    "privacy": "Confidentialité",
+    "help": "Aide",
+    "bottomNav": {
+      "home": "Accueil",
+      "tasks": "Tâches",
+      "focus": "Focus",
+      "planner": "Plan",
+      "ai": "IA"
+    },
+    "group": {
+      "core": "Cœur",
+      "productivity": "Productivité",
+      "focus": "Focus",
+      "adhdSupport": "Soutien TDAH",
+      "life": "Vie",
+      "ai": "IA",
+      "family": "Famille",
+      "professional": "Pro"
+    }
+  },
+  "common": {
+    "loading": "Chargement…",
+    "empty": "Rien ici pour l'instant",
+    "error": "Une erreur est survenue",
+    "retry": "Réessayer",
+    "save": "Enregistrer",
+    "saved": "Enregistré",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "close": "Fermer",
+    "create": "Créer",
+    "add": "Ajouter",
+    "search": "Rechercher",
+    "all": "Tout",
+    "today": "Aujourd'hui",
+    "tomorrow": "Demain",
+    "yesterday": "Hier",
+    "thisWeek": "Cette semaine",
+    "more": "Plus",
+    "less": "Moins",
+    "yes": "Oui",
+    "no": "Non",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "start": "Démarrer",
+    "continue": "Continuer",
+    "open": "Ouvrir",
+    "keep": "Garder",
+    "move": "Décaler",
+    "drop": "Lâcher",
+    "done": "Fait",
+    "of": "sur",
+    "or": "ou",
+    "items": "{count, plural, one {# élément} other {# éléments}}"
+  },
+  "theme": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système",
+    "toggle": "Changer de thème",
+    "label": "Thème"
+  },
+  "language": {
+    "label": "Langue",
+    "english": "English",
+    "arabic": "العربية",
+    "french": "Français",
+    "chinese": "简体中文",
+    "changed": "Langue changée pour {name}"
+  },
+  "accessibility": {
+    "skipToMain": "Aller au contenu principal",
+    "openNavigation": "Ouvrir la navigation",
+    "closeNavigation": "Fermer la navigation",
+    "navigationLandmark": "Navigation MindStep",
+    "quickActionsToolbar": "Actions rapides MindStep",
+    "mainContent": "Contenu principal",
+    "currentPage": "Page actuelle",
+    "progress": "{percent}% terminé"
+  },
+  "dashboard": {
+    "hero": {
+      "greeting": {
+        "morning": "Bonjour",
+        "afternoon": "Bon après-midi",
+        "evening": "Bonsoir",
+        "night": "Tu te reposes bien ?"
+      },
+      "whatMattersNow": "Ce qui compte maintenant",
+      "subtitle": "Un pas. Un focus. Un jour.",
+      "aiHint": "Demande à ton coach"
+    },
+    "sections": {
+      "adhdSupport": "Soutien TDAH",
+      "adhdSupportDescription": "Des outils doux pour les moments difficiles.",
+      "nextStep": "Ta prochaine étape",
+      "nextStepDescription": "Une seule tâche. Rien d'autre.",
+      "brainDump": "Vidage mental",
+      "brainDumpDescription": "Capture tout ce qui encombre ta tête.",
+      "focus": "Focus",
+      "focusDescription": "Démarre une session mono-focus.",
+      "todayRhythm": "Le rythme du jour",
+      "todayRhythmDescription": "Énergie, humeur et sommeil d'un seul coup d'œil.",
+      "topPriorities": "Tes priorités",
+      "topPrioritiesDescription": "Seulement ce qui compte le plus.",
+      "reminders": "Rappels",
+      "remindersDescription": "Ce qui demande ton attention bientôt.",
+      "progress": "Progression du jour",
+      "progressDescription": "Élan doux, pas de comptage.",
+      "energyCheck": "Comment est ton énergie ?",
+      "energyCheckDescription": "Un check rapide oriente les suggestions de MindStep."
+    },
+    "adhdCards": {
+      "iCantStart": {
+        "title": "Je n'arrive pas à démarrer",
+        "description": "Débloque-toi avec une micro-action."
+      },
+      "oneStep": {
+        "title": "Une étape",
+        "description": "Réduis la tâche à ses 2 premières minutes."
+      },
+      "resetMyDay": {
+        "title": "Réinitialiser ma journée",
+        "description": "Recommence, sans honte."
+      },
+      "minimumViableDay": {
+        "title": "Journée minimale",
+        "description": "Choisis trois non-négociables."
+      },
+      "whereWasI": {
+        "title": "J'en étais où ?",
+        "description": "Reprends là où tu t'étais arrêté."
+      },
+      "overwhelmMode": {
+        "title": "Mode submersion",
+        "description": "Éclaircir le bruit, une respiration à la fois."
+      }
+    },
+    "stats": {
+      "tasksDone": "Tâches terminées",
+      "focusMinutes": "Minutes de focus",
+      "streak": "Série en cours",
+      "brainDumps": "Idées capturées",
+      "energy": "Niveau d'énergie"
+    },
+    "empty": {
+      "noTasks": "Rien à faire — moment parfait pour une respiration.",
+      "noFocus": "Pas de session de focus aujourd'hui. Même 5 minutes comptent.",
+      "noReminders": "Aucun rappel. Tu es au calme."
+    }
+  },
+  "signature": {
+    "iCantStart": {
+      "title": "Je n'arrive pas à démarrer",
+      "step1Title": "Reconnaître",
+      "step1Body": "Démarrer est difficile. Ce n'est pas de la paresse — ton cerveau est submergé. Prends une respiration. On réduit ensemble.",
+      "step1Action": "Réduisons-la",
+      "step2Title": "Choisis une tâche",
+      "step2Body": "Une seule. Celle qui te tire.",
+      "step2Placeholder": "Écris la tâche qui coince (ou choisis-en une ci-dessous)",
+      "step3Title": "Réduis-la",
+      "step3Body": "Quelle est la plus petite version, 2 minutes ou moins ? Ouvrir le doc. Ouvrir le mail. Se lever.",
+      "step3Placeholder": "Écris la version 2 minutes…",
+      "step4Title": "Démarre un focus de 5 minutes",
+      "step4Body": "Cinq minutes. Tu peux arrêter après. La plupart du temps, tu ne voudras pas.",
+      "step4Action": "Démarrer un focus de 5 min",
+      "skipFocus": "Donne-moi juste la petite étape",
+      "success": "Tu as démarré. C'est toute la victoire du jour."
+    },
+    "resetMyDay": {
+      "title": "Réinitialiser ma journée",
+      "subtitle": "On garde ce qui compte et on lâche le reste. Rien n'est supprimé.",
+      "keep": "Garder",
+      "move": "Décaler à demain",
+      "drop": "Lâcher pour maintenant",
+      "keepHint": "Reste dans la liste du jour",
+      "moveHint": "Reporté — revient demain",
+      "dropHint": "Archivé — récupérable depuis les réglages",
+      "summary": {
+        "title": "Voilà ta journée plus légère",
+        "kept": "Gardées",
+        "moved": "Décalées",
+        "dropped": "Lâchées"
+      },
+      "apply": "Appliquer ce plan",
+      "empty": "Rien à réinitialiser — ta journée est déjà légère."
+    },
+    "startFocus": {
+      "title": "Démarrer une session de focus",
+      "subtitle": "Choisis une chose. Choisis la durée. Commence.",
+      "pickTask": "Choisis une tâche",
+      "orFreelance": "ou travaille sur quelque chose hors liste",
+      "freelancePlaceholder": "Sur quoi te focuses-tu ?",
+      "duration": "Combien de temps ?",
+      "presets": {
+        "quick5": "5 min · Démarrage rapide",
+        "focus15": "15 min · Focus rapide",
+        "focus25": "25 min · Pomodoro",
+        "focus45": "45 min · Travail profond",
+        "focus90": "90 min · Flow"
+      },
+      "begin": "Démarrer le focus",
+      "openFullFocus": "Ouvrir la vue focus complète"
+    },
+    "quickCapture": {
+      "title": "Capture rapide",
+      "subtitle": "Vide ton esprit en une frappe.",
+      "placeholder": "Écris n'importe quoi — une pensée, un rappel, une idée…",
+      "save": "Capturer",
+      "saved": "Capturé — trie plus tard dans le Vidage mental",
+      "shortcut": "Appuie sur C pour capturer partout"
+    }
+  },
+  "tasks": {
+    "title": "Tâches",
+    "subtitle": "Découper les grandes choses en petites actions.",
+    "add": "Ajouter une tâche",
+    "placeholder": "Qu'est-ce qui doit être fait ?",
+    "empty": "Aucune tâche. Ajoute la première ci-dessus.",
+    "fields": {
+      "title": "Titre",
+      "description": "Description",
+      "notes": "Notes",
+      "priority": "Priorité",
+      "energy": "Énergie requise",
+      "due": "Échéance",
+      "dueTime": "Heure",
+      "project": "Projet",
+      "milestone": "Jalon",
+      "estimate": "Temps estimé",
+      "tags": "Étiquettes"
+    },
+    "priority": {
+      "low": "Bas",
+      "normal": "Normal",
+      "high": "Haut",
+      "urgent": "Urgent"
+    },
+    "energy": {
+      "low": "Faible énergie",
+      "medium": "Énergie moyenne",
+      "high": "Haute énergie"
+    },
+    "status": {
+      "inbox": "Boîte de réception",
+      "planned": "Planifié",
+      "in_progress": "En cours",
+      "completed": "Terminé",
+      "archived": "Archivé"
+    },
+    "breakdown": "Découper en plus petites étapes",
+    "markDone": "Marquer comme fait",
+    "markUndone": "Marquer comme non fait",
+    "startFocus": "Démarrer le focus sur ça",
+    "overdue": "En retard",
+    "subtasks": "sous-tâches",
+    "subtaskCount": "{done}/{total} fait",
+    "count": "{count, plural, one {# tâche} other {# tâches}}",
+    "filters": {
+      "all": "Toutes les tâches",
+      "today": "Aujourd'hui",
+      "overdue": "En retard",
+      "completed": "Terminées",
+      "snoozed": "Reportées",
+      "archived": "Archivées"
+    },
+    "sort": {
+      "label": "Trier par",
+      "manual": "Manuel",
+      "due": "Échéance",
+      "priority": "Priorité",
+      "created": "Date de création",
+      "updated": "Date de mise à jour"
+    },
+    "search": {
+      "label": "Rechercher des tâches",
+      "placeholder": "Rechercher des tâches, projets, étiquettes…",
+      "empty": "Aucun résultat. Essaye une autre recherche.",
+      "clear": "Effacer la recherche"
+    },
+    "estimatePresets": {
+      "5": "5 min",
+      "10": "10 min",
+      "15": "15 min",
+      "25": "25 min",
+      "30": "30 min",
+      "45": "45 min",
+      "60": "60 min",
+      "custom": "Personnalisé"
+    },
+    "detail": {
+      "title": "Détail de la tâche",
+      "openTask": "Ouvrir la tâche",
+      "edit": "Modifier la tâche",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "addSubtask": "Ajouter une étape",
+      "subtaskPlaceholder": "Quelle est la prochaine étape ?",
+      "deleteSubtask": "Supprimer l'étape",
+      "completeSubtask": "Terminer l'étape",
+      "uncompleteSubtask": "Marquer l'étape comme non terminée",
+      "moveUp": "Monter",
+      "moveDown": "Descendre",
+      "archive": "Archiver",
+      "unarchive": "Restaurer",
+      "convertToTask": "Convertir en tâche",
+      "convertToReminder": "Convertir en rappel"
+    },
+    "confirmDelete": {
+      "title": "Supprimer la tâche ?",
+      "description": "Ceci est irréversible. Les sous-tâches seront aussi supprimées.",
+      "confirm": "Supprimer"
+    },
+    "progress": {
+      "label": "Progression",
+      "value": "{done} sur {total} étapes",
+      "noSubtasks": "Aucune sous-tâche pour l'instant"
+    }
+  },
+  "subtasks": {
+    "title": "Sous-tâches",
+    "add": "Ajouter une sous-tâche",
+    "empty": "Aucune sous-tâche. Ajoute la première étape.",
+    "markDone": "Marquer la sous-tâche comme terminée",
+    "markUndone": "Marquer la sous-tâche comme non terminée",
+    "delete": "Supprimer la sous-tâche",
+    "reorder": "Réorganiser les sous-tâches",
+    "moveUp": "Monter",
+    "moveDown": "Descendre",
+    "count": "{count, plural, one {# sous-tâche} other {# sous-tâches}}",
+    "completedCount": "{done} sur {total} terminées"
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Regroupe les tâches liées. Suis la vraie progression.",
+    "add": "Nouveau projet",
+    "empty": "Aucun projet. Regroupe ici quelques tâches liées.",
+    "fields": {
+      "name": "Nom du projet",
+      "description": "Description",
+      "color": "Couleur"
+    },
+    "detail": {
+      "title": "Projet",
+      "tasks": "Tâches",
+      "completedTasks": "Terminées",
+      "activeTasks": "Actives",
+      "milestones": "Jalons",
+      "noTasks": "Aucune tâche dans ce projet pour l'instant.",
+      "addTask": "Ajouter une tâche au projet",
+      "progress": "Progression"
+    },
+    "status": {
+      "active": "Actif",
+      "completed": "Terminé",
+      "archived": "Archivé"
+    },
+    "confirmDelete": {
+      "title": "Supprimer le projet ?",
+      "description": "Les tâches de ce projet garderont leurs données mais perdront le lien au projet.",
+      "confirm": "Supprimer"
+    },
+    "count": "{count, plural, one {# projet} other {# projets}}"
+  },
+  "milestones": {
+    "title": "Jalons",
+    "subtitle": "Regroupe les tâches de projet en jalons.",
+    "add": "Nouveau jalon",
+    "empty": "Aucun jalon. Regroupe les tâches en un jalon.",
+    "fields": {
+      "name": "Nom du jalon",
+      "description": "Description",
+      "due": "Échéance"
+    },
+    "detail": {
+      "title": "Jalon",
+      "progress": "Progression",
+      "tasks": "Tâches",
+      "noTasks": "Aucune tâche dans ce jalon pour l'instant.",
+      "complete": "Marquer le jalon comme terminé",
+      "reopen": "Rouvrir le jalon"
+    },
+    "status": {
+      "active": "Actif",
+      "completed": "Terminé",
+      "archived": "Archivé"
+    },
+    "confirmDelete": {
+      "title": "Supprimer le jalon ?",
+      "description": "Les tâches de ce jalon garderont leurs données mais perdront le lien au jalon.",
+      "confirm": "Supprimer"
+    },
+    "count": "{count, plural, one {# jalon} other {# jalons}}"
+  },
+  "brainDump": {
+    "title": "Vidage mental",
+    "subtitle": "Vide ton esprit. Tu trieras plus tard.",
+    "placeholder": "Écris n'importe quoi — une pensée, une idée, un rappel…",
+    "add": "Capturer",
+    "empty": "Ton esprit est limpide. Pour l'instant.",
+    "categorize": "Catégoriser",
+    "categories": {
+      "task": "Tâche",
+      "idea": "Idée",
+      "reminder": "Rappel",
+      "uncategorized": "Non catégorisé"
+    },
+    "count": "{count, plural, one {# entrée} other {# entrées}}",
+    "convert": {
+      "toTask": "Convertir en tâche",
+      "toReminder": "Convertir en rappel",
+      "title": "Convertir cette entrée",
+      "taskTitleLabel": "Titre de la tâche",
+      "priorityLabel": "Priorité",
+      "projectLabel": "Projet",
+      "dueLabel": "Échéance",
+      "remindAtLabel": "Rappelle-moi à",
+      "confirm": "Convertir",
+      "cancel": "Annuler",
+      "success": "Converti avec succès.",
+      "alreadyConverted": "Déjà converti."
+    },
+    "status": {
+      "inbox": "Boîte de réception",
+      "converted": "Converti",
+      "archived": "Archivé"
+    }
+  },
+  "breakdown": {
+    "title": "Découpage intelligent",
+    "subtitle": "Obtiens un point de départ. Modifie avant d'approuver.",
+    "trigger": "Découper ça",
+    "suggest": "Suggérer des étapes",
+    "sourceDisclosure": "Suggestion déterministe — à vérifier et modifier avant approbation.",
+    "edit": "Modifier l'étape",
+    "delete": "Supprimer l'étape",
+    "addStep": "Ajouter une étape",
+    "approve": "Approuver et créer",
+    "cancel": "Annuler",
+    "empty": "Aucune suggestion. Essaie un titre plus clair.",
+    "approved": "Sous-tâches créées.",
+    "noChanges": "Rien n'a changé."
+  },
+  "focus": {
+    "title": "Focus",
+    "subtitle": "Une chose à la fois.",
+    "startSession": "Démarrer une session de focus",
+    "endFocus": "Terminer le focus",
+    "pause": "Pause",
+    "resume": "Reprendre",
+    "stop": "Arrêter",
+    "complete": "Terminer",
+    "duration": "Durée",
+    "justFive": "Juste 5 minutes",
+    "distractionCapture": "Capture de distraction",
+    "distractionPlaceholder": "Qu'est-ce qui te tire ?",
+    "captureDistraction": "Capturer et continuer",
+    "distractionSaved": "Capturé. Retour au focus.",
+    "interruptions": "Interruptions",
+    "sessionActive": "Session active",
+    "sessionPaused": "En pause",
+    "sessionComplete": "Session terminée",
+    "sessionEnded": "Focus terminé",
+    "noTask": "Aucune tâche sélectionnée",
+    "timerComplete": "Temps écoulé. Tu l'as fait.",
+    "preset": {
+      "focus5": "5 min · Juste démarrer",
+      "focus10": "10 min · Rapide",
+      "focus15": "15 min · Focus rapide",
+      "focus25": "25 min · Pomodoro",
+      "focus30": "30 min · Une demi-heure",
+      "focus45": "45 min · Travail profond",
+      "focus60": "60 min · Heure pleine",
+      "focus90": "90 min · Flow"
+    },
+    "interruptionsCount": "{count, plural, one {# interruption} other {# interruptions}}",
+    "welcomeBack": {
+      "title": "Bon retour.",
+      "body": "Tu te concentrais sur « {task} ». Il reste {minutes} minutes.",
+      "continue": "Continuer le focus",
+      "endSession": "Terminer cette session",
+      "chooseAnother": "Choisir une autre tâche"
+    },
+    "whereWasI": {
+      "title": "J'en étais où ?",
+      "noRecentSession": "Aucune session de focus récente.",
+      "lastSession": "Tu travaillais sur : {task}",
+      "lastDistraction": "Dernière pensée capturée : {thought}",
+      "nextStep": "Prêt à continuer ?"
+    },
+    "completion": {
+      "title": "Focus terminé",
+      "duration": "{minutes} minutes",
+      "whatDidYouDo": "Qu'as-tu accompli ? (facultatif)",
+      "whatDidYouDoPlaceholder": "Note facultative…",
+      "done": "Terminé",
+      "startAnother": "En démarrer une autre",
+      "backToTasks": "Retour aux tâches"
+    },
+    "overwhelm": {
+      "title": "Je suis débordé",
+      "subtitle": "Rendons ça plus petit.",
+      "step1": "Qu'est-ce qui semble le plus important maintenant ?",
+      "step1Placeholder": "Écris la seule chose qui compte le plus…",
+      "step2": "Quelle est la plus petite prochaine action ?",
+      "step2Placeholder": "Écris une action de 2 minutes…",
+      "step3": "Combien de temps ?",
+      "start": "Démarrer le focus"
+    },
+    "oneStep": {
+      "title": "Juste une étape",
+      "subtitle": "Choisis une minuscule action. Démarre.",
+      "placeholder": "Quelle petite étape peux-tu faire ?",
+      "start": "Démarrer 5 minutes"
+    },
+    "transition": {
+      "title": "Respire.",
+      "subtitle": "Ferme les onglets inutiles. Choisis ta première étape. Prêt ?",
+      "ready": "Prêt à se concentrer",
+      "skip": "Passer"
+    },
+    "history": {
+      "title": "Historique de focus",
+      "today": "Aujourd'hui",
+      "thisWeek": "Cette semaine",
+      "thisMonth": "Ce mois-ci",
+      "empty": "Aucune session de focus. Même 5 minutes comptent.",
+      "sessionLabel": "{minutes} min · {status}",
+      "taskLabel": "Tâche : {task}"
+    },
+    "stats": {
+      "title": "Statistiques de focus",
+      "totalMinutes": "Temps de focus total",
+      "totalSessions": "Sessions totales",
+      "completedSessions": "Sessions terminées",
+      "averageSession": "Session moyenne",
+      "longestSession": "Session la plus longue",
+      "byDay": "Par jour",
+      "byTask": "Focus par tâche",
+      "noTaskFocus": "Aucune tâche associée",
+      "minutes": "{count, plural, one {# minute} other {# minutes}}",
+      "sessions": "{count, plural, one {# session} other {# sessions}}",
+      "empty": "Pas encore de données. Démarre ta première session.",
+      "trendWeek": "Tu t'es concentré pendant {minutes} minutes cette semaine.",
+      "trendLongest": "Ta session la plus longue a duré {minutes} minutes."
+    },
+    "aria": {
+      "timerStarted": "Focus démarré. Le minuteur tourne.",
+      "timerPaused": "Focus en pause.",
+      "timerResumed": "Focus repris.",
+      "timerCompleted": "Focus terminé. Bien joué.",
+      "timerEnded": "Focus arrêté tôt.",
+      "minutesRemaining": "Il reste {minutes} minutes.",
+      "distractionCaptured": "Distraction capturée. Retour au focus."
+    }
+  },
+  "habits": {
+    "title": "Habitudes",
+    "subtitle": "Petites routines, répétées avec douceur.",
+    "add": "Nouvelle habitude",
+    "empty": "Aucune habitude. Commence petit.",
+    "streak": "Série",
+    "fields": {
+      "name": "Nom de l'habitude",
+      "cue": "Après ce déclencheur…",
+      "routine": "Je vais…",
+      "reward": "Parce que ça me récompense avec…"
+    },
+    "streakCount": "{count, plural, one {# jour} other {# jours}}"
+  },
+  "energy": {
+    "title": "Journal d'énergie",
+    "subtitle": "Un check-in doux façonne ta journée.",
+    "levels": {
+      "1": "Épuisé",
+      "2": "Bas",
+      "3": "Stable",
+      "4": "Bon",
+      "5": "Pic"
+    },
+    "levelDescription": {
+      "1": "Repose-toi d'abord. Tâches minuscules seulement.",
+      "2": "Une petite chose à la fois.",
+      "3": "Stable — tu peux faire la plupart des choses.",
+      "4": "Fort — choisis quelque chose de meaningful.",
+      "5": "Pic — va au truc difficile."
+    },
+    "logged": "Enregistré. MindStep adaptera ses suggestions à ton énergie.",
+    "viewHistory": "Voir l'historique",
+    "today": "Énergie du jour",
+    "empty": "Aucun check-in aujourd'hui. Enregistrer prend un seul clic.",
+    "entriesCount": "{count, plural, one {# check-in} other {# check-ins}}"
+  },
+  "reminders": {
+    "title": "Rappels",
+    "subtitle": "Ce qui demande ton attention bientôt.",
+    "empty": "Aucun rappel. Tu es au calme.",
+    "dueSoon": "Bientôt dû",
+    "overdue": "En retard",
+    "later": "Plus tard aujourd'hui",
+    "tomorrow": "Demain",
+    "thisWeek": "Cette semaine",
+    "markDone": "Marquer comme fait",
+    "snooze": "Reporter 1 heure",
+    "count": "{count, plural, one {# rappel} other {# rappels}}"
+  },
+  "progress": {
+    "title": "Progression du jour",
+    "subtitle": "Élan doux. Pas de comptage.",
+    "tasksCompleted": "Tâches terminées",
+    "focusMinutes": "Minutes de focus",
+    "habitsDone": "Habitudes faites",
+    "captures": "Captures",
+    "streak": "Jours d'affilée",
+    "streakDescription": "Se montrer — même brièvement — garde la chaîne vivante.",
+    "motivations": {
+      "firstStep": "Tu as fait le premier pas. Ça compte.",
+      "momentum": "L'élan se construit.",
+      "going": "Tu avances. Continue doucement.",
+      "rest": "Le repos fait aussi partie de la progression."
+    }
+  },
+  "planner": {
+    "title": "Planificateur",
+    "subtitle": "Façonne ta journée, doucement.",
+    "day": "Jour",
+    "week": "Semaine",
+    "today": "Aujourd'hui",
+    "tomorrow": "Demain",
+    "schedule": "Calendrier",
+    "timeBlock": "Bloc temporel",
+    "routine": "Routine",
+    "availability": "Disponibilité",
+    "conflicts": "Conflits",
+    "planMyDay": "Planifier ma journée",
+    "whatShouldIDoNow": "Que faire maintenant ?",
+    "empty": "Ta journée est ouverte. Planifie une petite chose.",
+    "now": "MAINTENANT",
+    "next": "SUIVANT",
+    "later": "PLUS TARD",
+    "overloaded": "Allégeons un peu.",
+    "overloadedDescription": "Tu as plus de tâches prévues que de temps disponible. Certaines tâches sont restées non planifiées.",
+    "unscheduled": "Non planifié",
+    "buffer": "Marge",
+    "available": "Disponible",
+    "planned": "Prévu",
+    "maxDaily": "Maximum quotidien",
+    "deadlines": "Échéances",
+    "blocks": "blocs",
+    "generate": "Générer un plan",
+    "approve": "Approuver le plan",
+    "regenerate": "Régénérer",
+    "planSaved": "Plan enregistré. Ta journée est prête.",
+    "planAlreadyApproved": "Plan déjà approuvé — aucun doublon.",
+    "nextBestAction": {
+      "continueFocus": "Continue à te concentrer",
+      "startScheduled": "Commencer la tâche planifiée",
+      "startHighValue": "Prochaine étape suggérée",
+      "startTiny": "Commencer une petite étape",
+      "rest": "Rien d'urgent. Respire un coup."
+    },
+    "recover": {
+      "title": "Récupérer ma journée",
+      "subtitle": "Reconstruisons un plan plus léger.",
+      "analyze": "Analyser le temps restant",
+      "generate": "Générer un nouveau plan"
+    },
+    "move": {
+      "toTomorrow": "Déplacer à demain",
+      "toAnotherDay": "Déplacer à un autre jour",
+      "toNextSlot": "Déplacer au prochain créneau disponible"
+    },
+    "missed": {
+      "title": "Tâche manquée ?",
+      "continue": "Continuer",
+      "reschedule": "Replanifier",
+      "makeSmaller": "Réduire",
+      "skip": "Passer pour l'instant"
+    },
+    "aria": {
+      "scheduleLoaded": "Calendrier chargé.",
+      "planGenerated": "Plan généré. À vérifier avant approbation.",
+      "planApproved": "Plan approuvé et enregistré.",
+      "blockMoved": "Bloc déplacé."
+    }
+  },
+  "settings": {
+    "title": "Réglages",
+    "subtitle": "Adapte MindStep à ton esprit.",
+    "sections": {
+      "appearance": "Apparence",
+      "appearanceDescription": "Thème, mouvement et taille de texte.",
+      "language": "Langue",
+      "languageDescription": "Choisis comment MindStep te parle.",
+      "accessibility": "Accessibilité",
+      "accessibilityDescription": "Ajuste mouvement, contraste et rythme.",
+      "focus": "Focus par défaut",
+      "focusDescription": "Ta durée idéale de session et les pauses.",
+      "notifications": "Notifications",
+      "notificationsDescription": "Décide quand MindStep te contacte.",
+      "privacy": "Confidentialité & données",
+      "privacyDescription": "Tes données sont les tiennes. Toujours.",
+      "ai": "Coach IA",
+      "aiDescription": "Comment ton coach apparaît.",
+      "account": "Compte",
+      "accountDescription": "Ton profil et ta connexion."
+    },
+    "options": {
+      "theme": "Thème",
+      "reducedMotion": "Réduire les animations",
+      "highContrast": "Contraste élevé",
+      "textScale": "Taille du texte",
+      "language": "Langue de l'interface",
+      "focusLength": "Durée de focus par défaut (min)",
+      "shortBreak": "Pause courte (min)",
+      "longBreak": "Pause longue (min)",
+      "dailyStart": "La journée commence à",
+      "dailyEnd": "La journée se termine à",
+      "notificationsEnabled": "Autoriser les notifications",
+      "aiCoachEnabled": "Activer le Coach IA"
+    },
+    "textScale": {
+      "small": "Petit",
+      "normal": "Normal",
+      "large": "Grand",
+      "xlarge": "Très grand"
+    },
+    "saved": "Enregistré."
+  },
+  "ai": {
+    "title": "Coach IA",
+    "subtitle": "Un partenaire de réflexion bienveillant, jamais un remplacement des soins.",
+    "disclaimer": "MindStep n'est pas un outil médical. Il ne peut ni diagnostiquer ni traiter le TDAH. Pour des questions cliniques, consulte un professionnel qualifié.",
+    "placeholder": "Demande à ton coach n'importe quoi…",
+    "send": "Envoyer",
+    "contexts": {
+      "general": "Chat général",
+      "task_breakdown": "Découper une tâche",
+      "day_rebuilder": "Reconstruire ma journée",
+      "decision": "Aide-moi à décider",
+      "overwhelm": "Je suis submergé(e)"
+    },
+    "welcome": "Salut, je suis ton coach MindStep. Qu'est-ce qui t'occupe aujourd'hui ?",
+    "thinking": "Réflexion…",
+    "retry": "Réessayer",
+    "memory": "Mémoire",
+    "memoryDescription": "Les conversations récentes aident ton coach à rester dans le contexte. Les conversations épinglées sont conservées plus longtemps.",
+    "privacy": "Confidentialité",
+    "privacyDescription": "Les conversations de plus de 30 jours sont auto-purgées sauf si épinglées."
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "Aucune notification. Tu es à jour.",
+    "markAllRead": "Tout marquer comme lu",
+    "unread": "Non lu",
+    "read": "Lu",
+    "dismiss": "Ignorer",
+    "open": "Ouvrir",
+    "today": "Aujourd'hui",
+    "earlier": "Plus tôt",
+    "all": "Tout",
+    "types": {
+      "task_due": "Tâche due",
+      "task_overdue": "Tâche à traiter",
+      "focus_start": "Début du focus",
+      "focus_end": "Focus terminé",
+      "planning_reminder": "Rappel de planification",
+      "planned_task": "Tâche planifiée",
+      "missed_plan": "Plan modifié",
+      "recovery_suggestion": "Récupère ta journée",
+      "milestone": "Jalon",
+      "project": "Projet",
+      "system": "Système",
+      "ai_nudge": "Coup de pouce du coach",
+      "focus_reminder": "Rappel de focus",
+      "habit": "Rappel d'habitude",
+      "ai_insight": "Insight du coach",
+      "habit_reminder": "Rappel d'habitude",
+      "calendar_event": "Événement de calendrier",
+      "bill_due": "Facture à échoir",
+      "routine_reminder": "Rappel de routine"
+    },
+    "settings": "Réglages des notifications",
+    "frequency": {
+      "label": "Fréquence des notifications",
+      "minimal": "Minimal — uniquement critique",
+      "balanced": "Équilibré — rappels utiles",
+      "more": "Plus — rappels fréquents"
+    },
+    "quietHours": {
+      "label": "Heures de tranquillité",
+      "start": "Début",
+      "end": "Fin",
+      "description": "Les notifications non critiques sont reportées pendant les heures de tranquillité."
+    },
+    "budget": {
+      "label": "Limite quotidienne de notifications",
+      "description": "Nombre maximum de notifications non critiques par jour."
+    },
+    "categories": {
+      "tasks": "Rappels de tâches",
+      "focus": "Notifications de focus",
+      "planner": "Notifications du planificateur",
+      "milestones": "Notifications de jalons",
+      "aiNudges": "Coups de pouce du Coach IA",
+      "habits": "Rappels d'habitudes",
+      "calendar": "Rappels de calendrier",
+      "bills": "Rappels de factures",
+      "routines": "Rappels de routines"
+    },
+    "actions": {
+      "openTask": "Ouvrir la tâche",
+      "startFocus": "Démarrer le focus",
+      "openPlanner": "Ouvrir le planificateur",
+      "reschedule": "Replanifier",
+      "reviewPlan": "Revoir le plan",
+      "dismiss": "Ignorer",
+      "snooze": "Reporter",
+      "complete": "Terminer"
+    },
+    "snooze": {
+      "10min": "10 minutes",
+      "30min": "30 minutes",
+      "1hour": "1 heure",
+      "tomorrow": "Demain",
+      "capped": "Maximum de reports atteint. Essaie de replanifier ou terminer."
+    },
+    "smartActions": {
+      "snoozeTitle": "Reporter",
+      "rescheduleTitle": "Replanifier",
+      "completeTitle": "Terminer",
+      "dismissTitle": "Ignorer",
+      "snoozeDescription": "Me le rappeler plus tard, doucement.",
+      "rescheduleDescription": "Choisir un nouveau moment.",
+      "completeDescription": "C'est fait — marquer comme terminé.",
+      "dismissDescription": "Ne plus me le montrer."
+    },
+    "reschedule": {
+      "title": "Replanifier",
+      "description": "Choisis un nouveau moment pour ce rappel.",
+      "newTime": "Nouveau moment",
+      "pickTime": "Choisis un moment",
+      "confirm": "Replanifier",
+      "cancel": "Annuler",
+      "success": "Replanifié pour plus tard.",
+      "pastTime": "Choisis un moment dans le futur."
+    },
+    "snoozeResult": {
+      "success": "Reporté pour plus tard.",
+      "capped": "Maximum de reports atteint. Essaie de replanifier ou terminer.",
+      "tomorrowScheduled": "Reporté jusqu'à demain matin."
+    },
+    "completeResult": {
+      "success": "Marqué comme terminé.",
+      "taskCompleted": "Tâche marquée terminée.",
+      "reminderCompleted": "Rappel marqué terminé.",
+      "billPaid": "Facture marquée payée.",
+      "habitMarkedDone": "Habitude marquée faite pour aujourd'hui."
+    },
+    "unreadCount": "{count, plural, one {# non lu} other {# non lus}}",
+    "refresh": "Rafraîchir",
+    "aria": {
+      "notificationsLoaded": "Notifications chargées.",
+      "markedRead": "Marqué comme lu.",
+      "markedAllRead": "Tout marqué comme lu.",
+      "dismissed": "Notification ignorée.",
+      "snoozed": "Notification reportée.",
+      "rescheduled": "Notification replanifiée.",
+      "completed": "Notification terminée."
+    }
+  },
+  "pwa": {
+    "install": {
+      "title": "Installer MindStep",
+      "description": "Ajoute MindStep à ton écran d'accueil pour l'expérience complète.",
+      "accept": "Installer",
+      "dismiss": "Pas maintenant",
+      "iosInstructions": "Touche le bouton Partager, puis « Sur l'écran d'accueil »."
+    },
+    "update": {
+      "title": "Mise à jour disponible",
+      "description": "Une nouvelle version de MindStep est prête.",
+      "action": "Mettre à jour",
+      "dismiss": "Plus tard"
+    },
+    "offline": {
+      "banner": "{count, plural, zero {Tu es hors ligne. Les changements seront synchronisés au retour du réseau.} one {Tu es hors ligne. # changement est enregistré et sera synchronisé.} other {Tu es hors ligne. # changements sont enregistrés et seront synchronisés.}}",
+      "toast": "Tu es hors ligne. Tes changements sont en sûreté — ils seront synchronisés au retour du réseau.",
+      "page": {
+        "title": "Tu es hors ligne",
+        "body": "Tes changements sont enregistrés sur ton appareil et seront synchronisés au retour du réseau. Tu peux continuer à ajouter des tâches, capturer des idées et revoir ton plan.",
+        "retry": "Réessayer"
+      }
+    },
+    "syncing": {
+      "banner": "{count, plural, one {Synchronisation de # changement…} other {Synchronisation de # changements…}}"
+    },
+    "synced": {
+      "banner": "Tous les changements sont synchronisés."
+    },
+    "failed": {
+      "banner": "Certains changements n'ont pas pu être synchronisés. Touche réessayer.",
+      "retry": "Resynchroniser"
+    },
+    "online": {
+      "reconnected": "De nouveau en ligne.",
+      "reconnectedWithPending": "{count, plural, one {De nouveau en ligne — synchronisation de # changement.} other {De nouveau en ligne — synchronisation de # changements.}}"
+    },
+    "dismiss": "Ignorer",
+    "permissions": {
+      "title": "Activer les notifications ?",
+      "body": "MindStep peut te rappeler doucement les tâches, les sessions de focus et les routines. Tu peux désactiver à tout moment.",
+      "accept": "Autoriser",
+      "deny": "Pas maintenant",
+      "denied": "Les notifications sont bloquées. Tu peux les activer dans les réglages du navigateur.",
+      "enableInSettings": "Ouvrir les réglages du navigateur"
+    },
+    "push": {
+      "enabled": "Notifications push activées",
+      "disabled": "Notifications push désactivées",
+      "enable": "Activer les push",
+      "disable": "Désactiver les push",
+      "devicesLabel": "Tes appareils",
+      "addDevice": "Ajouter cet appareil",
+      "removeDevice": "Retirer"
+    }
+  },
+  "offline": {
+    "title": "Synchronisation hors ligne",
+    "description": "Les changements en attente sont en file sur ton appareil et seront synchronisés automatiquement au retour du réseau.",
+    "queueLabel": "File en attente",
+    "emptyQueue": "Aucun changement en attente.",
+    "pendingCount": "{count, plural, zero {Aucun changement en attente} one {# changement en attente} other {# changements en attente}}",
+    "retryAll": "Tout réessayer",
+    "discardAll": "Tout ignorer",
+    "discardConfirm": "Ignorer tous les changements en attente ? Action irréversible.",
+    "conflict": {
+      "title": "Conflit détecté",
+      "description": "Cet élément a été modifié sur un autre appareil depuis ta dernière édition. Choisis la version à conserver.",
+      "keepMine": "Garder ma version",
+      "keepTheirs": "Garder l'autre version",
+      "reviewManually": "Revoir manuellement"
+    }
+  },
+  "auth": {
+    "signIn": {
+      "title": "Se connecter",
+      "subtitle": "Bon retour.",
+      "email": "Email",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "forgotPassword": "Mot de passe oublié ?",
+      "noAccount": "Pas de compte ?",
+      "register": "En créer un"
+    },
+    "register": {
+      "title": "Crée ton compte",
+      "subtitle": "Ça prend une minute.",
+      "displayName": "Nom affiché",
+      "email": "Email",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmer le mot de passe",
+      "submit": "Créer le compte",
+      "haveAccount": "Déjà un compte ?",
+      "signIn": "Se connecter"
+    },
+    "forgotPassword": {
+      "title": "Mot de passe oublié",
+      "subtitle": "On t'enverra un lien de réinitialisation.",
+      "email": "Email",
+      "submit": "Envoyer le lien",
+      "backToSignIn": "Retour à la connexion"
+    },
+    "resetPassword": {
+      "title": "Réinitialiser le mot de passe",
+      "subtitle": "Choisis un nouveau mot de passe.",
+      "newPassword": "Nouveau mot de passe",
+      "confirmPassword": "Confirmer le nouveau mot de passe",
+      "submit": "Réinitialiser"
+    },
+    "verification": {
+      "title": "Vérifie ton email",
+      "subtitle": "On a envoyé un code à 6 chiffres à ta boîte.",
+      "code": "Code de vérification",
+      "submit": "Vérifier",
+      "resend": "Renvoyer le code",
+      "resent": "Code renvoyé."
+    },
+    "errors": {
+      "invalidCredentials": "Email ou mot de passe incorrect.",
+      "emailExists": "Un compte avec cet email existe déjà.",
+      "weakPassword": "Mot de passe trop faible. Utilise au moins 12 caractères avec des lettres, chiffres et symboles.",
+      "codeExpired": "Ce code a expiré. Demande-en un nouveau.",
+      "codeInvalid": "Ce code ne correspond pas. Réessaie.",
+      "tooManyAttempts": "Trop de tentatives. Attends un instant."
+    }
+  },
+  "errors": {
+    "unknown": "Quelque chose n'a pas chargé. Réessaie.",
+    "network": "Impossible de contacter le serveur. Vérifie ta connexion.",
+    "server": "On a eu un pépin de notre côté. On s'en occupe.",
+    "notFound": "On n'a pas trouvé ça.",
+    "unauthorized": "Connecte-toi pour continuer.",
+    "forbidden": "Tu n'as pas accès à ça.",
+    "validation": "Vérifie les champs surlignés.",
+    "rateLimited": "Trop de requêtes. Ralentis.",
+    "consentRequired": "Veuillez examiner et accepter les conditions de consentement.",
+    "featureDisabled": "Cette fonctionnalité est actuellement désactivée.",
+    "title": "Une erreur est survenue",
+    "retryAction": "Réessayer",
+    "codes": {
+      "VALIDATION_ERROR": "Vérifie les champs surlignés.",
+      "INVALID_INPUT": "Cet input ne semble pas correct.",
+      "INVALID_LOCALE": "Cette langue n'est pas supportée.",
+      "UNAUTHORIZED": "Connecte-toi pour continuer.",
+      "SESSION_EXPIRED": "Ta session a expiré. Reconnecte-toi.",
+      "FORBIDDEN": "Tu n'as pas accès à ça.",
+      "NOT_OWNER": "Tu ne peux accéder qu'à tes propres données.",
+      "CONSENT_REQUIRED": "Veuillez examiner et accepter les conditions de consentement.",
+      "FEATURE_DISABLED": "Cette fonctionnalité est actuellement désactivée.",
+      "NOT_FOUND": "On n'a pas trouvé ça.",
+      "CONFLICT": "Ça conflit avec des données existantes.",
+      "DUPLICATE": "Ça existe déjà.",
+      "BUSINESS_RULE_VIOLATION": "Cette action n'est pas autorisée maintenant.",
+      "RATE_LIMITED": "Trop de requêtes. Ralentis.",
+      "INTERNAL_ERROR": "On a eu un pépin de notre côté. On s'en occupe.",
+      "DATABASE_ERROR": "On a eu un pépin de notre côté. On s'en occupe.",
+      "AI_SERVICE_ERROR": "Le coach a du mal pour l'instant. Réessaie.",
+      "PI_SERVICE_ERROR": "Le service de paiement a du mal. Réessaie."
+    }
+  },
+  "validation": {
+    "required": "Ce champ est requis.",
+    "email": "Veuillez saisir un email valide.",
+    "emailTaken": "Cet email est déjà utilisé.",
+    "passwordTooShort": "Le mot de passe doit faire au moins 12 caractères.",
+    "passwordTooLong": "Mot de passe trop long (max 128).",
+    "passwordMismatch": "Les mots de passe ne correspondent pas.",
+    "nameTooShort": "Saisis au moins 1 caractère.",
+    "nameTooLong": "C'est un peu trop long.",
+    "titleTooLong": "Titre trop long.",
+    "notesTooLong": "Notes trop longues.",
+    "invalidDate": "Saisis une date valide.",
+    "invalidTime": "Saisis une heure valide.",
+    "invalidUrl": "Saisis une URL valide.",
+    "invalidColor": "Saisis une couleur valide (ex. #7c9885).",
+    "numberOutOfRange": "Ce nombre est hors plage.",
+    "selectOption": "Veuillez sélectionner une option.",
+    "tooShort": "Trop court.",
+    "tooLong": "Trop long."
+  },
+  "emptyStates": {
+    "title": "Rien ici pour l'instant",
+    "description": "C'est ici que tes données apparaîtront.",
+    "action": "Commencer",
+    "tasks": "Aucune tâche",
+    "tasksDescription": "Ajoute une petite chose que tu aimerais faire.",
+    "focus": "Aucune session de focus",
+    "focusDescription": "Même 5 minutes comptent comme une session.",
+    "habits": "Aucune habitude",
+    "habitsDescription": "Commence petit — une habitude faisable en 2 minutes.",
+    "brainDump": "Ton esprit est limpide",
+    "brainDumpDescription": "Capture ici tout ce qui te passe par la tête.",
+    "reminders": "Aucun rappel",
+    "remindersDescription": "Ce qui demande ton attention apparaîtra ici.",
+    "notifications": "Aucune notification",
+    "notificationsDescription": "Tu es à jour.",
+    "energy": "Aucun check-in d'énergie",
+    "energyDescription": "Un check rapide oriente les suggestions de MindStep.",
+    "insights": "Aucun insight",
+    "insightsDescription": "Après quelques jours, des schémas apparaîtront ici."
+  },
+  "loading": {
+    "default": "Chargement…",
+    "saving": "Enregistrement…",
+    "fetching": "Récupération…",
+    "sending": "Envoi…",
+    "starting": "Démarrage…"
+  },
+  "onboarding": {
+    "welcome": "Bienvenue sur MindStep",
+    "welcomeDescription": "Un pas. Un focus. Un jour.",
+    "step1": "Vidage mental",
+    "step1Description": "Vide tout ce qui encombre ta tête. Tu trieras plus tard.",
+    "step2": "Priorités",
+    "step2Description": "Choisis trois choses qui comptent le plus aujourd'hui.",
+    "step3": "Commence petit",
+    "step3Description": "Quand tu bloques, utilise « Je n'arrive pas à démarrer » pour réduire une tâche.",
+    "skip": "Passer",
+    "finish": "Commencer"
+  },
+  "privacy": {
+    "title": "Confidentialité & données",
+    "subtitle": "Tes données sont les tiennes. Exporte-les, supprime-les, contrôle comment elles sont utilisées.",
+    "principles": {
+      "dataIsYours": "Tes données sont les tiennes",
+      "dataIsYoursDescription": "Chaque enregistrement que tu crées appartient à ton compte. On ne vend ni ne partage jamais. Tu peux tout exporter ou supprimer à tout moment.",
+      "noDarkPatterns": "Pas de dark patterns",
+      "noDarkPatternsDescription": "MindStep n'utilise jamais la honte, les séries comme menaces ou les hooks d'anxiété. Les séries célèbrent l'effort ; elles ne punissent jamais les ruptures.",
+      "localFirst": "Local d'abord quand possible",
+      "localFirstDescription": "La phase 1 stocke préférences et état UI dans ton navigateur. Les données synchronisées vivent dans ton compte, chiffrées en transit.",
+      "noPassphrases": "Pas de phrases secrètes Pi",
+      "noPassphrasesDescription": "MindStep ne demande ni ne stocke jamais ta phrase secrète Pi. Tous les paiements Pi sont vérifiés via le SDK Pi côté serveur.",
+      "strictOwnership": "Limites de propriété strictes",
+      "strictOwnershipDescription": "Chaque requête en base est filtrée par userId. Un utilisateur ne peut jamais lire ou modifier les enregistrements d'un autre — appliqué au niveau des données, pas de l'UI.",
+      "calmByDesign": "Calme par conception",
+      "calmByDesignDescription": "Pas de points rouges d'angoisse, pas de pièges à scroll infini. MindStep montre ce qui compte maintenant et se retire."
+    },
+    "dataRights": {
+      "title": "Tes droits sur tes données",
+      "description": "Ce que tu peux faire avec tes données MindStep.",
+      "export": "Exporter toutes tes données en archive JSON.",
+      "exportDescription": "Télécharge une copie complète de tes données MindStep en JSON. Inclut toutes les tâches, projets, sessions de focus, conversations IA, historique de paiements et plus.",
+      "delete": "Supprimer définitivement ton compte et tous les enregistrements associés.",
+      "deleteDescription": "Cette action est irréversible. Toutes tes données seront supprimées définitivement. Tu seras déconnecté immédiatement.",
+      "withdrawConsent": "Retirer ton consentement à tout moment.",
+      "withdrawConsentDescription": "Met tous les indicateurs de consentement à off. Tes données sont conservées mais les fonctionnalités nécessitant un consentement seront limitées. Pour tout supprimer, utilise Supprimer le compte ci-dessus.",
+      "aiRetention": "Supprimer l'historique des conversations IA.",
+      "aiRetentionDescription": "Supprime toutes tes conversations et messages IA. Tes souvenirs IA (préférences) sont conservés."
+    },
+    "center": {
+      "title": "Centre de confidentialité",
+      "subtitle": "Gère tes données, consentement et préférences de partage.",
+      "dataExport": {
+        "title": "Exporter tes données",
+        "description": "Télécharge une copie complète de tes données MindStep en JSON. Inclut toutes tes tâches, projets, sessions de focus, conversations IA, historique de paiements et préférences. Aucune donnée d'autres utilisateurs n'est incluse.",
+        "button": "Télécharger mes données",
+        "success": "Export de données démarré — ton téléchargement va commencer.",
+        "failed": "Impossible d'exporter les données. Réessaie."
+      },
+      "deleteAIHistory": {
+        "title": "Supprimer l'historique des conversations IA",
+        "description": "Supprime définitivement toutes tes conversations et messages avec le coach IA. Tes souvenirs IA (préférences explicites) sont conservés. Irréversible.",
+        "button": "Supprimer l'historique IA",
+        "confirm": "Supprimer toutes les conversations IA ? Irréversible.",
+        "success": "Historique IA supprimé.",
+        "failed": "Impossible de supprimer l'historique IA. Réessaie."
+      },
+      "deleteAccount": {
+        "title": "Supprimer le compte",
+        "description": "Supprime définitivement ton compte et TOUTES les données associées. Inclut chaque tâche, projet, session de focus, conversation IA, enregistrement de paiement et préférence. IRRÉVERSIBLE.",
+        "button": "Supprimer mon compte",
+        "confirm": "Tape DELETE pour confirmer",
+        "confirmPlaceholder": "Tape DELETE ici",
+        "warning": "Irréversible. Toutes tes données seront effacées définitivement. Pense à exporter tes données d'abord.",
+        "success": "Compte supprimé. Tu as été déconnecté.",
+        "failed": "Impossible de supprimer le compte. Réessaie ou contacte le support."
+      },
+      "consentManagement": {
+        "title": "Gestion du consentement",
+        "description": "Contrôle à quoi tu consens. Tu peux changer à tout moment.",
+        "terms": "Conditions d'utilisation",
+        "termsDescription": "J'accepte les conditions d'utilisation de MindStep.",
+        "privacy": "Politique de confidentialité",
+        "privacyDescription": "J'accepte la politique de confidentialité de MindStep.",
+        "ageConfirmed": "Confirmation d'âge",
+        "ageConfirmedDescription": "Je confirme être d'âge légal pour utiliser ce service dans ma juridiction.",
+        "marketing": "Emails marketing",
+        "marketingDescription": "Je veux recevoir les mises à jour produit et astuces. (Optionnel — off par défaut.)",
+        "dataProcessing": "Traitement des données",
+        "dataProcessingDescription": "Je consens à ce que MindStep traite mes données pour fournir le service. Requis pour utiliser MindStep.",
+        "save": "Sauvegarder le consentement",
+        "saved": "Consentement sauvegardé.",
+        "withdrawAll": "Retirer tout le consentement",
+        "withdrawAllConfirm": "Retirer tout le consentement ? Tes données restent, mais les fonctionnalités nécessitant un consentement seront limitées. Tu peux re-consentir plus tard.",
+        "withdrawn": "Tout le consentement retiré."
+      },
+      "dataSharing": {
+        "title": "Contrôles de partage des données",
+        "description": "Contrôle quelles données MindStep peut utiliser pour des fonctionnalités spécifiques. Désactiver peut limiter les fonctionnalités.",
+        "aiCoach": "Contexte du coach IA",
+        "aiCoachDescription": "Permet au coach IA de voir tes tâches, sessions de focus et brain dumps pour des conseils contextuels. Off = réponses génériques seulement.",
+        "insights": "Insights personnels",
+        "insightsDescription": "Permet à MindStep d'analyser tes données d'activité pour générer des patterns et revues hebdomadaires. Off = pas d'insights.",
+        "analytics": "Analyses anonymes",
+        "analyticsDescription": "Partage des patterns d'utilisation anonymes pour améliorer MindStep. Aucune donnée personnelle n'est jamais partagée. (Actuellement toujours off — Phase 2.)",
+        "note": "Note : Ces contrôles sont stockés dans tes préférences. MindStep ne vend jamais tes données à des tiers."
+      }
+    },
+    "loading": "Chargement des réglages de confidentialité…"
+  },
+  "help": {
+    "crisisTitle": "Si tu es en crise",
+    "crisisBody": "MindStep n'est pas un service de crise. Si tu es en danger immédiat, contacte les services d'urgence locaux ou une ligne de crise en santé mentale de ton pays.",
+    "gettingStarted": "Pour démarrer",
+    "gettingStartedDescription": "Commence par le Vidage mental. Ajoute tout ce qui encombre ta tête. Trie plus tard.",
+    "adhdTips": "Astuces adaptées au TDAH",
+    "adhdTipsDescription": "Réduis la friction : nomme les tâches comme des actions (« Email Sam »). Utilise Une étape sur ce qui est gros.",
+    "beGentle": "Sois doux avec toi-même",
+    "beGentleDescription": "Les séries célèbrent l'effort. Un jour manqué est une information, pas un échec.",
+    "medicalDisclaimer": "Avertissement médical",
+    "contact": "Contact",
+    "contactDescription": "Phase 2 — chat de support in-app.",
+    "bugReports": "Rapports de bugs : dépose via le tracker d'issues du dépôt projet.",
+    "privacyEmail": "Questions confidentielles : privacy@mindstep.app (placeholder jusqu'à la Phase 2).",
+    "securityReports": "Rapports de sécurité : voir SECURITY.md pour la divulgation responsable."
+  },
+  "comingSoon": {
+    "title": "{name} — à venir dans une phase future",
+    "description": "Cette section fait partie de l'architecture planifiée de MindStep mais n'est pas implémentée dans la phase actuelle. Ce n'est intentionnellement pas un lien mort — la navigation est réelle et la route est réservée. Quand ce module sortira, tu verras une vraie fonctionnalité ici, pas un placeholder.",
+    "badge": "Scaffoldé en Phase 1 · Sortie en Phase 2+"
+  },
+  "insights": {
+    "title": "Insights",
+    "subtitle": "Patterns descriptifs de tes données. Pas un diagnostic.",
+    "privacy": "Tes données restent tiennes",
+    "privacyDescription": "Les insights utilisent uniquement tes données d'activité. Rien n'est vendu ou partagé extérieurement. Tu peux ignorer n'importe quel insight à tout moment.",
+    "empty": "Pas assez d'activité pour l'instant",
+    "emptyDescription": "Commence à utiliser MindStep — sessions de focus, tâches et check-ins d'énergie révéleront des patterns au fil du temps. Les patterns apparaissent dès qu'il y a assez de données pour être fiables.",
+    "refresh": "Rafraîchir",
+    "tabs": {
+      "focus": "Focus",
+      "time": "Temps",
+      "tasks": "Tâches",
+      "energy": "Énergie",
+      "weekly": "Hebdo",
+      "experiments": "Expériences"
+    },
+    "categories": {
+      "focus": "Focus",
+      "time": "Patterns temporels",
+      "task": "Patterns de tâches",
+      "energy": "Énergie",
+      "weekly": "Revue hebdo",
+      "general": "Général"
+    },
+    "kinds": {
+      "pattern": "Pattern",
+      "observation": "Observation",
+      "suggestion": "Suggestion",
+      "warning": "À noter",
+      "celebration": "À retenir",
+      "correlation": "Association",
+      "experiment": "Expérience"
+    },
+    "dismiss": "Ignorer",
+    "dismissed": "Ignoré",
+    "weeklyReview": {
+      "title": "Revue hebdomadaire",
+      "period": "{start} – {end}",
+      "whatWorked": "Ce qui a marché",
+      "whatWasDifficult": "Ce qui a été difficile",
+      "whatChanged": "Ce qui a changé",
+      "suggestedExperiment": "Expérience suggérée",
+      "startExperiment": "Lancer cette expérience",
+      "metrics": {
+        "totalFocusMinutes": "Minutes de focus totales",
+        "completedTasks": "Tâches terminées",
+        "completedSessions": "Sessions terminées",
+        "avgEnergy": "Énergie moyenne",
+        "interruptions": "Interruptions"
+      }
+    },
+    "aria": {
+      "chart": "Graphique : {title}",
+      "bars": "Graphique à barres avec {count} barres",
+      "noData": "Aucune donnée à afficher"
+    },
+    "loading": "Analyse de tes patterns…",
+    "error": "Impossible de charger les insights pour l'instant."
+  },
+  "experiments": {
+    "title": "Expériences personnelles",
+    "subtitle": "Essaie un changement pendant une semaine. On capturera les métriques avant/après — sans jugement.",
+    "empty": "Aucune expérience pour l'instant",
+    "emptyDescription": "Essaie un changement pendant une semaine. MindStep capturera tes métriques avant et après — de manière descriptive, sans jugement.",
+    "start": "Lancer une expérience",
+    "startTitle": "Lancer une expérience personnelle",
+    "fields": {
+      "type": "Quoi essayer",
+      "title": "Nom (optionnel)",
+      "hypothesis": "Ton hypothèse (optionnel)"
+    },
+    "submit": "Lancer l'expérience",
+    "cancel": "Annuler",
+    "types": {
+      "shorter_focus": "Sessions de focus plus courtes",
+      "longer_focus": "Sessions de focus plus longues",
+      "morning_planning": "Planification du matin",
+      "evening_planning": "Planification du soir",
+      "smaller_steps": "Plus petites étapes de tâche",
+      "different_reminder_timing": "Timing de rappel différent",
+      "earlier_breaks": "Pauses plus tôt",
+      "later_breaks": "Pauses plus tard"
+    },
+    "descriptions": {
+      "shorter_focus": "Planifie des sessions de focus de 10 min au lieu de 25.",
+      "longer_focus": "Planifie des sessions de focus de 40 min au lieu de 25.",
+      "morning_planning": "Passe 5 minutes chaque matin à écrire les 3 tâches les plus importantes du jour.",
+      "evening_planning": "Passe 5 minutes chaque soir à écrire les 3 tâches les plus importantes de demain.",
+      "smaller_steps": "Découpe ta prochaine tâche en 3 plus petites étapes.",
+      "different_reminder_timing": "Essaie les rappels 30 minutes plus tôt que d'habitude.",
+      "earlier_breaks": "Prends une pause de 5 min après chaque 15 min de focus.",
+      "later_breaks": "Pousse les blocs de focus à 35 minutes avant une pause."
+    },
+    "status": {
+      "active": "Active",
+      "completed": "Terminée",
+      "abandoned": "Abandonnée"
+    },
+    "result": {
+      "baseline": "Baseline (avant)",
+      "post": "Post (après)",
+      "delta": "Changement",
+      "description": "Ce que tes données montrent",
+      "noDescription": "Pas assez de données pour comparer pour l'instant."
+    },
+    "complete": "Terminer l'expérience",
+    "abandon": "Abandonner",
+    "completeConfirm": "Terminer cette expérience ? MindStep capturera un snapshot final et le comparera à ta baseline.",
+    "abandonConfirm": "Abandonner cette expérience ? Ta baseline est préservée, mais aucune comparaison finale ne sera faite.",
+    "started": "Expérience lancée. Essaie le changement pendant une semaine — puis reviens pour la terminer.",
+    "completed": "Expérience terminée. Vois les résultats ci-dessous.",
+    "abandoned": "Expérience abandonnée.",
+    "failed": "Impossible de lancer l'expérience. Réessaie.",
+    "loading": "Chargement des expériences…",
+    "aria": {
+      "started": "Expérience lancée.",
+      "completed": "Expérience terminée.",
+      "abandoned": "Expérience abandonnée."
+    }
+  },
+  "disclaimer": {
+    "notMedical": "MindStep n'est pas un outil médical ou de diagnostic. Il ne diagnostique pas le TDAH, ne prescrit pas de médicaments, ne recommande pas de changement de dosage et ne remplace pas les soins professionnels. En cas de crise, contacte un professionnel de santé ou les services d'urgence locaux."
+  },
+  "pi": {
+    "title": "Compte Pi",
+    "subtitle": "Connecte-toi via Pi, gère ton premium et consulte l'historique des paiements.",
+    "signedInAs": "Connecté en tant que {username}",
+    "notSignedIn": "Non connecté",
+    "network": "Réseau",
+    "networkValue": "{network, select, testnet {Testnet (test)} mainnet {Mainnet (production)} other {Inconnu}}",
+    "signInWithPi": "Se connecter avec Pi",
+    "signOut": "Se déconnecter",
+    "signingIn": "Connexion en cours…",
+    "signingOut": "Déconnexion en cours…",
+    "premium": {
+      "title": "MindStep Premium",
+      "active": "Premium actif",
+      "expired": "Premium expiré",
+      "free": "Plan gratuit",
+      "expiresOn": "Expire le {date}",
+      "lifetime": "Abonnement à vie",
+      "features": "Fonctionnalités incluses",
+      "noEntitlement": "Pas encore de premium",
+      "noEntitlementDescription": "Choisis un plan ci-dessous pour débloquer les sessions de focus illimitées, les insights avancés, les expériences personnelles et plus."
+    },
+    "products": {
+      "title": "Choisis ton plan",
+      "subtitle": "Paie en Pi. Annule à tout moment.",
+      "monthly": "Mensuel",
+      "yearly": "Annuel",
+      "lifetime": "À vie",
+      "bestValue": "Meilleure valeur",
+      "perMonth": "par mois",
+      "perYear": "par an",
+      "oneTime": "unique",
+      "buy": "Acheter avec Pi",
+      "buyMonthly": "Prendre Mensuel",
+      "buyYearly": "Prendre Annuel",
+      "buyLifetime": "Prendre À vie",
+      "processing": "Paiement en cours…",
+      "success": "Paiement réussi — premium activé !",
+      "cancelled": "Paiement annulé. Aucun frais n'a été appliqué.",
+      "failed": "Paiement échoué. Réessaie.",
+      "piAmount": "{amount} PI"
+    },
+    "history": {
+      "title": "Historique des paiements",
+      "empty": "Pas encore de paiement",
+      "emptyDescription": "Tes paiements Pi apparaîtront ici dès que tu en fais un.",
+      "status": {
+        "pending": "En attente",
+        "developer_approved": "Approuvé",
+        "user_approved": "En attente blockchain",
+        "transaction_verified": "Vérification",
+        "completed": "Terminé",
+        "cancelled": "Annulé",
+        "failed": "Échoué"
+      },
+      "txid": "ID de transaction",
+      "amount": "Montant",
+      "product": "Produit",
+      "date": "Date",
+      "refresh": "Rafraîchir"
+    },
+    "errors": {
+      "notInPiBrowser": "Pas dans le Pi Browser",
+      "notInPiBrowserDescription": "La connexion Pi et les paiements ne fonctionnent que dans le Pi Browser. Ouvre cette page dans le Pi Browser pour continuer.",
+      "notConfigured": "Pi n'est pas configuré",
+      "notConfiguredDescription": "Ce serveur n'est pas encore configuré pour l'intégration Pi. Contacte l'administrateur.",
+      "authFailed": "Connexion échouée. Réessaie.",
+      "authCancelled": "Tu as annulé la connexion Pi.",
+      "paymentFailed": "Paiement échoué. Réessaie.",
+      "paymentCancelled": "Paiement annulé.",
+      "sessionExpired": "Ta session a expiré. Reconnecte-toi.",
+      "retry": "Réessayer"
+    },
+    "compliance": {
+      "title": "Conformité & sécurité",
+      "noPassphrases": "Pas de phrases secrètes",
+      "noPassphrasesDescription": "MindStep ne demande ni ne stocke jamais ta phrase secrète Pi. Tous les paiements ont lieu dans le Pi Wallet, signés par toi.",
+      "serverVerified": "Vérifié côté serveur",
+      "serverVerifiedDescription": "Chaque paiement est vérifié via l'API Pi Platform avant tout octroi d'entitlement. Le frontend ne décide jamais.",
+      "testnetVsMainnet": "Test-Pi n'accorde jamais le premium",
+      "testnetVsMainnetDescription": "Les transactions Test-Pi sont étiquetées avec le réseau actif et ne peuvent jamais accorder d'entitlement réel — même si elles atteignent notre backend."
+    },
+    "loading": "Chargement…",
+    "loadingProducts": "Chargement des produits…",
+    "loadingHistory": "Chargement de l'historique…",
+    "loadingEntitlement": "Chargement du statut premium…",
+    "aria": {
+      "signedIn": "Tu es connecté avec Pi.",
+      "signedOut": "Tu n'es pas connecté.",
+      "premiumActive": "Ton abonnement premium est actif.",
+      "paymentComplete": "Paiement terminé."
+    }
+  },
+  "footer": {
+    "tagline": "Un pas. Un focus. Un jour.",
+    "rights": "Conçu avec soin. Tes données restent les tiennes."
+  }
+}
