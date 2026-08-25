@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { useUIStore } from "@/stores/ui-store";
 import { useDialogStore } from "@/stores/dialog-store";
@@ -41,10 +41,12 @@ export function DashboardSection() {
   const todaysFocusMinutes = useFocusStore((s) => s.todaysMinutes());
   const [quickDraft, setQuickDraft] = useState("");
 
-  const hour = new Date().getHours();
-  const greetingKey =
-    hour < 5 ? "night" : hour < 12 ? "morning" : hour < 18 ? "afternoon" : "evening";
+  const [greetingKey, setGreetingKey] = useState<"night" | "morning" | "afternoon" | "evening">("morning");
 
+useEffect(() => {
+  const hour = new Date().getHours();
+  setGreetingKey(hour < 5 ? "night" : hour < 12 ? "morning" : hour < 18 ? "afternoon" : "evening");
+}, []);
   // Compute next-step (most urgent non-done task).
   const nextTask = tasks
     .filter((task) => task.status !== "done" && !task.archived && !task.snoozed)
