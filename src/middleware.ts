@@ -6,8 +6,7 @@
  *     Allows inline styles + 'unsafe-inline' for styles because Next.js + Tailwind
  *     require them. Does NOT allow 'unsafe-inline' or 'unsafe-eval' for scripts.
  *     Allows the Pi SDK script from sdk.minepi.com.
- *   - X-Content-Type-Options: nosniff — prevents MIME sniffing.
- *   - X-Frame-Options: DENY — prevents clickjacking (we are not framed).
+ *   - X-Content-Type-Options: nosniff — prevents MIME sniffing.   
  *   - Referrer-Policy: strict-origin-when-cross-origin — leak minimum referrer.
  *   - Permissions-Policy: restricts camera, microphone, geolocation, payment
  *     (we don't use these — explicit deny).
@@ -50,7 +49,7 @@ const cspDirectives: Record<string, string> = {
   "object-src": "'none'",
   "base-uri": "'none'",
   "form-action": `${SELF}`,
-  "frame-ancestors": "'none'",
+  "frame-ancestors": `${SELF} https://sdk.minepi.com https://app-cdn.minepi.com https://*.minepi.com`,,
   "upgrade-insecure-requests": "",
 };
 
