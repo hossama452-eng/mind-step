@@ -49,7 +49,7 @@ const cspDirectives: Record<string, string> = {
   "object-src": "'none'",
   "base-uri": "'none'",
   "form-action": `${SELF}`,
-  "frame-ancestors": `${SELF} https://sdk.minepi.com https://app-cdn.minepi.com https://*.minepi.com`,,
+  "frame-ancestors": `${SELF} https://sdk.minepi.com https://app-cdn.minepi.com https://*.minepi.com`,
   "upgrade-insecure-requests": "",
 };
 
