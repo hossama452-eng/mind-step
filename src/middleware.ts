@@ -75,10 +75,7 @@ export function middleware(_req: NextRequest) {
   // X-Content-Type-Options: nosniff — prevents MIME sniffing.
   res.headers.set("X-Content-Type-Options", "nosniff");
 
-  // X-Frame-Options: DENY — clickjacking defense. CSP frame-ancestors
-  // is the modern equivalent, but we set both for older browsers.
-  res.headers.set("X-Frame-Options", "DENY");
-
+  
   // Referrer-Policy: strict-origin-when-cross-origin — leak minimum.
   res.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
 
