@@ -100,7 +100,7 @@ export function middleware(_req: NextRequest) {
 
   // Cross-Origin-Resource-Policy — restrict cross-origin resource loads.
   // 'same-origin' is too strict for the Pi SDK script loading. Use 'same-site'.
-  res.headers.set("Cross-Origin-Resource-Policy", "same-site");
+  res.headers.set("Cross-Origin-Resource-Policy", "cross-origin");
 
   return res;
 }
